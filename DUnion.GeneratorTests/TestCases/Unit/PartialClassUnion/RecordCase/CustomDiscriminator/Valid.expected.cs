@@ -10,6 +10,7 @@
 #pragma warning disable
 namespace TestCases
 {
+    [System.Diagnostics.DebuggerTypeProxyAttribute(typeof(DebuggerTypeProxy))]
     public partial class Union : System.IEquatable<TestCases.Union>
     {
         /// <summary>
@@ -626,6 +627,39 @@ namespace TestCases
                 default:
                     throw new System.InvalidOperationException("Union is not valid");
             }
+        }
+        sealed class DebuggerTypeProxy
+        {
+            private readonly TestCases.Union _value;
+    
+            DebuggerTypeProxy(TestCases.Union value)
+            {
+                _value = value;
+            }
+    
+            public System.Object Value => _value._value;
+    
+            public System.Type Type 
+            {
+                get
+                {
+                    switch(_value.MyDiscriminator)
+                    {
+                        case 0:
+                            return null;
+    
+                        case 1:
+                            return typeof(TestCases.Union.Case1);
+                        
+                        case 2:
+                            return typeof(TestCases.Union.Case2);
+                        
+                        default:
+                            return null;
+                    }
+                }
+            }
+    
         }
     }
 }

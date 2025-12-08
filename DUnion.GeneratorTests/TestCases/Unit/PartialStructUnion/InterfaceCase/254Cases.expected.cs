@@ -10,6 +10,7 @@
 #pragma warning disable
 namespace TestCases
 {
+    [System.Diagnostics.DebuggerTypeProxyAttribute(typeof(DebuggerTypeProxy))]
     public readonly partial struct Union : System.IEquatable<TestCases.Union>
     {
         /// <summary>
@@ -42652,6 +42653,795 @@ namespace TestCases
                 default:
                     throw new System.InvalidOperationException("Union is not valid");
             }
+        }
+        sealed class DebuggerTypeProxy
+        {
+            private readonly TestCases.Union _value;
+    
+            DebuggerTypeProxy(TestCases.Union value)
+            {
+                _value = value;
+            }
+    
+            public System.Object Value => _value._value;
+    
+            public System.Type Type 
+            {
+                get
+                {
+                    switch(_value._discriminator)
+                    {
+                        case 0:
+                            return null;
+    
+                        case 1:
+                            return typeof(TestCases.Union.ICase1);
+                        
+                        case 2:
+                            return typeof(TestCases.Union.ICase2);
+                        
+                        case 3:
+                            return typeof(TestCases.Union.ICase3);
+                        
+                        case 4:
+                            return typeof(TestCases.Union.ICase4);
+                        
+                        case 5:
+                            return typeof(TestCases.Union.ICase5);
+                        
+                        case 6:
+                            return typeof(TestCases.Union.ICase6);
+                        
+                        case 7:
+                            return typeof(TestCases.Union.ICase7);
+                        
+                        case 8:
+                            return typeof(TestCases.Union.ICase8);
+                        
+                        case 9:
+                            return typeof(TestCases.Union.ICase9);
+                        
+                        case 10:
+                            return typeof(TestCases.Union.ICase10);
+                        
+                        case 11:
+                            return typeof(TestCases.Union.ICase11);
+                        
+                        case 12:
+                            return typeof(TestCases.Union.ICase12);
+                        
+                        case 13:
+                            return typeof(TestCases.Union.ICase13);
+                        
+                        case 14:
+                            return typeof(TestCases.Union.ICase14);
+                        
+                        case 15:
+                            return typeof(TestCases.Union.ICase15);
+                        
+                        case 16:
+                            return typeof(TestCases.Union.ICase16);
+                        
+                        case 17:
+                            return typeof(TestCases.Union.ICase17);
+                        
+                        case 18:
+                            return typeof(TestCases.Union.ICase18);
+                        
+                        case 19:
+                            return typeof(TestCases.Union.ICase19);
+                        
+                        case 20:
+                            return typeof(TestCases.Union.ICase20);
+                        
+                        case 21:
+                            return typeof(TestCases.Union.ICase21);
+                        
+                        case 22:
+                            return typeof(TestCases.Union.ICase22);
+                        
+                        case 23:
+                            return typeof(TestCases.Union.ICase23);
+                        
+                        case 24:
+                            return typeof(TestCases.Union.ICase24);
+                        
+                        case 25:
+                            return typeof(TestCases.Union.ICase25);
+                        
+                        case 26:
+                            return typeof(TestCases.Union.ICase26);
+                        
+                        case 27:
+                            return typeof(TestCases.Union.ICase27);
+                        
+                        case 28:
+                            return typeof(TestCases.Union.ICase28);
+                        
+                        case 29:
+                            return typeof(TestCases.Union.ICase29);
+                        
+                        case 30:
+                            return typeof(TestCases.Union.ICase30);
+                        
+                        case 31:
+                            return typeof(TestCases.Union.ICase31);
+                        
+                        case 32:
+                            return typeof(TestCases.Union.ICase32);
+                        
+                        case 33:
+                            return typeof(TestCases.Union.ICase33);
+                        
+                        case 34:
+                            return typeof(TestCases.Union.ICase34);
+                        
+                        case 35:
+                            return typeof(TestCases.Union.ICase35);
+                        
+                        case 36:
+                            return typeof(TestCases.Union.ICase36);
+                        
+                        case 37:
+                            return typeof(TestCases.Union.ICase37);
+                        
+                        case 38:
+                            return typeof(TestCases.Union.ICase38);
+                        
+                        case 39:
+                            return typeof(TestCases.Union.ICase39);
+                        
+                        case 40:
+                            return typeof(TestCases.Union.ICase40);
+                        
+                        case 41:
+                            return typeof(TestCases.Union.ICase41);
+                        
+                        case 42:
+                            return typeof(TestCases.Union.ICase42);
+                        
+                        case 43:
+                            return typeof(TestCases.Union.ICase43);
+                        
+                        case 44:
+                            return typeof(TestCases.Union.ICase44);
+                        
+                        case 45:
+                            return typeof(TestCases.Union.ICase45);
+                        
+                        case 46:
+                            return typeof(TestCases.Union.ICase46);
+                        
+                        case 47:
+                            return typeof(TestCases.Union.ICase47);
+                        
+                        case 48:
+                            return typeof(TestCases.Union.ICase48);
+                        
+                        case 49:
+                            return typeof(TestCases.Union.ICase49);
+                        
+                        case 50:
+                            return typeof(TestCases.Union.ICase50);
+                        
+                        case 51:
+                            return typeof(TestCases.Union.ICase51);
+                        
+                        case 52:
+                            return typeof(TestCases.Union.ICase52);
+                        
+                        case 53:
+                            return typeof(TestCases.Union.ICase53);
+                        
+                        case 54:
+                            return typeof(TestCases.Union.ICase54);
+                        
+                        case 55:
+                            return typeof(TestCases.Union.ICase55);
+                        
+                        case 56:
+                            return typeof(TestCases.Union.ICase56);
+                        
+                        case 57:
+                            return typeof(TestCases.Union.ICase57);
+                        
+                        case 58:
+                            return typeof(TestCases.Union.ICase58);
+                        
+                        case 59:
+                            return typeof(TestCases.Union.ICase59);
+                        
+                        case 60:
+                            return typeof(TestCases.Union.ICase60);
+                        
+                        case 61:
+                            return typeof(TestCases.Union.ICase61);
+                        
+                        case 62:
+                            return typeof(TestCases.Union.ICase62);
+                        
+                        case 63:
+                            return typeof(TestCases.Union.ICase63);
+                        
+                        case 64:
+                            return typeof(TestCases.Union.ICase64);
+                        
+                        case 65:
+                            return typeof(TestCases.Union.ICase65);
+                        
+                        case 66:
+                            return typeof(TestCases.Union.ICase66);
+                        
+                        case 67:
+                            return typeof(TestCases.Union.ICase67);
+                        
+                        case 68:
+                            return typeof(TestCases.Union.ICase68);
+                        
+                        case 69:
+                            return typeof(TestCases.Union.ICase69);
+                        
+                        case 70:
+                            return typeof(TestCases.Union.ICase70);
+                        
+                        case 71:
+                            return typeof(TestCases.Union.ICase71);
+                        
+                        case 72:
+                            return typeof(TestCases.Union.ICase72);
+                        
+                        case 73:
+                            return typeof(TestCases.Union.ICase73);
+                        
+                        case 74:
+                            return typeof(TestCases.Union.ICase74);
+                        
+                        case 75:
+                            return typeof(TestCases.Union.ICase75);
+                        
+                        case 76:
+                            return typeof(TestCases.Union.ICase76);
+                        
+                        case 77:
+                            return typeof(TestCases.Union.ICase77);
+                        
+                        case 78:
+                            return typeof(TestCases.Union.ICase78);
+                        
+                        case 79:
+                            return typeof(TestCases.Union.ICase79);
+                        
+                        case 80:
+                            return typeof(TestCases.Union.ICase80);
+                        
+                        case 81:
+                            return typeof(TestCases.Union.ICase81);
+                        
+                        case 82:
+                            return typeof(TestCases.Union.ICase82);
+                        
+                        case 83:
+                            return typeof(TestCases.Union.ICase83);
+                        
+                        case 84:
+                            return typeof(TestCases.Union.ICase84);
+                        
+                        case 85:
+                            return typeof(TestCases.Union.ICase85);
+                        
+                        case 86:
+                            return typeof(TestCases.Union.ICase86);
+                        
+                        case 87:
+                            return typeof(TestCases.Union.ICase87);
+                        
+                        case 88:
+                            return typeof(TestCases.Union.ICase88);
+                        
+                        case 89:
+                            return typeof(TestCases.Union.ICase89);
+                        
+                        case 90:
+                            return typeof(TestCases.Union.ICase90);
+                        
+                        case 91:
+                            return typeof(TestCases.Union.ICase91);
+                        
+                        case 92:
+                            return typeof(TestCases.Union.ICase92);
+                        
+                        case 93:
+                            return typeof(TestCases.Union.ICase93);
+                        
+                        case 94:
+                            return typeof(TestCases.Union.ICase94);
+                        
+                        case 95:
+                            return typeof(TestCases.Union.ICase95);
+                        
+                        case 96:
+                            return typeof(TestCases.Union.ICase96);
+                        
+                        case 97:
+                            return typeof(TestCases.Union.ICase97);
+                        
+                        case 98:
+                            return typeof(TestCases.Union.ICase98);
+                        
+                        case 99:
+                            return typeof(TestCases.Union.ICase99);
+                        
+                        case 100:
+                            return typeof(TestCases.Union.ICase100);
+                        
+                        case 101:
+                            return typeof(TestCases.Union.ICase101);
+                        
+                        case 102:
+                            return typeof(TestCases.Union.ICase102);
+                        
+                        case 103:
+                            return typeof(TestCases.Union.ICase103);
+                        
+                        case 104:
+                            return typeof(TestCases.Union.ICase104);
+                        
+                        case 105:
+                            return typeof(TestCases.Union.ICase105);
+                        
+                        case 106:
+                            return typeof(TestCases.Union.ICase106);
+                        
+                        case 107:
+                            return typeof(TestCases.Union.ICase107);
+                        
+                        case 108:
+                            return typeof(TestCases.Union.ICase108);
+                        
+                        case 109:
+                            return typeof(TestCases.Union.ICase109);
+                        
+                        case 110:
+                            return typeof(TestCases.Union.ICase110);
+                        
+                        case 111:
+                            return typeof(TestCases.Union.ICase111);
+                        
+                        case 112:
+                            return typeof(TestCases.Union.ICase112);
+                        
+                        case 113:
+                            return typeof(TestCases.Union.ICase113);
+                        
+                        case 114:
+                            return typeof(TestCases.Union.ICase114);
+                        
+                        case 115:
+                            return typeof(TestCases.Union.ICase115);
+                        
+                        case 116:
+                            return typeof(TestCases.Union.ICase116);
+                        
+                        case 117:
+                            return typeof(TestCases.Union.ICase117);
+                        
+                        case 118:
+                            return typeof(TestCases.Union.ICase118);
+                        
+                        case 119:
+                            return typeof(TestCases.Union.ICase119);
+                        
+                        case 120:
+                            return typeof(TestCases.Union.ICase120);
+                        
+                        case 121:
+                            return typeof(TestCases.Union.ICase121);
+                        
+                        case 122:
+                            return typeof(TestCases.Union.ICase122);
+                        
+                        case 123:
+                            return typeof(TestCases.Union.ICase123);
+                        
+                        case 124:
+                            return typeof(TestCases.Union.ICase124);
+                        
+                        case 125:
+                            return typeof(TestCases.Union.ICase125);
+                        
+                        case 126:
+                            return typeof(TestCases.Union.ICase126);
+                        
+                        case 127:
+                            return typeof(TestCases.Union.ICase127);
+                        
+                        case 128:
+                            return typeof(TestCases.Union.ICase128);
+                        
+                        case 129:
+                            return typeof(TestCases.Union.ICase129);
+                        
+                        case 130:
+                            return typeof(TestCases.Union.ICase130);
+                        
+                        case 131:
+                            return typeof(TestCases.Union.ICase131);
+                        
+                        case 132:
+                            return typeof(TestCases.Union.ICase132);
+                        
+                        case 133:
+                            return typeof(TestCases.Union.ICase133);
+                        
+                        case 134:
+                            return typeof(TestCases.Union.ICase134);
+                        
+                        case 135:
+                            return typeof(TestCases.Union.ICase135);
+                        
+                        case 136:
+                            return typeof(TestCases.Union.ICase136);
+                        
+                        case 137:
+                            return typeof(TestCases.Union.ICase137);
+                        
+                        case 138:
+                            return typeof(TestCases.Union.ICase138);
+                        
+                        case 139:
+                            return typeof(TestCases.Union.ICase139);
+                        
+                        case 140:
+                            return typeof(TestCases.Union.ICase140);
+                        
+                        case 141:
+                            return typeof(TestCases.Union.ICase141);
+                        
+                        case 142:
+                            return typeof(TestCases.Union.ICase142);
+                        
+                        case 143:
+                            return typeof(TestCases.Union.ICase143);
+                        
+                        case 144:
+                            return typeof(TestCases.Union.ICase144);
+                        
+                        case 145:
+                            return typeof(TestCases.Union.ICase145);
+                        
+                        case 146:
+                            return typeof(TestCases.Union.ICase146);
+                        
+                        case 147:
+                            return typeof(TestCases.Union.ICase147);
+                        
+                        case 148:
+                            return typeof(TestCases.Union.ICase148);
+                        
+                        case 149:
+                            return typeof(TestCases.Union.ICase149);
+                        
+                        case 150:
+                            return typeof(TestCases.Union.ICase150);
+                        
+                        case 151:
+                            return typeof(TestCases.Union.ICase151);
+                        
+                        case 152:
+                            return typeof(TestCases.Union.ICase152);
+                        
+                        case 153:
+                            return typeof(TestCases.Union.ICase153);
+                        
+                        case 154:
+                            return typeof(TestCases.Union.ICase154);
+                        
+                        case 155:
+                            return typeof(TestCases.Union.ICase155);
+                        
+                        case 156:
+                            return typeof(TestCases.Union.ICase156);
+                        
+                        case 157:
+                            return typeof(TestCases.Union.ICase157);
+                        
+                        case 158:
+                            return typeof(TestCases.Union.ICase158);
+                        
+                        case 159:
+                            return typeof(TestCases.Union.ICase159);
+                        
+                        case 160:
+                            return typeof(TestCases.Union.ICase160);
+                        
+                        case 161:
+                            return typeof(TestCases.Union.ICase161);
+                        
+                        case 162:
+                            return typeof(TestCases.Union.ICase162);
+                        
+                        case 163:
+                            return typeof(TestCases.Union.ICase163);
+                        
+                        case 164:
+                            return typeof(TestCases.Union.ICase164);
+                        
+                        case 165:
+                            return typeof(TestCases.Union.ICase165);
+                        
+                        case 166:
+                            return typeof(TestCases.Union.ICase166);
+                        
+                        case 167:
+                            return typeof(TestCases.Union.ICase167);
+                        
+                        case 168:
+                            return typeof(TestCases.Union.ICase168);
+                        
+                        case 169:
+                            return typeof(TestCases.Union.ICase169);
+                        
+                        case 170:
+                            return typeof(TestCases.Union.ICase170);
+                        
+                        case 171:
+                            return typeof(TestCases.Union.ICase171);
+                        
+                        case 172:
+                            return typeof(TestCases.Union.ICase172);
+                        
+                        case 173:
+                            return typeof(TestCases.Union.ICase173);
+                        
+                        case 174:
+                            return typeof(TestCases.Union.ICase174);
+                        
+                        case 175:
+                            return typeof(TestCases.Union.ICase175);
+                        
+                        case 176:
+                            return typeof(TestCases.Union.ICase176);
+                        
+                        case 177:
+                            return typeof(TestCases.Union.ICase177);
+                        
+                        case 178:
+                            return typeof(TestCases.Union.ICase178);
+                        
+                        case 179:
+                            return typeof(TestCases.Union.ICase179);
+                        
+                        case 180:
+                            return typeof(TestCases.Union.ICase180);
+                        
+                        case 181:
+                            return typeof(TestCases.Union.ICase181);
+                        
+                        case 182:
+                            return typeof(TestCases.Union.ICase182);
+                        
+                        case 183:
+                            return typeof(TestCases.Union.ICase183);
+                        
+                        case 184:
+                            return typeof(TestCases.Union.ICase184);
+                        
+                        case 185:
+                            return typeof(TestCases.Union.ICase185);
+                        
+                        case 186:
+                            return typeof(TestCases.Union.ICase186);
+                        
+                        case 187:
+                            return typeof(TestCases.Union.ICase187);
+                        
+                        case 188:
+                            return typeof(TestCases.Union.ICase188);
+                        
+                        case 189:
+                            return typeof(TestCases.Union.ICase189);
+                        
+                        case 190:
+                            return typeof(TestCases.Union.ICase190);
+                        
+                        case 191:
+                            return typeof(TestCases.Union.ICase191);
+                        
+                        case 192:
+                            return typeof(TestCases.Union.ICase192);
+                        
+                        case 193:
+                            return typeof(TestCases.Union.ICase193);
+                        
+                        case 194:
+                            return typeof(TestCases.Union.ICase194);
+                        
+                        case 195:
+                            return typeof(TestCases.Union.ICase195);
+                        
+                        case 196:
+                            return typeof(TestCases.Union.ICase196);
+                        
+                        case 197:
+                            return typeof(TestCases.Union.ICase197);
+                        
+                        case 198:
+                            return typeof(TestCases.Union.ICase198);
+                        
+                        case 199:
+                            return typeof(TestCases.Union.ICase199);
+                        
+                        case 200:
+                            return typeof(TestCases.Union.ICase200);
+                        
+                        case 201:
+                            return typeof(TestCases.Union.ICase201);
+                        
+                        case 202:
+                            return typeof(TestCases.Union.ICase202);
+                        
+                        case 203:
+                            return typeof(TestCases.Union.ICase203);
+                        
+                        case 204:
+                            return typeof(TestCases.Union.ICase204);
+                        
+                        case 205:
+                            return typeof(TestCases.Union.ICase205);
+                        
+                        case 206:
+                            return typeof(TestCases.Union.ICase206);
+                        
+                        case 207:
+                            return typeof(TestCases.Union.ICase207);
+                        
+                        case 208:
+                            return typeof(TestCases.Union.ICase208);
+                        
+                        case 209:
+                            return typeof(TestCases.Union.ICase209);
+                        
+                        case 210:
+                            return typeof(TestCases.Union.ICase210);
+                        
+                        case 211:
+                            return typeof(TestCases.Union.ICase211);
+                        
+                        case 212:
+                            return typeof(TestCases.Union.ICase212);
+                        
+                        case 213:
+                            return typeof(TestCases.Union.ICase213);
+                        
+                        case 214:
+                            return typeof(TestCases.Union.ICase214);
+                        
+                        case 215:
+                            return typeof(TestCases.Union.ICase215);
+                        
+                        case 216:
+                            return typeof(TestCases.Union.ICase216);
+                        
+                        case 217:
+                            return typeof(TestCases.Union.ICase217);
+                        
+                        case 218:
+                            return typeof(TestCases.Union.ICase218);
+                        
+                        case 219:
+                            return typeof(TestCases.Union.ICase219);
+                        
+                        case 220:
+                            return typeof(TestCases.Union.ICase220);
+                        
+                        case 221:
+                            return typeof(TestCases.Union.ICase221);
+                        
+                        case 222:
+                            return typeof(TestCases.Union.ICase222);
+                        
+                        case 223:
+                            return typeof(TestCases.Union.ICase223);
+                        
+                        case 224:
+                            return typeof(TestCases.Union.ICase224);
+                        
+                        case 225:
+                            return typeof(TestCases.Union.ICase225);
+                        
+                        case 226:
+                            return typeof(TestCases.Union.ICase226);
+                        
+                        case 227:
+                            return typeof(TestCases.Union.ICase227);
+                        
+                        case 228:
+                            return typeof(TestCases.Union.ICase228);
+                        
+                        case 229:
+                            return typeof(TestCases.Union.ICase229);
+                        
+                        case 230:
+                            return typeof(TestCases.Union.ICase230);
+                        
+                        case 231:
+                            return typeof(TestCases.Union.ICase231);
+                        
+                        case 232:
+                            return typeof(TestCases.Union.ICase232);
+                        
+                        case 233:
+                            return typeof(TestCases.Union.ICase233);
+                        
+                        case 234:
+                            return typeof(TestCases.Union.ICase234);
+                        
+                        case 235:
+                            return typeof(TestCases.Union.ICase235);
+                        
+                        case 236:
+                            return typeof(TestCases.Union.ICase236);
+                        
+                        case 237:
+                            return typeof(TestCases.Union.ICase237);
+                        
+                        case 238:
+                            return typeof(TestCases.Union.ICase238);
+                        
+                        case 239:
+                            return typeof(TestCases.Union.ICase239);
+                        
+                        case 240:
+                            return typeof(TestCases.Union.ICase240);
+                        
+                        case 241:
+                            return typeof(TestCases.Union.ICase241);
+                        
+                        case 242:
+                            return typeof(TestCases.Union.ICase242);
+                        
+                        case 243:
+                            return typeof(TestCases.Union.ICase243);
+                        
+                        case 244:
+                            return typeof(TestCases.Union.ICase244);
+                        
+                        case 245:
+                            return typeof(TestCases.Union.ICase245);
+                        
+                        case 246:
+                            return typeof(TestCases.Union.ICase246);
+                        
+                        case 247:
+                            return typeof(TestCases.Union.ICase247);
+                        
+                        case 248:
+                            return typeof(TestCases.Union.ICase248);
+                        
+                        case 249:
+                            return typeof(TestCases.Union.ICase249);
+                        
+                        case 250:
+                            return typeof(TestCases.Union.ICase250);
+                        
+                        case 251:
+                            return typeof(TestCases.Union.ICase251);
+                        
+                        case 252:
+                            return typeof(TestCases.Union.ICase252);
+                        
+                        case 253:
+                            return typeof(TestCases.Union.ICase253);
+                        
+                        case 254:
+                            return typeof(TestCases.Union.ICase254);
+                        
+                        default:
+                            return null;
+                    }
+                }
+            }
+    
         }
     }
 }

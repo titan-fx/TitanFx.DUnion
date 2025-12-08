@@ -1,12 +1,12 @@
-﻿using DUnion.Models;
-using Microsoft.CodeAnalysis.CSharp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using DUnion.Models;
+using Microsoft.CodeAnalysis.CSharp;
 using CA = Microsoft.CodeAnalysis;
 
 namespace DUnion;
@@ -18,16 +18,20 @@ internal static class UnionTemplate
     private static readonly string _bool = typeof(bool).FullName;
     private static readonly string _byte = typeof(byte).FullName;
     private static readonly string _compilerGenerated = typeof(CompilerGeneratedAttribute).FullName;
+    private static readonly string _debuggerTypeProxy = typeof(DebuggerTypeProxyAttribute).FullName;
     private static readonly string _debuggerBrowsable = typeof(DebuggerBrowsableAttribute).FullName;
-    private static readonly string _debuggerBrowsableState = typeof(DebuggerBrowsableState).FullName;
+    private static readonly string _debuggerBrowsableState =
+        typeof(DebuggerBrowsableState).FullName;
     private static readonly string _editorBrowsable = typeof(EditorBrowsableAttribute).FullName;
     private static readonly string _editorBrowsableState = typeof(EditorBrowsableState).FullName;
     private static readonly string _func = typeof(Func<>).FullName[..^2];
     private static readonly string _iEquatable = typeof(IEquatable<>).FullName[..^2];
     private static readonly string _int = typeof(int).FullName;
     private static readonly string _invalidCastException = typeof(InvalidCastException).FullName;
-    private static readonly string _invalidOperationException = typeof(InvalidOperationException).FullName;
+    private static readonly string _invalidOperationException =
+        typeof(InvalidOperationException).FullName;
     private static readonly string _object = typeof(object).FullName;
+    private static readonly string _type = typeof(Type).FullName;
     private static readonly string _string = typeof(string).FullName;
     private static readonly string _uint = typeof(uint).FullName;
     private static readonly string _unsafe = typeof(Unsafe).FullName;
@@ -77,7 +81,7 @@ internal static class UnionTemplate
             { Kind: CA.TypeKind.Class, IsRecord: true } => "record class",
             { Kind: CA.TypeKind.Class, IsRecord: false } => "class",
             { Kind: CA.TypeKind.Interface } => "interface",
-            _ => throw new NotSupportedException($"Unsupported container type {container.Kind}")
+            _ => throw new NotSupportedException($"Unsupported container type {container.Kind}"),
         };
     }
 
@@ -124,11 +128,16 @@ internal static class UnionTemplate
         private string TUnion { get; }
 
         private string Value { get; }
+        private string OpenTParams { get; }
 
         public UnionRenderContext(Union model)
         {
             Class = GetKindSource(model.Definition);
             TParams = Helpers.Render(model.Id.TypeParameters);
+            OpenTParams =
+                model.Id.TypeParameters.Length == 0
+                    ? ""
+                    : $"<{new string(',', model.Id.TypeParameters.Length - 1)}>";
             TConststraints = RenderTypeConstraints(model.Id.TypeParameters);
             TUnion = Helpers.Render(model.Id);
             TDiscriminator = ComputeDiscriminatorType(model.Cases);
@@ -151,6 +160,7 @@ internal static class UnionTemplate
         public override string ToString()
         {
             return $$"""
+                [{{_debuggerTypeProxy}}(typeof(DebuggerTypeProxy{{OpenTParams}}))]
                 {{Class}} {{Name}}{{TParams}} : {{_iEquatable}}<{{TUnion}}>{{TConststraints}}
                 {
                     /// <summary>
@@ -617,6 +627,38 @@ internal static class UnionTemplate
                                 throw new {{_invalidOperationException}}("Union is not valid");
                         }
                     }
+                    sealed class DebuggerTypeProxy{{TParams}}
+                    {
+                        private readonly {{TUnion}} _value;
+
+                        DebuggerTypeProxy({{TUnion}} value)
+                        {
+                            _value = value;
+                        }
+
+                        public {{_object}} Value => _value.{{Value}};
+
+                        public {{_type}} Type 
+                        {
+                            get
+                            {
+                                switch(_value.{{Discriminator}})
+                                {
+                                    case 0:
+                                        return null;
+
+                                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                                    case {{c.Id}}:
+                                        return typeof({{c.TCase}});
+
+                                    """)).Indent(20)}}
+                                    default:
+                                        return null;
+                                }
+                            }
+                        }
+
+                    }
                 }
                 """;
         }
@@ -627,7 +669,7 @@ internal static class UnionTemplate
             {
                 < byte.MaxValue => _byte,
                 < ushort.MaxValue => _ushort,
-                _ => _uint
+                _ => _uint,
             };
         }
 
@@ -659,22 +701,31 @@ internal static class UnionTemplate
             if (kind.IsRecord)
                 segments.Add(SyntaxFacts.GetText(SyntaxKind.RecordKeyword));
 
-            segments.Add(SyntaxFacts.GetText(kind.Kind switch
-            {
-                CA.TypeKind.Struct => SyntaxKind.StructKeyword,
-                CA.TypeKind.Interface => SyntaxKind.InterfaceKeyword,
-                CA.TypeKind.Class => SyntaxKind.ClassKeyword,
-                _ => throw new NotSupportedException($"Unsupported union type kind {kind.Kind}")
-            }));
+            segments.Add(
+                SyntaxFacts.GetText(
+                    kind.Kind switch
+                    {
+                        CA.TypeKind.Struct => SyntaxKind.StructKeyword,
+                        CA.TypeKind.Interface => SyntaxKind.InterfaceKeyword,
+                        CA.TypeKind.Class => SyntaxKind.ClassKeyword,
+                        _ => throw new NotSupportedException(
+                            $"Unsupported union type kind {kind.Kind}"
+                        ),
+                    }
+                )
+            );
 
             return string.Join(" ", segments);
         }
 
         private static string RenderTypeConstraints(Sequence<TypeParameter> typeParameters)
         {
-            return string.Join("", typeParameters
-                .Where(p => p.Constraints.Length > 0)
-                .Select(p => $"\r\n    where {p.Name} : {string.Join(", ", p.Constraints)}"));
+            return string.Join(
+                "",
+                typeParameters
+                    .Where(p => p.Constraints.Length > 0)
+                    .Select(p => $"\r\n    where {p.Name} : {string.Join(", ", p.Constraints)}")
+            );
         }
 
         private string Cast(string value, string type, CA.TypeKind kind)

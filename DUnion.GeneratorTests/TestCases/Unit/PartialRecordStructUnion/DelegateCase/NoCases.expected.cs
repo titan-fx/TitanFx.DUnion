@@ -12,6 +12,7 @@
 #pragma warning disable
 namespace TestCases
 {
+    [System.Diagnostics.DebuggerTypeProxyAttribute(typeof(DebuggerTypeProxy))]
     public readonly partial record struct Union : System.IEquatable<TestCases.Union>
     {
         /// <summary>
@@ -195,6 +196,34 @@ namespace TestCases
                 default:
                     throw new System.InvalidOperationException("Union is not valid");
             }
+        }
+        sealed class DebuggerTypeProxy
+        {
+            private readonly TestCases.Union _value;
+    
+            DebuggerTypeProxy(TestCases.Union value)
+            {
+                _value = value;
+            }
+    
+            public System.Object Value => _value._value;
+    
+            public System.Type Type 
+            {
+                get
+                {
+                    switch(_value._discriminator)
+                    {
+                        case 0:
+                            return null;
+    
+                        
+                        default:
+                            return null;
+                    }
+                }
+            }
+    
         }
     }
 }

@@ -10,6 +10,7 @@
 #pragma warning disable
 namespace TestCases
 {
+    [System.Diagnostics.DebuggerTypeProxyAttribute(typeof(DebuggerTypeProxy))]
     public readonly partial record struct JsonValue : System.IEquatable<TestCases.JsonValue>
     {
         /// <summary>
@@ -1319,6 +1320,51 @@ namespace TestCases
                 default:
                     throw new System.InvalidOperationException("Union is not valid");
             }
+        }
+        sealed class DebuggerTypeProxy
+        {
+            private readonly TestCases.JsonValue _value;
+    
+            DebuggerTypeProxy(TestCases.JsonValue value)
+            {
+                _value = value;
+            }
+    
+            public System.Object Value => _value._value;
+    
+            public System.Type Type 
+            {
+                get
+                {
+                    switch(_value._discriminator)
+                    {
+                        case 0:
+                            return null;
+    
+                        case 1:
+                            return typeof(TestCases.JsonValue.String);
+                        
+                        case 2:
+                            return typeof(TestCases.JsonValue.Number);
+                        
+                        case 3:
+                            return typeof(TestCases.JsonValue.Boolean);
+                        
+                        case 4:
+                            return typeof(TestCases.JsonValue.Null);
+                        
+                        case 5:
+                            return typeof(TestCases.JsonValue.Array);
+                        
+                        case 6:
+                            return typeof(TestCases.JsonValue.Object);
+                        
+                        default:
+                            return null;
+                    }
+                }
+            }
+    
         }
     }
 }
