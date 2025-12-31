@@ -338,6 +338,72 @@ namespace TestCases
         /// </list>
         /// </summary>
         /// <param name="default"></param>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseSome">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</param>
+        /// <param name="caseNone">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</param>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Option{T}" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Option{T}" /> is a struct and this is the default value of <see cref="TestCases.Option{T}" />.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public void Switch<TSwitchContext>
+        (
+            TSwitchContext context,
+            System.Action<TSwitchContext>? @default,
+            System.Action<TSwitchContext, TestCases.Option.Some<T>>? caseSome = null,
+            System.Action<TSwitchContext, TestCases.Option.None>? caseNone = null
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized.");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseSome, null))
+                    {
+                        caseSome.Invoke(context, ((TestCases.Option.Some<T>)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNone, null))
+                    {
+                        caseNone.Invoke(context, ((TestCases.Option.None)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Option{T}" /> represents.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseSome" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNone" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="default" /></term>
+        ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="default"></param>
         /// <param name="caseSome">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</param>
         /// <param name="caseNone">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</param>
         /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Option{T}" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Option{T}" /> is a struct and this is the default value of <see cref="TestCases.Option{T}" />.</exception>
@@ -373,6 +439,59 @@ namespace TestCases
                     else if (!System.Object.ReferenceEquals(@default, null))
                     {
                         @default.Invoke();
+                    }
+                    break;
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+    
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Option{T}" /> represents.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseSome" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNone" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseSome">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</param>
+        /// <param name="caseNone">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</param>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Option{T}" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Option{T}" /> is a struct and this is the default value of <see cref="TestCases.Option{T}" />.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public void Switch<TSwitchContext>
+        (
+            TSwitchContext context,
+            System.Action<TSwitchContext,TestCases.Option.Some<T>>? caseSome,
+            System.Action<TSwitchContext,TestCases.Option.None>? caseNone
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseSome, null))
+                    {
+                        caseSome.Invoke(context, ((TestCases.Option.Some<T>)this._value));
+                    }
+                    break;
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNone, null))
+                    {
+                        caseNone.Invoke(context, ((TestCases.Option.None)this._value));
                     }
                     break;
                 
@@ -518,6 +637,80 @@ namespace TestCases
         ///         <term><paramref name="caseNone" /></term>
         ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</description>
         ///     </item>
+        ///     <item>
+        ///         <term><paramref name="default" /></term>
+        ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="default"></param>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseSome">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</param>
+        /// <param name="caseNone">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</param>
+        /// <returns>the result of invoking the relevant delegate.</returns>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Option{T}" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Option{T}" /> is a struct and this is the default value of <see cref="TestCases.Option{T}" />.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown when both the delegate that should have been invoked and <paramref name="default" /> are null.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public TMatchResult Match<TMatchResult, TMatchContext>
+        (
+            TMatchContext context,
+            System.Func<TMatchContext, TMatchResult> @default,
+            System.Func<TMatchContext, TestCases.Option.Some<T>, TMatchResult>? caseSome = null,
+            System.Func<TMatchContext, TestCases.Option.None, TMatchResult>? caseNone = null
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseSome, null))
+                    {
+                        return caseSome.Invoke(context, ((TestCases.Option.Some<T>)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNone, null))
+                    {
+                        return caseNone.Invoke(context, ((TestCases.Option.None)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Option{T}" /> represents and returns its result.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseSome" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNone" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</description>
+        ///     </item>
         /// </list>
         /// </summary>
         /// <param name="caseSome">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</param>
@@ -551,6 +744,66 @@ namespace TestCases
                     if (!System.Object.ReferenceEquals(caseNone, null))
                     {
                         return caseNone.Invoke(((TestCases.Option.None)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseNone));
+                    }
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Option{T}" /> represents and returns its result.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseSome" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNone" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseSome">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.Some{T}" />.</param>
+        /// <param name="caseNone">The delegate to invoke when the <see cref="TestCases.Option{T}" /> represents a <see cref="TestCases.Option.None" />.</param>
+        /// <returns>the result of invoking the relevant delegate.</returns>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Option{T}" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Option{T}" /> is a struct and this is the default value of <see cref="TestCases.Option{T}" />.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown when the delegate that should have been invoked is null.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public TMatchResult Match<TMatchResult, TMatchContext>
+        (
+            TMatchContext context,
+            System.Func<TMatchContext, TestCases.Option.Some<T>, TMatchResult> caseSome,
+            System.Func<TMatchContext, TestCases.Option.None, TMatchResult> caseNone
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseSome, null))
+                    {
+                        return caseSome.Invoke(context, ((TestCases.Option.Some<T>)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseSome));
+                    }
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNone, null))
+                    {
+                        return caseNone.Invoke(context, ((TestCases.Option.None)this._value));
                     }
                     else
                     {

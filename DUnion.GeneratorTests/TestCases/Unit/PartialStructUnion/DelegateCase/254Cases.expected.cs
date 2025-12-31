@@ -33411,6 +33411,4356 @@ namespace TestCases
         /// </list>
         /// </summary>
         /// <param name="default"></param>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseCase1">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</param>
+        /// <param name="caseCase2">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</param>
+        /// <param name="caseCase3">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</param>
+        /// <param name="caseCase4">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</param>
+        /// <param name="caseCase5">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</param>
+        /// <param name="caseCase6">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</param>
+        /// <param name="caseCase7">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</param>
+        /// <param name="caseCase8">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</param>
+        /// <param name="caseCase9">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</param>
+        /// <param name="caseCase10">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</param>
+        /// <param name="caseCase11">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</param>
+        /// <param name="caseCase12">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</param>
+        /// <param name="caseCase13">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</param>
+        /// <param name="caseCase14">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</param>
+        /// <param name="caseCase15">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</param>
+        /// <param name="caseCase16">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</param>
+        /// <param name="caseCase17">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</param>
+        /// <param name="caseCase18">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</param>
+        /// <param name="caseCase19">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</param>
+        /// <param name="caseCase20">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</param>
+        /// <param name="caseCase21">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</param>
+        /// <param name="caseCase22">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</param>
+        /// <param name="caseCase23">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</param>
+        /// <param name="caseCase24">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</param>
+        /// <param name="caseCase25">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</param>
+        /// <param name="caseCase26">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</param>
+        /// <param name="caseCase27">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</param>
+        /// <param name="caseCase28">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</param>
+        /// <param name="caseCase29">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</param>
+        /// <param name="caseCase30">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</param>
+        /// <param name="caseCase31">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</param>
+        /// <param name="caseCase32">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</param>
+        /// <param name="caseCase33">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</param>
+        /// <param name="caseCase34">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</param>
+        /// <param name="caseCase35">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</param>
+        /// <param name="caseCase36">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</param>
+        /// <param name="caseCase37">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</param>
+        /// <param name="caseCase38">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</param>
+        /// <param name="caseCase39">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</param>
+        /// <param name="caseCase40">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</param>
+        /// <param name="caseCase41">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</param>
+        /// <param name="caseCase42">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</param>
+        /// <param name="caseCase43">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</param>
+        /// <param name="caseCase44">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</param>
+        /// <param name="caseCase45">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</param>
+        /// <param name="caseCase46">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</param>
+        /// <param name="caseCase47">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</param>
+        /// <param name="caseCase48">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</param>
+        /// <param name="caseCase49">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</param>
+        /// <param name="caseCase50">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</param>
+        /// <param name="caseCase51">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</param>
+        /// <param name="caseCase52">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</param>
+        /// <param name="caseCase53">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</param>
+        /// <param name="caseCase54">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</param>
+        /// <param name="caseCase55">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</param>
+        /// <param name="caseCase56">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</param>
+        /// <param name="caseCase57">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</param>
+        /// <param name="caseCase58">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</param>
+        /// <param name="caseCase59">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</param>
+        /// <param name="caseCase60">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</param>
+        /// <param name="caseCase61">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</param>
+        /// <param name="caseCase62">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</param>
+        /// <param name="caseCase63">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</param>
+        /// <param name="caseCase64">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</param>
+        /// <param name="caseCase65">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</param>
+        /// <param name="caseCase66">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</param>
+        /// <param name="caseCase67">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</param>
+        /// <param name="caseCase68">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</param>
+        /// <param name="caseCase69">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</param>
+        /// <param name="caseCase70">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</param>
+        /// <param name="caseCase71">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</param>
+        /// <param name="caseCase72">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</param>
+        /// <param name="caseCase73">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</param>
+        /// <param name="caseCase74">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</param>
+        /// <param name="caseCase75">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</param>
+        /// <param name="caseCase76">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</param>
+        /// <param name="caseCase77">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</param>
+        /// <param name="caseCase78">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</param>
+        /// <param name="caseCase79">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</param>
+        /// <param name="caseCase80">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</param>
+        /// <param name="caseCase81">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</param>
+        /// <param name="caseCase82">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</param>
+        /// <param name="caseCase83">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</param>
+        /// <param name="caseCase84">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</param>
+        /// <param name="caseCase85">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</param>
+        /// <param name="caseCase86">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</param>
+        /// <param name="caseCase87">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</param>
+        /// <param name="caseCase88">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</param>
+        /// <param name="caseCase89">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</param>
+        /// <param name="caseCase90">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</param>
+        /// <param name="caseCase91">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</param>
+        /// <param name="caseCase92">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</param>
+        /// <param name="caseCase93">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</param>
+        /// <param name="caseCase94">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</param>
+        /// <param name="caseCase95">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</param>
+        /// <param name="caseCase96">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</param>
+        /// <param name="caseCase97">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</param>
+        /// <param name="caseCase98">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</param>
+        /// <param name="caseCase99">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</param>
+        /// <param name="caseCase100">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</param>
+        /// <param name="caseCase101">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</param>
+        /// <param name="caseCase102">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</param>
+        /// <param name="caseCase103">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</param>
+        /// <param name="caseCase104">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</param>
+        /// <param name="caseCase105">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</param>
+        /// <param name="caseCase106">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</param>
+        /// <param name="caseCase107">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</param>
+        /// <param name="caseCase108">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</param>
+        /// <param name="caseCase109">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</param>
+        /// <param name="caseCase110">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</param>
+        /// <param name="caseCase111">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</param>
+        /// <param name="caseCase112">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</param>
+        /// <param name="caseCase113">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</param>
+        /// <param name="caseCase114">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</param>
+        /// <param name="caseCase115">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</param>
+        /// <param name="caseCase116">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</param>
+        /// <param name="caseCase117">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</param>
+        /// <param name="caseCase118">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</param>
+        /// <param name="caseCase119">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</param>
+        /// <param name="caseCase120">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</param>
+        /// <param name="caseCase121">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</param>
+        /// <param name="caseCase122">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</param>
+        /// <param name="caseCase123">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</param>
+        /// <param name="caseCase124">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</param>
+        /// <param name="caseCase125">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</param>
+        /// <param name="caseCase126">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</param>
+        /// <param name="caseCase127">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</param>
+        /// <param name="caseCase128">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</param>
+        /// <param name="caseCase129">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</param>
+        /// <param name="caseCase130">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</param>
+        /// <param name="caseCase131">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</param>
+        /// <param name="caseCase132">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</param>
+        /// <param name="caseCase133">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</param>
+        /// <param name="caseCase134">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</param>
+        /// <param name="caseCase135">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</param>
+        /// <param name="caseCase136">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</param>
+        /// <param name="caseCase137">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</param>
+        /// <param name="caseCase138">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</param>
+        /// <param name="caseCase139">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</param>
+        /// <param name="caseCase140">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</param>
+        /// <param name="caseCase141">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</param>
+        /// <param name="caseCase142">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</param>
+        /// <param name="caseCase143">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</param>
+        /// <param name="caseCase144">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</param>
+        /// <param name="caseCase145">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</param>
+        /// <param name="caseCase146">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</param>
+        /// <param name="caseCase147">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</param>
+        /// <param name="caseCase148">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</param>
+        /// <param name="caseCase149">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</param>
+        /// <param name="caseCase150">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</param>
+        /// <param name="caseCase151">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</param>
+        /// <param name="caseCase152">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</param>
+        /// <param name="caseCase153">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</param>
+        /// <param name="caseCase154">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</param>
+        /// <param name="caseCase155">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</param>
+        /// <param name="caseCase156">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</param>
+        /// <param name="caseCase157">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</param>
+        /// <param name="caseCase158">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</param>
+        /// <param name="caseCase159">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</param>
+        /// <param name="caseCase160">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</param>
+        /// <param name="caseCase161">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</param>
+        /// <param name="caseCase162">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</param>
+        /// <param name="caseCase163">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</param>
+        /// <param name="caseCase164">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</param>
+        /// <param name="caseCase165">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</param>
+        /// <param name="caseCase166">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</param>
+        /// <param name="caseCase167">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</param>
+        /// <param name="caseCase168">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</param>
+        /// <param name="caseCase169">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</param>
+        /// <param name="caseCase170">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</param>
+        /// <param name="caseCase171">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</param>
+        /// <param name="caseCase172">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</param>
+        /// <param name="caseCase173">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</param>
+        /// <param name="caseCase174">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</param>
+        /// <param name="caseCase175">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</param>
+        /// <param name="caseCase176">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</param>
+        /// <param name="caseCase177">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</param>
+        /// <param name="caseCase178">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</param>
+        /// <param name="caseCase179">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</param>
+        /// <param name="caseCase180">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</param>
+        /// <param name="caseCase181">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</param>
+        /// <param name="caseCase182">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</param>
+        /// <param name="caseCase183">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</param>
+        /// <param name="caseCase184">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</param>
+        /// <param name="caseCase185">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</param>
+        /// <param name="caseCase186">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</param>
+        /// <param name="caseCase187">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</param>
+        /// <param name="caseCase188">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</param>
+        /// <param name="caseCase189">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</param>
+        /// <param name="caseCase190">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</param>
+        /// <param name="caseCase191">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</param>
+        /// <param name="caseCase192">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</param>
+        /// <param name="caseCase193">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</param>
+        /// <param name="caseCase194">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</param>
+        /// <param name="caseCase195">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</param>
+        /// <param name="caseCase196">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</param>
+        /// <param name="caseCase197">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</param>
+        /// <param name="caseCase198">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</param>
+        /// <param name="caseCase199">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</param>
+        /// <param name="caseCase200">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</param>
+        /// <param name="caseCase201">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</param>
+        /// <param name="caseCase202">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</param>
+        /// <param name="caseCase203">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</param>
+        /// <param name="caseCase204">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</param>
+        /// <param name="caseCase205">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</param>
+        /// <param name="caseCase206">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</param>
+        /// <param name="caseCase207">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</param>
+        /// <param name="caseCase208">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</param>
+        /// <param name="caseCase209">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</param>
+        /// <param name="caseCase210">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</param>
+        /// <param name="caseCase211">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</param>
+        /// <param name="caseCase212">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</param>
+        /// <param name="caseCase213">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</param>
+        /// <param name="caseCase214">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</param>
+        /// <param name="caseCase215">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</param>
+        /// <param name="caseCase216">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</param>
+        /// <param name="caseCase217">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</param>
+        /// <param name="caseCase218">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</param>
+        /// <param name="caseCase219">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</param>
+        /// <param name="caseCase220">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</param>
+        /// <param name="caseCase221">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</param>
+        /// <param name="caseCase222">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</param>
+        /// <param name="caseCase223">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</param>
+        /// <param name="caseCase224">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</param>
+        /// <param name="caseCase225">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</param>
+        /// <param name="caseCase226">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</param>
+        /// <param name="caseCase227">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</param>
+        /// <param name="caseCase228">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</param>
+        /// <param name="caseCase229">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</param>
+        /// <param name="caseCase230">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</param>
+        /// <param name="caseCase231">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</param>
+        /// <param name="caseCase232">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</param>
+        /// <param name="caseCase233">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</param>
+        /// <param name="caseCase234">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</param>
+        /// <param name="caseCase235">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</param>
+        /// <param name="caseCase236">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</param>
+        /// <param name="caseCase237">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</param>
+        /// <param name="caseCase238">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</param>
+        /// <param name="caseCase239">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</param>
+        /// <param name="caseCase240">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</param>
+        /// <param name="caseCase241">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</param>
+        /// <param name="caseCase242">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</param>
+        /// <param name="caseCase243">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</param>
+        /// <param name="caseCase244">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</param>
+        /// <param name="caseCase245">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</param>
+        /// <param name="caseCase246">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</param>
+        /// <param name="caseCase247">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</param>
+        /// <param name="caseCase248">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</param>
+        /// <param name="caseCase249">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</param>
+        /// <param name="caseCase250">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</param>
+        /// <param name="caseCase251">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</param>
+        /// <param name="caseCase252">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</param>
+        /// <param name="caseCase253">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</param>
+        /// <param name="caseCase254">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</param>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Union" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Union" /> is a struct and this is the default value of <see cref="TestCases.Union" />.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public void Switch<TSwitchContext>
+        (
+            TSwitchContext context,
+            System.Action<TSwitchContext>? @default,
+            System.Action<TSwitchContext, TestCases.Union.Case1>? caseCase1 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case2>? caseCase2 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case3>? caseCase3 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case4>? caseCase4 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case5>? caseCase5 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case6>? caseCase6 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case7>? caseCase7 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case8>? caseCase8 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case9>? caseCase9 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case10>? caseCase10 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case11>? caseCase11 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case12>? caseCase12 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case13>? caseCase13 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case14>? caseCase14 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case15>? caseCase15 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case16>? caseCase16 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case17>? caseCase17 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case18>? caseCase18 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case19>? caseCase19 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case20>? caseCase20 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case21>? caseCase21 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case22>? caseCase22 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case23>? caseCase23 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case24>? caseCase24 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case25>? caseCase25 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case26>? caseCase26 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case27>? caseCase27 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case28>? caseCase28 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case29>? caseCase29 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case30>? caseCase30 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case31>? caseCase31 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case32>? caseCase32 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case33>? caseCase33 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case34>? caseCase34 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case35>? caseCase35 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case36>? caseCase36 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case37>? caseCase37 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case38>? caseCase38 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case39>? caseCase39 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case40>? caseCase40 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case41>? caseCase41 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case42>? caseCase42 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case43>? caseCase43 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case44>? caseCase44 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case45>? caseCase45 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case46>? caseCase46 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case47>? caseCase47 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case48>? caseCase48 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case49>? caseCase49 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case50>? caseCase50 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case51>? caseCase51 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case52>? caseCase52 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case53>? caseCase53 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case54>? caseCase54 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case55>? caseCase55 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case56>? caseCase56 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case57>? caseCase57 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case58>? caseCase58 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case59>? caseCase59 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case60>? caseCase60 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case61>? caseCase61 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case62>? caseCase62 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case63>? caseCase63 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case64>? caseCase64 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case65>? caseCase65 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case66>? caseCase66 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case67>? caseCase67 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case68>? caseCase68 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case69>? caseCase69 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case70>? caseCase70 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case71>? caseCase71 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case72>? caseCase72 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case73>? caseCase73 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case74>? caseCase74 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case75>? caseCase75 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case76>? caseCase76 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case77>? caseCase77 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case78>? caseCase78 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case79>? caseCase79 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case80>? caseCase80 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case81>? caseCase81 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case82>? caseCase82 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case83>? caseCase83 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case84>? caseCase84 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case85>? caseCase85 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case86>? caseCase86 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case87>? caseCase87 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case88>? caseCase88 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case89>? caseCase89 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case90>? caseCase90 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case91>? caseCase91 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case92>? caseCase92 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case93>? caseCase93 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case94>? caseCase94 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case95>? caseCase95 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case96>? caseCase96 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case97>? caseCase97 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case98>? caseCase98 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case99>? caseCase99 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case100>? caseCase100 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case101>? caseCase101 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case102>? caseCase102 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case103>? caseCase103 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case104>? caseCase104 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case105>? caseCase105 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case106>? caseCase106 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case107>? caseCase107 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case108>? caseCase108 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case109>? caseCase109 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case110>? caseCase110 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case111>? caseCase111 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case112>? caseCase112 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case113>? caseCase113 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case114>? caseCase114 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case115>? caseCase115 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case116>? caseCase116 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case117>? caseCase117 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case118>? caseCase118 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case119>? caseCase119 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case120>? caseCase120 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case121>? caseCase121 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case122>? caseCase122 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case123>? caseCase123 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case124>? caseCase124 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case125>? caseCase125 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case126>? caseCase126 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case127>? caseCase127 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case128>? caseCase128 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case129>? caseCase129 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case130>? caseCase130 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case131>? caseCase131 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case132>? caseCase132 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case133>? caseCase133 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case134>? caseCase134 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case135>? caseCase135 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case136>? caseCase136 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case137>? caseCase137 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case138>? caseCase138 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case139>? caseCase139 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case140>? caseCase140 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case141>? caseCase141 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case142>? caseCase142 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case143>? caseCase143 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case144>? caseCase144 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case145>? caseCase145 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case146>? caseCase146 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case147>? caseCase147 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case148>? caseCase148 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case149>? caseCase149 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case150>? caseCase150 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case151>? caseCase151 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case152>? caseCase152 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case153>? caseCase153 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case154>? caseCase154 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case155>? caseCase155 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case156>? caseCase156 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case157>? caseCase157 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case158>? caseCase158 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case159>? caseCase159 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case160>? caseCase160 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case161>? caseCase161 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case162>? caseCase162 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case163>? caseCase163 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case164>? caseCase164 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case165>? caseCase165 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case166>? caseCase166 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case167>? caseCase167 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case168>? caseCase168 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case169>? caseCase169 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case170>? caseCase170 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case171>? caseCase171 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case172>? caseCase172 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case173>? caseCase173 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case174>? caseCase174 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case175>? caseCase175 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case176>? caseCase176 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case177>? caseCase177 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case178>? caseCase178 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case179>? caseCase179 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case180>? caseCase180 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case181>? caseCase181 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case182>? caseCase182 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case183>? caseCase183 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case184>? caseCase184 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case185>? caseCase185 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case186>? caseCase186 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case187>? caseCase187 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case188>? caseCase188 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case189>? caseCase189 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case190>? caseCase190 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case191>? caseCase191 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case192>? caseCase192 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case193>? caseCase193 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case194>? caseCase194 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case195>? caseCase195 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case196>? caseCase196 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case197>? caseCase197 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case198>? caseCase198 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case199>? caseCase199 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case200>? caseCase200 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case201>? caseCase201 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case202>? caseCase202 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case203>? caseCase203 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case204>? caseCase204 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case205>? caseCase205 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case206>? caseCase206 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case207>? caseCase207 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case208>? caseCase208 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case209>? caseCase209 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case210>? caseCase210 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case211>? caseCase211 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case212>? caseCase212 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case213>? caseCase213 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case214>? caseCase214 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case215>? caseCase215 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case216>? caseCase216 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case217>? caseCase217 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case218>? caseCase218 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case219>? caseCase219 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case220>? caseCase220 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case221>? caseCase221 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case222>? caseCase222 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case223>? caseCase223 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case224>? caseCase224 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case225>? caseCase225 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case226>? caseCase226 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case227>? caseCase227 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case228>? caseCase228 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case229>? caseCase229 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case230>? caseCase230 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case231>? caseCase231 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case232>? caseCase232 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case233>? caseCase233 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case234>? caseCase234 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case235>? caseCase235 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case236>? caseCase236 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case237>? caseCase237 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case238>? caseCase238 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case239>? caseCase239 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case240>? caseCase240 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case241>? caseCase241 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case242>? caseCase242 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case243>? caseCase243 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case244>? caseCase244 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case245>? caseCase245 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case246>? caseCase246 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case247>? caseCase247 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case248>? caseCase248 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case249>? caseCase249 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case250>? caseCase250 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case251>? caseCase251 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case252>? caseCase252 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case253>? caseCase253 = null,
+            System.Action<TSwitchContext, TestCases.Union.Case254>? caseCase254 = null
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized.");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseCase1, null))
+                    {
+                        caseCase1.Invoke(context, ((TestCases.Union.Case1)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseCase2, null))
+                    {
+                        caseCase2.Invoke(context, ((TestCases.Union.Case2)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseCase3, null))
+                    {
+                        caseCase3.Invoke(context, ((TestCases.Union.Case3)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseCase4, null))
+                    {
+                        caseCase4.Invoke(context, ((TestCases.Union.Case4)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseCase5, null))
+                    {
+                        caseCase5.Invoke(context, ((TestCases.Union.Case5)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseCase6, null))
+                    {
+                        caseCase6.Invoke(context, ((TestCases.Union.Case6)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 7:
+                    if (!System.Object.ReferenceEquals(caseCase7, null))
+                    {
+                        caseCase7.Invoke(context, ((TestCases.Union.Case7)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 8:
+                    if (!System.Object.ReferenceEquals(caseCase8, null))
+                    {
+                        caseCase8.Invoke(context, ((TestCases.Union.Case8)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 9:
+                    if (!System.Object.ReferenceEquals(caseCase9, null))
+                    {
+                        caseCase9.Invoke(context, ((TestCases.Union.Case9)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 10:
+                    if (!System.Object.ReferenceEquals(caseCase10, null))
+                    {
+                        caseCase10.Invoke(context, ((TestCases.Union.Case10)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 11:
+                    if (!System.Object.ReferenceEquals(caseCase11, null))
+                    {
+                        caseCase11.Invoke(context, ((TestCases.Union.Case11)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 12:
+                    if (!System.Object.ReferenceEquals(caseCase12, null))
+                    {
+                        caseCase12.Invoke(context, ((TestCases.Union.Case12)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 13:
+                    if (!System.Object.ReferenceEquals(caseCase13, null))
+                    {
+                        caseCase13.Invoke(context, ((TestCases.Union.Case13)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 14:
+                    if (!System.Object.ReferenceEquals(caseCase14, null))
+                    {
+                        caseCase14.Invoke(context, ((TestCases.Union.Case14)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 15:
+                    if (!System.Object.ReferenceEquals(caseCase15, null))
+                    {
+                        caseCase15.Invoke(context, ((TestCases.Union.Case15)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 16:
+                    if (!System.Object.ReferenceEquals(caseCase16, null))
+                    {
+                        caseCase16.Invoke(context, ((TestCases.Union.Case16)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 17:
+                    if (!System.Object.ReferenceEquals(caseCase17, null))
+                    {
+                        caseCase17.Invoke(context, ((TestCases.Union.Case17)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 18:
+                    if (!System.Object.ReferenceEquals(caseCase18, null))
+                    {
+                        caseCase18.Invoke(context, ((TestCases.Union.Case18)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 19:
+                    if (!System.Object.ReferenceEquals(caseCase19, null))
+                    {
+                        caseCase19.Invoke(context, ((TestCases.Union.Case19)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 20:
+                    if (!System.Object.ReferenceEquals(caseCase20, null))
+                    {
+                        caseCase20.Invoke(context, ((TestCases.Union.Case20)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 21:
+                    if (!System.Object.ReferenceEquals(caseCase21, null))
+                    {
+                        caseCase21.Invoke(context, ((TestCases.Union.Case21)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 22:
+                    if (!System.Object.ReferenceEquals(caseCase22, null))
+                    {
+                        caseCase22.Invoke(context, ((TestCases.Union.Case22)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 23:
+                    if (!System.Object.ReferenceEquals(caseCase23, null))
+                    {
+                        caseCase23.Invoke(context, ((TestCases.Union.Case23)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 24:
+                    if (!System.Object.ReferenceEquals(caseCase24, null))
+                    {
+                        caseCase24.Invoke(context, ((TestCases.Union.Case24)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 25:
+                    if (!System.Object.ReferenceEquals(caseCase25, null))
+                    {
+                        caseCase25.Invoke(context, ((TestCases.Union.Case25)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 26:
+                    if (!System.Object.ReferenceEquals(caseCase26, null))
+                    {
+                        caseCase26.Invoke(context, ((TestCases.Union.Case26)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 27:
+                    if (!System.Object.ReferenceEquals(caseCase27, null))
+                    {
+                        caseCase27.Invoke(context, ((TestCases.Union.Case27)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 28:
+                    if (!System.Object.ReferenceEquals(caseCase28, null))
+                    {
+                        caseCase28.Invoke(context, ((TestCases.Union.Case28)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 29:
+                    if (!System.Object.ReferenceEquals(caseCase29, null))
+                    {
+                        caseCase29.Invoke(context, ((TestCases.Union.Case29)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 30:
+                    if (!System.Object.ReferenceEquals(caseCase30, null))
+                    {
+                        caseCase30.Invoke(context, ((TestCases.Union.Case30)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 31:
+                    if (!System.Object.ReferenceEquals(caseCase31, null))
+                    {
+                        caseCase31.Invoke(context, ((TestCases.Union.Case31)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 32:
+                    if (!System.Object.ReferenceEquals(caseCase32, null))
+                    {
+                        caseCase32.Invoke(context, ((TestCases.Union.Case32)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 33:
+                    if (!System.Object.ReferenceEquals(caseCase33, null))
+                    {
+                        caseCase33.Invoke(context, ((TestCases.Union.Case33)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 34:
+                    if (!System.Object.ReferenceEquals(caseCase34, null))
+                    {
+                        caseCase34.Invoke(context, ((TestCases.Union.Case34)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 35:
+                    if (!System.Object.ReferenceEquals(caseCase35, null))
+                    {
+                        caseCase35.Invoke(context, ((TestCases.Union.Case35)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 36:
+                    if (!System.Object.ReferenceEquals(caseCase36, null))
+                    {
+                        caseCase36.Invoke(context, ((TestCases.Union.Case36)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 37:
+                    if (!System.Object.ReferenceEquals(caseCase37, null))
+                    {
+                        caseCase37.Invoke(context, ((TestCases.Union.Case37)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 38:
+                    if (!System.Object.ReferenceEquals(caseCase38, null))
+                    {
+                        caseCase38.Invoke(context, ((TestCases.Union.Case38)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 39:
+                    if (!System.Object.ReferenceEquals(caseCase39, null))
+                    {
+                        caseCase39.Invoke(context, ((TestCases.Union.Case39)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 40:
+                    if (!System.Object.ReferenceEquals(caseCase40, null))
+                    {
+                        caseCase40.Invoke(context, ((TestCases.Union.Case40)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 41:
+                    if (!System.Object.ReferenceEquals(caseCase41, null))
+                    {
+                        caseCase41.Invoke(context, ((TestCases.Union.Case41)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 42:
+                    if (!System.Object.ReferenceEquals(caseCase42, null))
+                    {
+                        caseCase42.Invoke(context, ((TestCases.Union.Case42)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 43:
+                    if (!System.Object.ReferenceEquals(caseCase43, null))
+                    {
+                        caseCase43.Invoke(context, ((TestCases.Union.Case43)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 44:
+                    if (!System.Object.ReferenceEquals(caseCase44, null))
+                    {
+                        caseCase44.Invoke(context, ((TestCases.Union.Case44)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 45:
+                    if (!System.Object.ReferenceEquals(caseCase45, null))
+                    {
+                        caseCase45.Invoke(context, ((TestCases.Union.Case45)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 46:
+                    if (!System.Object.ReferenceEquals(caseCase46, null))
+                    {
+                        caseCase46.Invoke(context, ((TestCases.Union.Case46)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 47:
+                    if (!System.Object.ReferenceEquals(caseCase47, null))
+                    {
+                        caseCase47.Invoke(context, ((TestCases.Union.Case47)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 48:
+                    if (!System.Object.ReferenceEquals(caseCase48, null))
+                    {
+                        caseCase48.Invoke(context, ((TestCases.Union.Case48)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 49:
+                    if (!System.Object.ReferenceEquals(caseCase49, null))
+                    {
+                        caseCase49.Invoke(context, ((TestCases.Union.Case49)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 50:
+                    if (!System.Object.ReferenceEquals(caseCase50, null))
+                    {
+                        caseCase50.Invoke(context, ((TestCases.Union.Case50)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 51:
+                    if (!System.Object.ReferenceEquals(caseCase51, null))
+                    {
+                        caseCase51.Invoke(context, ((TestCases.Union.Case51)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 52:
+                    if (!System.Object.ReferenceEquals(caseCase52, null))
+                    {
+                        caseCase52.Invoke(context, ((TestCases.Union.Case52)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 53:
+                    if (!System.Object.ReferenceEquals(caseCase53, null))
+                    {
+                        caseCase53.Invoke(context, ((TestCases.Union.Case53)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 54:
+                    if (!System.Object.ReferenceEquals(caseCase54, null))
+                    {
+                        caseCase54.Invoke(context, ((TestCases.Union.Case54)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 55:
+                    if (!System.Object.ReferenceEquals(caseCase55, null))
+                    {
+                        caseCase55.Invoke(context, ((TestCases.Union.Case55)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 56:
+                    if (!System.Object.ReferenceEquals(caseCase56, null))
+                    {
+                        caseCase56.Invoke(context, ((TestCases.Union.Case56)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 57:
+                    if (!System.Object.ReferenceEquals(caseCase57, null))
+                    {
+                        caseCase57.Invoke(context, ((TestCases.Union.Case57)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 58:
+                    if (!System.Object.ReferenceEquals(caseCase58, null))
+                    {
+                        caseCase58.Invoke(context, ((TestCases.Union.Case58)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 59:
+                    if (!System.Object.ReferenceEquals(caseCase59, null))
+                    {
+                        caseCase59.Invoke(context, ((TestCases.Union.Case59)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 60:
+                    if (!System.Object.ReferenceEquals(caseCase60, null))
+                    {
+                        caseCase60.Invoke(context, ((TestCases.Union.Case60)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 61:
+                    if (!System.Object.ReferenceEquals(caseCase61, null))
+                    {
+                        caseCase61.Invoke(context, ((TestCases.Union.Case61)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 62:
+                    if (!System.Object.ReferenceEquals(caseCase62, null))
+                    {
+                        caseCase62.Invoke(context, ((TestCases.Union.Case62)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 63:
+                    if (!System.Object.ReferenceEquals(caseCase63, null))
+                    {
+                        caseCase63.Invoke(context, ((TestCases.Union.Case63)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 64:
+                    if (!System.Object.ReferenceEquals(caseCase64, null))
+                    {
+                        caseCase64.Invoke(context, ((TestCases.Union.Case64)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 65:
+                    if (!System.Object.ReferenceEquals(caseCase65, null))
+                    {
+                        caseCase65.Invoke(context, ((TestCases.Union.Case65)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 66:
+                    if (!System.Object.ReferenceEquals(caseCase66, null))
+                    {
+                        caseCase66.Invoke(context, ((TestCases.Union.Case66)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 67:
+                    if (!System.Object.ReferenceEquals(caseCase67, null))
+                    {
+                        caseCase67.Invoke(context, ((TestCases.Union.Case67)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 68:
+                    if (!System.Object.ReferenceEquals(caseCase68, null))
+                    {
+                        caseCase68.Invoke(context, ((TestCases.Union.Case68)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 69:
+                    if (!System.Object.ReferenceEquals(caseCase69, null))
+                    {
+                        caseCase69.Invoke(context, ((TestCases.Union.Case69)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 70:
+                    if (!System.Object.ReferenceEquals(caseCase70, null))
+                    {
+                        caseCase70.Invoke(context, ((TestCases.Union.Case70)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 71:
+                    if (!System.Object.ReferenceEquals(caseCase71, null))
+                    {
+                        caseCase71.Invoke(context, ((TestCases.Union.Case71)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 72:
+                    if (!System.Object.ReferenceEquals(caseCase72, null))
+                    {
+                        caseCase72.Invoke(context, ((TestCases.Union.Case72)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 73:
+                    if (!System.Object.ReferenceEquals(caseCase73, null))
+                    {
+                        caseCase73.Invoke(context, ((TestCases.Union.Case73)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 74:
+                    if (!System.Object.ReferenceEquals(caseCase74, null))
+                    {
+                        caseCase74.Invoke(context, ((TestCases.Union.Case74)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 75:
+                    if (!System.Object.ReferenceEquals(caseCase75, null))
+                    {
+                        caseCase75.Invoke(context, ((TestCases.Union.Case75)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 76:
+                    if (!System.Object.ReferenceEquals(caseCase76, null))
+                    {
+                        caseCase76.Invoke(context, ((TestCases.Union.Case76)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 77:
+                    if (!System.Object.ReferenceEquals(caseCase77, null))
+                    {
+                        caseCase77.Invoke(context, ((TestCases.Union.Case77)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 78:
+                    if (!System.Object.ReferenceEquals(caseCase78, null))
+                    {
+                        caseCase78.Invoke(context, ((TestCases.Union.Case78)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 79:
+                    if (!System.Object.ReferenceEquals(caseCase79, null))
+                    {
+                        caseCase79.Invoke(context, ((TestCases.Union.Case79)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 80:
+                    if (!System.Object.ReferenceEquals(caseCase80, null))
+                    {
+                        caseCase80.Invoke(context, ((TestCases.Union.Case80)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 81:
+                    if (!System.Object.ReferenceEquals(caseCase81, null))
+                    {
+                        caseCase81.Invoke(context, ((TestCases.Union.Case81)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 82:
+                    if (!System.Object.ReferenceEquals(caseCase82, null))
+                    {
+                        caseCase82.Invoke(context, ((TestCases.Union.Case82)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 83:
+                    if (!System.Object.ReferenceEquals(caseCase83, null))
+                    {
+                        caseCase83.Invoke(context, ((TestCases.Union.Case83)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 84:
+                    if (!System.Object.ReferenceEquals(caseCase84, null))
+                    {
+                        caseCase84.Invoke(context, ((TestCases.Union.Case84)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 85:
+                    if (!System.Object.ReferenceEquals(caseCase85, null))
+                    {
+                        caseCase85.Invoke(context, ((TestCases.Union.Case85)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 86:
+                    if (!System.Object.ReferenceEquals(caseCase86, null))
+                    {
+                        caseCase86.Invoke(context, ((TestCases.Union.Case86)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 87:
+                    if (!System.Object.ReferenceEquals(caseCase87, null))
+                    {
+                        caseCase87.Invoke(context, ((TestCases.Union.Case87)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 88:
+                    if (!System.Object.ReferenceEquals(caseCase88, null))
+                    {
+                        caseCase88.Invoke(context, ((TestCases.Union.Case88)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 89:
+                    if (!System.Object.ReferenceEquals(caseCase89, null))
+                    {
+                        caseCase89.Invoke(context, ((TestCases.Union.Case89)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 90:
+                    if (!System.Object.ReferenceEquals(caseCase90, null))
+                    {
+                        caseCase90.Invoke(context, ((TestCases.Union.Case90)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 91:
+                    if (!System.Object.ReferenceEquals(caseCase91, null))
+                    {
+                        caseCase91.Invoke(context, ((TestCases.Union.Case91)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 92:
+                    if (!System.Object.ReferenceEquals(caseCase92, null))
+                    {
+                        caseCase92.Invoke(context, ((TestCases.Union.Case92)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 93:
+                    if (!System.Object.ReferenceEquals(caseCase93, null))
+                    {
+                        caseCase93.Invoke(context, ((TestCases.Union.Case93)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 94:
+                    if (!System.Object.ReferenceEquals(caseCase94, null))
+                    {
+                        caseCase94.Invoke(context, ((TestCases.Union.Case94)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 95:
+                    if (!System.Object.ReferenceEquals(caseCase95, null))
+                    {
+                        caseCase95.Invoke(context, ((TestCases.Union.Case95)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 96:
+                    if (!System.Object.ReferenceEquals(caseCase96, null))
+                    {
+                        caseCase96.Invoke(context, ((TestCases.Union.Case96)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 97:
+                    if (!System.Object.ReferenceEquals(caseCase97, null))
+                    {
+                        caseCase97.Invoke(context, ((TestCases.Union.Case97)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 98:
+                    if (!System.Object.ReferenceEquals(caseCase98, null))
+                    {
+                        caseCase98.Invoke(context, ((TestCases.Union.Case98)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 99:
+                    if (!System.Object.ReferenceEquals(caseCase99, null))
+                    {
+                        caseCase99.Invoke(context, ((TestCases.Union.Case99)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 100:
+                    if (!System.Object.ReferenceEquals(caseCase100, null))
+                    {
+                        caseCase100.Invoke(context, ((TestCases.Union.Case100)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 101:
+                    if (!System.Object.ReferenceEquals(caseCase101, null))
+                    {
+                        caseCase101.Invoke(context, ((TestCases.Union.Case101)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 102:
+                    if (!System.Object.ReferenceEquals(caseCase102, null))
+                    {
+                        caseCase102.Invoke(context, ((TestCases.Union.Case102)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 103:
+                    if (!System.Object.ReferenceEquals(caseCase103, null))
+                    {
+                        caseCase103.Invoke(context, ((TestCases.Union.Case103)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 104:
+                    if (!System.Object.ReferenceEquals(caseCase104, null))
+                    {
+                        caseCase104.Invoke(context, ((TestCases.Union.Case104)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 105:
+                    if (!System.Object.ReferenceEquals(caseCase105, null))
+                    {
+                        caseCase105.Invoke(context, ((TestCases.Union.Case105)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 106:
+                    if (!System.Object.ReferenceEquals(caseCase106, null))
+                    {
+                        caseCase106.Invoke(context, ((TestCases.Union.Case106)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 107:
+                    if (!System.Object.ReferenceEquals(caseCase107, null))
+                    {
+                        caseCase107.Invoke(context, ((TestCases.Union.Case107)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 108:
+                    if (!System.Object.ReferenceEquals(caseCase108, null))
+                    {
+                        caseCase108.Invoke(context, ((TestCases.Union.Case108)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 109:
+                    if (!System.Object.ReferenceEquals(caseCase109, null))
+                    {
+                        caseCase109.Invoke(context, ((TestCases.Union.Case109)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 110:
+                    if (!System.Object.ReferenceEquals(caseCase110, null))
+                    {
+                        caseCase110.Invoke(context, ((TestCases.Union.Case110)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 111:
+                    if (!System.Object.ReferenceEquals(caseCase111, null))
+                    {
+                        caseCase111.Invoke(context, ((TestCases.Union.Case111)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 112:
+                    if (!System.Object.ReferenceEquals(caseCase112, null))
+                    {
+                        caseCase112.Invoke(context, ((TestCases.Union.Case112)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 113:
+                    if (!System.Object.ReferenceEquals(caseCase113, null))
+                    {
+                        caseCase113.Invoke(context, ((TestCases.Union.Case113)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 114:
+                    if (!System.Object.ReferenceEquals(caseCase114, null))
+                    {
+                        caseCase114.Invoke(context, ((TestCases.Union.Case114)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 115:
+                    if (!System.Object.ReferenceEquals(caseCase115, null))
+                    {
+                        caseCase115.Invoke(context, ((TestCases.Union.Case115)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 116:
+                    if (!System.Object.ReferenceEquals(caseCase116, null))
+                    {
+                        caseCase116.Invoke(context, ((TestCases.Union.Case116)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 117:
+                    if (!System.Object.ReferenceEquals(caseCase117, null))
+                    {
+                        caseCase117.Invoke(context, ((TestCases.Union.Case117)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 118:
+                    if (!System.Object.ReferenceEquals(caseCase118, null))
+                    {
+                        caseCase118.Invoke(context, ((TestCases.Union.Case118)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 119:
+                    if (!System.Object.ReferenceEquals(caseCase119, null))
+                    {
+                        caseCase119.Invoke(context, ((TestCases.Union.Case119)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 120:
+                    if (!System.Object.ReferenceEquals(caseCase120, null))
+                    {
+                        caseCase120.Invoke(context, ((TestCases.Union.Case120)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 121:
+                    if (!System.Object.ReferenceEquals(caseCase121, null))
+                    {
+                        caseCase121.Invoke(context, ((TestCases.Union.Case121)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 122:
+                    if (!System.Object.ReferenceEquals(caseCase122, null))
+                    {
+                        caseCase122.Invoke(context, ((TestCases.Union.Case122)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 123:
+                    if (!System.Object.ReferenceEquals(caseCase123, null))
+                    {
+                        caseCase123.Invoke(context, ((TestCases.Union.Case123)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 124:
+                    if (!System.Object.ReferenceEquals(caseCase124, null))
+                    {
+                        caseCase124.Invoke(context, ((TestCases.Union.Case124)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 125:
+                    if (!System.Object.ReferenceEquals(caseCase125, null))
+                    {
+                        caseCase125.Invoke(context, ((TestCases.Union.Case125)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 126:
+                    if (!System.Object.ReferenceEquals(caseCase126, null))
+                    {
+                        caseCase126.Invoke(context, ((TestCases.Union.Case126)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 127:
+                    if (!System.Object.ReferenceEquals(caseCase127, null))
+                    {
+                        caseCase127.Invoke(context, ((TestCases.Union.Case127)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 128:
+                    if (!System.Object.ReferenceEquals(caseCase128, null))
+                    {
+                        caseCase128.Invoke(context, ((TestCases.Union.Case128)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 129:
+                    if (!System.Object.ReferenceEquals(caseCase129, null))
+                    {
+                        caseCase129.Invoke(context, ((TestCases.Union.Case129)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 130:
+                    if (!System.Object.ReferenceEquals(caseCase130, null))
+                    {
+                        caseCase130.Invoke(context, ((TestCases.Union.Case130)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 131:
+                    if (!System.Object.ReferenceEquals(caseCase131, null))
+                    {
+                        caseCase131.Invoke(context, ((TestCases.Union.Case131)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 132:
+                    if (!System.Object.ReferenceEquals(caseCase132, null))
+                    {
+                        caseCase132.Invoke(context, ((TestCases.Union.Case132)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 133:
+                    if (!System.Object.ReferenceEquals(caseCase133, null))
+                    {
+                        caseCase133.Invoke(context, ((TestCases.Union.Case133)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 134:
+                    if (!System.Object.ReferenceEquals(caseCase134, null))
+                    {
+                        caseCase134.Invoke(context, ((TestCases.Union.Case134)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 135:
+                    if (!System.Object.ReferenceEquals(caseCase135, null))
+                    {
+                        caseCase135.Invoke(context, ((TestCases.Union.Case135)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 136:
+                    if (!System.Object.ReferenceEquals(caseCase136, null))
+                    {
+                        caseCase136.Invoke(context, ((TestCases.Union.Case136)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 137:
+                    if (!System.Object.ReferenceEquals(caseCase137, null))
+                    {
+                        caseCase137.Invoke(context, ((TestCases.Union.Case137)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 138:
+                    if (!System.Object.ReferenceEquals(caseCase138, null))
+                    {
+                        caseCase138.Invoke(context, ((TestCases.Union.Case138)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 139:
+                    if (!System.Object.ReferenceEquals(caseCase139, null))
+                    {
+                        caseCase139.Invoke(context, ((TestCases.Union.Case139)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 140:
+                    if (!System.Object.ReferenceEquals(caseCase140, null))
+                    {
+                        caseCase140.Invoke(context, ((TestCases.Union.Case140)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 141:
+                    if (!System.Object.ReferenceEquals(caseCase141, null))
+                    {
+                        caseCase141.Invoke(context, ((TestCases.Union.Case141)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 142:
+                    if (!System.Object.ReferenceEquals(caseCase142, null))
+                    {
+                        caseCase142.Invoke(context, ((TestCases.Union.Case142)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 143:
+                    if (!System.Object.ReferenceEquals(caseCase143, null))
+                    {
+                        caseCase143.Invoke(context, ((TestCases.Union.Case143)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 144:
+                    if (!System.Object.ReferenceEquals(caseCase144, null))
+                    {
+                        caseCase144.Invoke(context, ((TestCases.Union.Case144)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 145:
+                    if (!System.Object.ReferenceEquals(caseCase145, null))
+                    {
+                        caseCase145.Invoke(context, ((TestCases.Union.Case145)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 146:
+                    if (!System.Object.ReferenceEquals(caseCase146, null))
+                    {
+                        caseCase146.Invoke(context, ((TestCases.Union.Case146)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 147:
+                    if (!System.Object.ReferenceEquals(caseCase147, null))
+                    {
+                        caseCase147.Invoke(context, ((TestCases.Union.Case147)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 148:
+                    if (!System.Object.ReferenceEquals(caseCase148, null))
+                    {
+                        caseCase148.Invoke(context, ((TestCases.Union.Case148)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 149:
+                    if (!System.Object.ReferenceEquals(caseCase149, null))
+                    {
+                        caseCase149.Invoke(context, ((TestCases.Union.Case149)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 150:
+                    if (!System.Object.ReferenceEquals(caseCase150, null))
+                    {
+                        caseCase150.Invoke(context, ((TestCases.Union.Case150)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 151:
+                    if (!System.Object.ReferenceEquals(caseCase151, null))
+                    {
+                        caseCase151.Invoke(context, ((TestCases.Union.Case151)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 152:
+                    if (!System.Object.ReferenceEquals(caseCase152, null))
+                    {
+                        caseCase152.Invoke(context, ((TestCases.Union.Case152)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 153:
+                    if (!System.Object.ReferenceEquals(caseCase153, null))
+                    {
+                        caseCase153.Invoke(context, ((TestCases.Union.Case153)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 154:
+                    if (!System.Object.ReferenceEquals(caseCase154, null))
+                    {
+                        caseCase154.Invoke(context, ((TestCases.Union.Case154)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 155:
+                    if (!System.Object.ReferenceEquals(caseCase155, null))
+                    {
+                        caseCase155.Invoke(context, ((TestCases.Union.Case155)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 156:
+                    if (!System.Object.ReferenceEquals(caseCase156, null))
+                    {
+                        caseCase156.Invoke(context, ((TestCases.Union.Case156)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 157:
+                    if (!System.Object.ReferenceEquals(caseCase157, null))
+                    {
+                        caseCase157.Invoke(context, ((TestCases.Union.Case157)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 158:
+                    if (!System.Object.ReferenceEquals(caseCase158, null))
+                    {
+                        caseCase158.Invoke(context, ((TestCases.Union.Case158)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 159:
+                    if (!System.Object.ReferenceEquals(caseCase159, null))
+                    {
+                        caseCase159.Invoke(context, ((TestCases.Union.Case159)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 160:
+                    if (!System.Object.ReferenceEquals(caseCase160, null))
+                    {
+                        caseCase160.Invoke(context, ((TestCases.Union.Case160)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 161:
+                    if (!System.Object.ReferenceEquals(caseCase161, null))
+                    {
+                        caseCase161.Invoke(context, ((TestCases.Union.Case161)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 162:
+                    if (!System.Object.ReferenceEquals(caseCase162, null))
+                    {
+                        caseCase162.Invoke(context, ((TestCases.Union.Case162)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 163:
+                    if (!System.Object.ReferenceEquals(caseCase163, null))
+                    {
+                        caseCase163.Invoke(context, ((TestCases.Union.Case163)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 164:
+                    if (!System.Object.ReferenceEquals(caseCase164, null))
+                    {
+                        caseCase164.Invoke(context, ((TestCases.Union.Case164)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 165:
+                    if (!System.Object.ReferenceEquals(caseCase165, null))
+                    {
+                        caseCase165.Invoke(context, ((TestCases.Union.Case165)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 166:
+                    if (!System.Object.ReferenceEquals(caseCase166, null))
+                    {
+                        caseCase166.Invoke(context, ((TestCases.Union.Case166)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 167:
+                    if (!System.Object.ReferenceEquals(caseCase167, null))
+                    {
+                        caseCase167.Invoke(context, ((TestCases.Union.Case167)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 168:
+                    if (!System.Object.ReferenceEquals(caseCase168, null))
+                    {
+                        caseCase168.Invoke(context, ((TestCases.Union.Case168)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 169:
+                    if (!System.Object.ReferenceEquals(caseCase169, null))
+                    {
+                        caseCase169.Invoke(context, ((TestCases.Union.Case169)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 170:
+                    if (!System.Object.ReferenceEquals(caseCase170, null))
+                    {
+                        caseCase170.Invoke(context, ((TestCases.Union.Case170)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 171:
+                    if (!System.Object.ReferenceEquals(caseCase171, null))
+                    {
+                        caseCase171.Invoke(context, ((TestCases.Union.Case171)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 172:
+                    if (!System.Object.ReferenceEquals(caseCase172, null))
+                    {
+                        caseCase172.Invoke(context, ((TestCases.Union.Case172)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 173:
+                    if (!System.Object.ReferenceEquals(caseCase173, null))
+                    {
+                        caseCase173.Invoke(context, ((TestCases.Union.Case173)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 174:
+                    if (!System.Object.ReferenceEquals(caseCase174, null))
+                    {
+                        caseCase174.Invoke(context, ((TestCases.Union.Case174)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 175:
+                    if (!System.Object.ReferenceEquals(caseCase175, null))
+                    {
+                        caseCase175.Invoke(context, ((TestCases.Union.Case175)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 176:
+                    if (!System.Object.ReferenceEquals(caseCase176, null))
+                    {
+                        caseCase176.Invoke(context, ((TestCases.Union.Case176)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 177:
+                    if (!System.Object.ReferenceEquals(caseCase177, null))
+                    {
+                        caseCase177.Invoke(context, ((TestCases.Union.Case177)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 178:
+                    if (!System.Object.ReferenceEquals(caseCase178, null))
+                    {
+                        caseCase178.Invoke(context, ((TestCases.Union.Case178)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 179:
+                    if (!System.Object.ReferenceEquals(caseCase179, null))
+                    {
+                        caseCase179.Invoke(context, ((TestCases.Union.Case179)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 180:
+                    if (!System.Object.ReferenceEquals(caseCase180, null))
+                    {
+                        caseCase180.Invoke(context, ((TestCases.Union.Case180)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 181:
+                    if (!System.Object.ReferenceEquals(caseCase181, null))
+                    {
+                        caseCase181.Invoke(context, ((TestCases.Union.Case181)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 182:
+                    if (!System.Object.ReferenceEquals(caseCase182, null))
+                    {
+                        caseCase182.Invoke(context, ((TestCases.Union.Case182)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 183:
+                    if (!System.Object.ReferenceEquals(caseCase183, null))
+                    {
+                        caseCase183.Invoke(context, ((TestCases.Union.Case183)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 184:
+                    if (!System.Object.ReferenceEquals(caseCase184, null))
+                    {
+                        caseCase184.Invoke(context, ((TestCases.Union.Case184)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 185:
+                    if (!System.Object.ReferenceEquals(caseCase185, null))
+                    {
+                        caseCase185.Invoke(context, ((TestCases.Union.Case185)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 186:
+                    if (!System.Object.ReferenceEquals(caseCase186, null))
+                    {
+                        caseCase186.Invoke(context, ((TestCases.Union.Case186)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 187:
+                    if (!System.Object.ReferenceEquals(caseCase187, null))
+                    {
+                        caseCase187.Invoke(context, ((TestCases.Union.Case187)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 188:
+                    if (!System.Object.ReferenceEquals(caseCase188, null))
+                    {
+                        caseCase188.Invoke(context, ((TestCases.Union.Case188)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 189:
+                    if (!System.Object.ReferenceEquals(caseCase189, null))
+                    {
+                        caseCase189.Invoke(context, ((TestCases.Union.Case189)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 190:
+                    if (!System.Object.ReferenceEquals(caseCase190, null))
+                    {
+                        caseCase190.Invoke(context, ((TestCases.Union.Case190)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 191:
+                    if (!System.Object.ReferenceEquals(caseCase191, null))
+                    {
+                        caseCase191.Invoke(context, ((TestCases.Union.Case191)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 192:
+                    if (!System.Object.ReferenceEquals(caseCase192, null))
+                    {
+                        caseCase192.Invoke(context, ((TestCases.Union.Case192)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 193:
+                    if (!System.Object.ReferenceEquals(caseCase193, null))
+                    {
+                        caseCase193.Invoke(context, ((TestCases.Union.Case193)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 194:
+                    if (!System.Object.ReferenceEquals(caseCase194, null))
+                    {
+                        caseCase194.Invoke(context, ((TestCases.Union.Case194)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 195:
+                    if (!System.Object.ReferenceEquals(caseCase195, null))
+                    {
+                        caseCase195.Invoke(context, ((TestCases.Union.Case195)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 196:
+                    if (!System.Object.ReferenceEquals(caseCase196, null))
+                    {
+                        caseCase196.Invoke(context, ((TestCases.Union.Case196)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 197:
+                    if (!System.Object.ReferenceEquals(caseCase197, null))
+                    {
+                        caseCase197.Invoke(context, ((TestCases.Union.Case197)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 198:
+                    if (!System.Object.ReferenceEquals(caseCase198, null))
+                    {
+                        caseCase198.Invoke(context, ((TestCases.Union.Case198)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 199:
+                    if (!System.Object.ReferenceEquals(caseCase199, null))
+                    {
+                        caseCase199.Invoke(context, ((TestCases.Union.Case199)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 200:
+                    if (!System.Object.ReferenceEquals(caseCase200, null))
+                    {
+                        caseCase200.Invoke(context, ((TestCases.Union.Case200)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 201:
+                    if (!System.Object.ReferenceEquals(caseCase201, null))
+                    {
+                        caseCase201.Invoke(context, ((TestCases.Union.Case201)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 202:
+                    if (!System.Object.ReferenceEquals(caseCase202, null))
+                    {
+                        caseCase202.Invoke(context, ((TestCases.Union.Case202)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 203:
+                    if (!System.Object.ReferenceEquals(caseCase203, null))
+                    {
+                        caseCase203.Invoke(context, ((TestCases.Union.Case203)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 204:
+                    if (!System.Object.ReferenceEquals(caseCase204, null))
+                    {
+                        caseCase204.Invoke(context, ((TestCases.Union.Case204)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 205:
+                    if (!System.Object.ReferenceEquals(caseCase205, null))
+                    {
+                        caseCase205.Invoke(context, ((TestCases.Union.Case205)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 206:
+                    if (!System.Object.ReferenceEquals(caseCase206, null))
+                    {
+                        caseCase206.Invoke(context, ((TestCases.Union.Case206)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 207:
+                    if (!System.Object.ReferenceEquals(caseCase207, null))
+                    {
+                        caseCase207.Invoke(context, ((TestCases.Union.Case207)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 208:
+                    if (!System.Object.ReferenceEquals(caseCase208, null))
+                    {
+                        caseCase208.Invoke(context, ((TestCases.Union.Case208)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 209:
+                    if (!System.Object.ReferenceEquals(caseCase209, null))
+                    {
+                        caseCase209.Invoke(context, ((TestCases.Union.Case209)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 210:
+                    if (!System.Object.ReferenceEquals(caseCase210, null))
+                    {
+                        caseCase210.Invoke(context, ((TestCases.Union.Case210)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 211:
+                    if (!System.Object.ReferenceEquals(caseCase211, null))
+                    {
+                        caseCase211.Invoke(context, ((TestCases.Union.Case211)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 212:
+                    if (!System.Object.ReferenceEquals(caseCase212, null))
+                    {
+                        caseCase212.Invoke(context, ((TestCases.Union.Case212)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 213:
+                    if (!System.Object.ReferenceEquals(caseCase213, null))
+                    {
+                        caseCase213.Invoke(context, ((TestCases.Union.Case213)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 214:
+                    if (!System.Object.ReferenceEquals(caseCase214, null))
+                    {
+                        caseCase214.Invoke(context, ((TestCases.Union.Case214)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 215:
+                    if (!System.Object.ReferenceEquals(caseCase215, null))
+                    {
+                        caseCase215.Invoke(context, ((TestCases.Union.Case215)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 216:
+                    if (!System.Object.ReferenceEquals(caseCase216, null))
+                    {
+                        caseCase216.Invoke(context, ((TestCases.Union.Case216)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 217:
+                    if (!System.Object.ReferenceEquals(caseCase217, null))
+                    {
+                        caseCase217.Invoke(context, ((TestCases.Union.Case217)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 218:
+                    if (!System.Object.ReferenceEquals(caseCase218, null))
+                    {
+                        caseCase218.Invoke(context, ((TestCases.Union.Case218)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 219:
+                    if (!System.Object.ReferenceEquals(caseCase219, null))
+                    {
+                        caseCase219.Invoke(context, ((TestCases.Union.Case219)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 220:
+                    if (!System.Object.ReferenceEquals(caseCase220, null))
+                    {
+                        caseCase220.Invoke(context, ((TestCases.Union.Case220)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 221:
+                    if (!System.Object.ReferenceEquals(caseCase221, null))
+                    {
+                        caseCase221.Invoke(context, ((TestCases.Union.Case221)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 222:
+                    if (!System.Object.ReferenceEquals(caseCase222, null))
+                    {
+                        caseCase222.Invoke(context, ((TestCases.Union.Case222)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 223:
+                    if (!System.Object.ReferenceEquals(caseCase223, null))
+                    {
+                        caseCase223.Invoke(context, ((TestCases.Union.Case223)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 224:
+                    if (!System.Object.ReferenceEquals(caseCase224, null))
+                    {
+                        caseCase224.Invoke(context, ((TestCases.Union.Case224)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 225:
+                    if (!System.Object.ReferenceEquals(caseCase225, null))
+                    {
+                        caseCase225.Invoke(context, ((TestCases.Union.Case225)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 226:
+                    if (!System.Object.ReferenceEquals(caseCase226, null))
+                    {
+                        caseCase226.Invoke(context, ((TestCases.Union.Case226)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 227:
+                    if (!System.Object.ReferenceEquals(caseCase227, null))
+                    {
+                        caseCase227.Invoke(context, ((TestCases.Union.Case227)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 228:
+                    if (!System.Object.ReferenceEquals(caseCase228, null))
+                    {
+                        caseCase228.Invoke(context, ((TestCases.Union.Case228)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 229:
+                    if (!System.Object.ReferenceEquals(caseCase229, null))
+                    {
+                        caseCase229.Invoke(context, ((TestCases.Union.Case229)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 230:
+                    if (!System.Object.ReferenceEquals(caseCase230, null))
+                    {
+                        caseCase230.Invoke(context, ((TestCases.Union.Case230)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 231:
+                    if (!System.Object.ReferenceEquals(caseCase231, null))
+                    {
+                        caseCase231.Invoke(context, ((TestCases.Union.Case231)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 232:
+                    if (!System.Object.ReferenceEquals(caseCase232, null))
+                    {
+                        caseCase232.Invoke(context, ((TestCases.Union.Case232)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 233:
+                    if (!System.Object.ReferenceEquals(caseCase233, null))
+                    {
+                        caseCase233.Invoke(context, ((TestCases.Union.Case233)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 234:
+                    if (!System.Object.ReferenceEquals(caseCase234, null))
+                    {
+                        caseCase234.Invoke(context, ((TestCases.Union.Case234)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 235:
+                    if (!System.Object.ReferenceEquals(caseCase235, null))
+                    {
+                        caseCase235.Invoke(context, ((TestCases.Union.Case235)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 236:
+                    if (!System.Object.ReferenceEquals(caseCase236, null))
+                    {
+                        caseCase236.Invoke(context, ((TestCases.Union.Case236)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 237:
+                    if (!System.Object.ReferenceEquals(caseCase237, null))
+                    {
+                        caseCase237.Invoke(context, ((TestCases.Union.Case237)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 238:
+                    if (!System.Object.ReferenceEquals(caseCase238, null))
+                    {
+                        caseCase238.Invoke(context, ((TestCases.Union.Case238)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 239:
+                    if (!System.Object.ReferenceEquals(caseCase239, null))
+                    {
+                        caseCase239.Invoke(context, ((TestCases.Union.Case239)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 240:
+                    if (!System.Object.ReferenceEquals(caseCase240, null))
+                    {
+                        caseCase240.Invoke(context, ((TestCases.Union.Case240)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 241:
+                    if (!System.Object.ReferenceEquals(caseCase241, null))
+                    {
+                        caseCase241.Invoke(context, ((TestCases.Union.Case241)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 242:
+                    if (!System.Object.ReferenceEquals(caseCase242, null))
+                    {
+                        caseCase242.Invoke(context, ((TestCases.Union.Case242)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 243:
+                    if (!System.Object.ReferenceEquals(caseCase243, null))
+                    {
+                        caseCase243.Invoke(context, ((TestCases.Union.Case243)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 244:
+                    if (!System.Object.ReferenceEquals(caseCase244, null))
+                    {
+                        caseCase244.Invoke(context, ((TestCases.Union.Case244)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 245:
+                    if (!System.Object.ReferenceEquals(caseCase245, null))
+                    {
+                        caseCase245.Invoke(context, ((TestCases.Union.Case245)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 246:
+                    if (!System.Object.ReferenceEquals(caseCase246, null))
+                    {
+                        caseCase246.Invoke(context, ((TestCases.Union.Case246)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 247:
+                    if (!System.Object.ReferenceEquals(caseCase247, null))
+                    {
+                        caseCase247.Invoke(context, ((TestCases.Union.Case247)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 248:
+                    if (!System.Object.ReferenceEquals(caseCase248, null))
+                    {
+                        caseCase248.Invoke(context, ((TestCases.Union.Case248)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 249:
+                    if (!System.Object.ReferenceEquals(caseCase249, null))
+                    {
+                        caseCase249.Invoke(context, ((TestCases.Union.Case249)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 250:
+                    if (!System.Object.ReferenceEquals(caseCase250, null))
+                    {
+                        caseCase250.Invoke(context, ((TestCases.Union.Case250)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 251:
+                    if (!System.Object.ReferenceEquals(caseCase251, null))
+                    {
+                        caseCase251.Invoke(context, ((TestCases.Union.Case251)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 252:
+                    if (!System.Object.ReferenceEquals(caseCase252, null))
+                    {
+                        caseCase252.Invoke(context, ((TestCases.Union.Case252)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 253:
+                    if (!System.Object.ReferenceEquals(caseCase253, null))
+                    {
+                        caseCase253.Invoke(context, ((TestCases.Union.Case253)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 254:
+                    if (!System.Object.ReferenceEquals(caseCase254, null))
+                    {
+                        caseCase254.Invoke(context, ((TestCases.Union.Case254)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Union" /> represents.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseCase1" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase2" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase3" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase4" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase5" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase6" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase7" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase8" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase9" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase10" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase11" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase12" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase13" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase14" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase15" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase16" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase17" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase18" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase19" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase20" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase21" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase22" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase23" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase24" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase25" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase26" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase27" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase28" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase29" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase30" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase31" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase32" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase33" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase34" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase35" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase36" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase37" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase38" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase39" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase40" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase41" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase42" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase43" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase44" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase45" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase46" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase47" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase48" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase49" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase50" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase51" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase52" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase53" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase54" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase55" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase56" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase57" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase58" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase59" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase60" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase61" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase62" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase63" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase64" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase65" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase66" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase67" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase68" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase69" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase70" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase71" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase72" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase73" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase74" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase75" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase76" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase77" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase78" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase79" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase80" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase81" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase82" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase83" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase84" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase85" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase86" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase87" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase88" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase89" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase90" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase91" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase92" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase93" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase94" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase95" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase96" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase97" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase98" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase99" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase100" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase101" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase102" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase103" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase104" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase105" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase106" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase107" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase108" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase109" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase110" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase111" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase112" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase113" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase114" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase115" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase116" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase117" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase118" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase119" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase120" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase121" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase122" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase123" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase124" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase125" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase126" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase127" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase128" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase129" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase130" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase131" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase132" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase133" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase134" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase135" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase136" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase137" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase138" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase139" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase140" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase141" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase142" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase143" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase144" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase145" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase146" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase147" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase148" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase149" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase150" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase151" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase152" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase153" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase154" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase155" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase156" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase157" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase158" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase159" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase160" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase161" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase162" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase163" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase164" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase165" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase166" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase167" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase168" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase169" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase170" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase171" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase172" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase173" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase174" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase175" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase176" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase177" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase178" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase179" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase180" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase181" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase182" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase183" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase184" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase185" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase186" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase187" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase188" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase189" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase190" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase191" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase192" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase193" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase194" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase195" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase196" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase197" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase198" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase199" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase200" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase201" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase202" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase203" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase204" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase205" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase206" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase207" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase208" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase209" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase210" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase211" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase212" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase213" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase214" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase215" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase216" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase217" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase218" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase219" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase220" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase221" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase222" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase223" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase224" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase225" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase226" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase227" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase228" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase229" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase230" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase231" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase232" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase233" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase234" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase235" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase236" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase237" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase238" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase239" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase240" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase241" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase242" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase243" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase244" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase245" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase246" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase247" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase248" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase249" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase250" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase251" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase252" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase253" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase254" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="default" /></term>
+        ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="default"></param>
         /// <param name="caseCase1">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</param>
         /// <param name="caseCase2">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</param>
         /// <param name="caseCase3">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</param>
@@ -36722,6 +41072,3335 @@ namespace TestCases
                     else if (!System.Object.ReferenceEquals(@default, null))
                     {
                         @default.Invoke();
+                    }
+                    break;
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+    
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Union" /> represents.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseCase1" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase2" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase3" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase4" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase5" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase6" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase7" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase8" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase9" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase10" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase11" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase12" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase13" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase14" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase15" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase16" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase17" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase18" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase19" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase20" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase21" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase22" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase23" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase24" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase25" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase26" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase27" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase28" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase29" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase30" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase31" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase32" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase33" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase34" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase35" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase36" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase37" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase38" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase39" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase40" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase41" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase42" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase43" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase44" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase45" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase46" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase47" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase48" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase49" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase50" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase51" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase52" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase53" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase54" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase55" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase56" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase57" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase58" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase59" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase60" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase61" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase62" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase63" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase64" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase65" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase66" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase67" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase68" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase69" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase70" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase71" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase72" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase73" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase74" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase75" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase76" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase77" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase78" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase79" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase80" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase81" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase82" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase83" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase84" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase85" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase86" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase87" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase88" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase89" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase90" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase91" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase92" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase93" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase94" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase95" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase96" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase97" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase98" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase99" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase100" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase101" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase102" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase103" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase104" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase105" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase106" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase107" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase108" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase109" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase110" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase111" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase112" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase113" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase114" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase115" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase116" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase117" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase118" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase119" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase120" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase121" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase122" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase123" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase124" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase125" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase126" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase127" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase128" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase129" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase130" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase131" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase132" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase133" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase134" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase135" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase136" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase137" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase138" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase139" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase140" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase141" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase142" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase143" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase144" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase145" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase146" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase147" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase148" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase149" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase150" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase151" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase152" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase153" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase154" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase155" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase156" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase157" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase158" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase159" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase160" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase161" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase162" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase163" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase164" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase165" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase166" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase167" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase168" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase169" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase170" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase171" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase172" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase173" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase174" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase175" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase176" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase177" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase178" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase179" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase180" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase181" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase182" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase183" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase184" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase185" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase186" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase187" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase188" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase189" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase190" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase191" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase192" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase193" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase194" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase195" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase196" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase197" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase198" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase199" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase200" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase201" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase202" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase203" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase204" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase205" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase206" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase207" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase208" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase209" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase210" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase211" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase212" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase213" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase214" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase215" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase216" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase217" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase218" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase219" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase220" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase221" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase222" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase223" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase224" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase225" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase226" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase227" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase228" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase229" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase230" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase231" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase232" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase233" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase234" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase235" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase236" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase237" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase238" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase239" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase240" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase241" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase242" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase243" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase244" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase245" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase246" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase247" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase248" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase249" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase250" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase251" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase252" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase253" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase254" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseCase1">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</param>
+        /// <param name="caseCase2">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</param>
+        /// <param name="caseCase3">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</param>
+        /// <param name="caseCase4">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</param>
+        /// <param name="caseCase5">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</param>
+        /// <param name="caseCase6">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</param>
+        /// <param name="caseCase7">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</param>
+        /// <param name="caseCase8">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</param>
+        /// <param name="caseCase9">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</param>
+        /// <param name="caseCase10">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</param>
+        /// <param name="caseCase11">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</param>
+        /// <param name="caseCase12">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</param>
+        /// <param name="caseCase13">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</param>
+        /// <param name="caseCase14">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</param>
+        /// <param name="caseCase15">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</param>
+        /// <param name="caseCase16">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</param>
+        /// <param name="caseCase17">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</param>
+        /// <param name="caseCase18">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</param>
+        /// <param name="caseCase19">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</param>
+        /// <param name="caseCase20">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</param>
+        /// <param name="caseCase21">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</param>
+        /// <param name="caseCase22">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</param>
+        /// <param name="caseCase23">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</param>
+        /// <param name="caseCase24">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</param>
+        /// <param name="caseCase25">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</param>
+        /// <param name="caseCase26">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</param>
+        /// <param name="caseCase27">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</param>
+        /// <param name="caseCase28">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</param>
+        /// <param name="caseCase29">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</param>
+        /// <param name="caseCase30">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</param>
+        /// <param name="caseCase31">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</param>
+        /// <param name="caseCase32">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</param>
+        /// <param name="caseCase33">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</param>
+        /// <param name="caseCase34">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</param>
+        /// <param name="caseCase35">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</param>
+        /// <param name="caseCase36">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</param>
+        /// <param name="caseCase37">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</param>
+        /// <param name="caseCase38">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</param>
+        /// <param name="caseCase39">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</param>
+        /// <param name="caseCase40">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</param>
+        /// <param name="caseCase41">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</param>
+        /// <param name="caseCase42">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</param>
+        /// <param name="caseCase43">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</param>
+        /// <param name="caseCase44">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</param>
+        /// <param name="caseCase45">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</param>
+        /// <param name="caseCase46">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</param>
+        /// <param name="caseCase47">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</param>
+        /// <param name="caseCase48">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</param>
+        /// <param name="caseCase49">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</param>
+        /// <param name="caseCase50">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</param>
+        /// <param name="caseCase51">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</param>
+        /// <param name="caseCase52">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</param>
+        /// <param name="caseCase53">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</param>
+        /// <param name="caseCase54">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</param>
+        /// <param name="caseCase55">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</param>
+        /// <param name="caseCase56">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</param>
+        /// <param name="caseCase57">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</param>
+        /// <param name="caseCase58">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</param>
+        /// <param name="caseCase59">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</param>
+        /// <param name="caseCase60">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</param>
+        /// <param name="caseCase61">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</param>
+        /// <param name="caseCase62">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</param>
+        /// <param name="caseCase63">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</param>
+        /// <param name="caseCase64">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</param>
+        /// <param name="caseCase65">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</param>
+        /// <param name="caseCase66">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</param>
+        /// <param name="caseCase67">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</param>
+        /// <param name="caseCase68">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</param>
+        /// <param name="caseCase69">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</param>
+        /// <param name="caseCase70">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</param>
+        /// <param name="caseCase71">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</param>
+        /// <param name="caseCase72">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</param>
+        /// <param name="caseCase73">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</param>
+        /// <param name="caseCase74">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</param>
+        /// <param name="caseCase75">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</param>
+        /// <param name="caseCase76">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</param>
+        /// <param name="caseCase77">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</param>
+        /// <param name="caseCase78">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</param>
+        /// <param name="caseCase79">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</param>
+        /// <param name="caseCase80">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</param>
+        /// <param name="caseCase81">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</param>
+        /// <param name="caseCase82">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</param>
+        /// <param name="caseCase83">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</param>
+        /// <param name="caseCase84">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</param>
+        /// <param name="caseCase85">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</param>
+        /// <param name="caseCase86">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</param>
+        /// <param name="caseCase87">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</param>
+        /// <param name="caseCase88">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</param>
+        /// <param name="caseCase89">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</param>
+        /// <param name="caseCase90">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</param>
+        /// <param name="caseCase91">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</param>
+        /// <param name="caseCase92">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</param>
+        /// <param name="caseCase93">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</param>
+        /// <param name="caseCase94">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</param>
+        /// <param name="caseCase95">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</param>
+        /// <param name="caseCase96">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</param>
+        /// <param name="caseCase97">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</param>
+        /// <param name="caseCase98">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</param>
+        /// <param name="caseCase99">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</param>
+        /// <param name="caseCase100">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</param>
+        /// <param name="caseCase101">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</param>
+        /// <param name="caseCase102">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</param>
+        /// <param name="caseCase103">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</param>
+        /// <param name="caseCase104">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</param>
+        /// <param name="caseCase105">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</param>
+        /// <param name="caseCase106">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</param>
+        /// <param name="caseCase107">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</param>
+        /// <param name="caseCase108">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</param>
+        /// <param name="caseCase109">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</param>
+        /// <param name="caseCase110">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</param>
+        /// <param name="caseCase111">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</param>
+        /// <param name="caseCase112">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</param>
+        /// <param name="caseCase113">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</param>
+        /// <param name="caseCase114">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</param>
+        /// <param name="caseCase115">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</param>
+        /// <param name="caseCase116">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</param>
+        /// <param name="caseCase117">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</param>
+        /// <param name="caseCase118">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</param>
+        /// <param name="caseCase119">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</param>
+        /// <param name="caseCase120">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</param>
+        /// <param name="caseCase121">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</param>
+        /// <param name="caseCase122">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</param>
+        /// <param name="caseCase123">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</param>
+        /// <param name="caseCase124">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</param>
+        /// <param name="caseCase125">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</param>
+        /// <param name="caseCase126">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</param>
+        /// <param name="caseCase127">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</param>
+        /// <param name="caseCase128">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</param>
+        /// <param name="caseCase129">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</param>
+        /// <param name="caseCase130">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</param>
+        /// <param name="caseCase131">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</param>
+        /// <param name="caseCase132">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</param>
+        /// <param name="caseCase133">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</param>
+        /// <param name="caseCase134">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</param>
+        /// <param name="caseCase135">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</param>
+        /// <param name="caseCase136">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</param>
+        /// <param name="caseCase137">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</param>
+        /// <param name="caseCase138">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</param>
+        /// <param name="caseCase139">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</param>
+        /// <param name="caseCase140">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</param>
+        /// <param name="caseCase141">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</param>
+        /// <param name="caseCase142">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</param>
+        /// <param name="caseCase143">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</param>
+        /// <param name="caseCase144">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</param>
+        /// <param name="caseCase145">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</param>
+        /// <param name="caseCase146">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</param>
+        /// <param name="caseCase147">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</param>
+        /// <param name="caseCase148">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</param>
+        /// <param name="caseCase149">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</param>
+        /// <param name="caseCase150">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</param>
+        /// <param name="caseCase151">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</param>
+        /// <param name="caseCase152">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</param>
+        /// <param name="caseCase153">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</param>
+        /// <param name="caseCase154">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</param>
+        /// <param name="caseCase155">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</param>
+        /// <param name="caseCase156">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</param>
+        /// <param name="caseCase157">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</param>
+        /// <param name="caseCase158">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</param>
+        /// <param name="caseCase159">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</param>
+        /// <param name="caseCase160">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</param>
+        /// <param name="caseCase161">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</param>
+        /// <param name="caseCase162">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</param>
+        /// <param name="caseCase163">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</param>
+        /// <param name="caseCase164">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</param>
+        /// <param name="caseCase165">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</param>
+        /// <param name="caseCase166">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</param>
+        /// <param name="caseCase167">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</param>
+        /// <param name="caseCase168">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</param>
+        /// <param name="caseCase169">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</param>
+        /// <param name="caseCase170">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</param>
+        /// <param name="caseCase171">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</param>
+        /// <param name="caseCase172">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</param>
+        /// <param name="caseCase173">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</param>
+        /// <param name="caseCase174">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</param>
+        /// <param name="caseCase175">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</param>
+        /// <param name="caseCase176">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</param>
+        /// <param name="caseCase177">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</param>
+        /// <param name="caseCase178">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</param>
+        /// <param name="caseCase179">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</param>
+        /// <param name="caseCase180">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</param>
+        /// <param name="caseCase181">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</param>
+        /// <param name="caseCase182">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</param>
+        /// <param name="caseCase183">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</param>
+        /// <param name="caseCase184">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</param>
+        /// <param name="caseCase185">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</param>
+        /// <param name="caseCase186">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</param>
+        /// <param name="caseCase187">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</param>
+        /// <param name="caseCase188">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</param>
+        /// <param name="caseCase189">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</param>
+        /// <param name="caseCase190">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</param>
+        /// <param name="caseCase191">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</param>
+        /// <param name="caseCase192">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</param>
+        /// <param name="caseCase193">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</param>
+        /// <param name="caseCase194">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</param>
+        /// <param name="caseCase195">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</param>
+        /// <param name="caseCase196">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</param>
+        /// <param name="caseCase197">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</param>
+        /// <param name="caseCase198">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</param>
+        /// <param name="caseCase199">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</param>
+        /// <param name="caseCase200">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</param>
+        /// <param name="caseCase201">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</param>
+        /// <param name="caseCase202">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</param>
+        /// <param name="caseCase203">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</param>
+        /// <param name="caseCase204">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</param>
+        /// <param name="caseCase205">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</param>
+        /// <param name="caseCase206">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</param>
+        /// <param name="caseCase207">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</param>
+        /// <param name="caseCase208">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</param>
+        /// <param name="caseCase209">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</param>
+        /// <param name="caseCase210">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</param>
+        /// <param name="caseCase211">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</param>
+        /// <param name="caseCase212">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</param>
+        /// <param name="caseCase213">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</param>
+        /// <param name="caseCase214">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</param>
+        /// <param name="caseCase215">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</param>
+        /// <param name="caseCase216">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</param>
+        /// <param name="caseCase217">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</param>
+        /// <param name="caseCase218">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</param>
+        /// <param name="caseCase219">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</param>
+        /// <param name="caseCase220">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</param>
+        /// <param name="caseCase221">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</param>
+        /// <param name="caseCase222">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</param>
+        /// <param name="caseCase223">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</param>
+        /// <param name="caseCase224">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</param>
+        /// <param name="caseCase225">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</param>
+        /// <param name="caseCase226">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</param>
+        /// <param name="caseCase227">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</param>
+        /// <param name="caseCase228">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</param>
+        /// <param name="caseCase229">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</param>
+        /// <param name="caseCase230">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</param>
+        /// <param name="caseCase231">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</param>
+        /// <param name="caseCase232">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</param>
+        /// <param name="caseCase233">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</param>
+        /// <param name="caseCase234">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</param>
+        /// <param name="caseCase235">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</param>
+        /// <param name="caseCase236">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</param>
+        /// <param name="caseCase237">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</param>
+        /// <param name="caseCase238">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</param>
+        /// <param name="caseCase239">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</param>
+        /// <param name="caseCase240">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</param>
+        /// <param name="caseCase241">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</param>
+        /// <param name="caseCase242">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</param>
+        /// <param name="caseCase243">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</param>
+        /// <param name="caseCase244">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</param>
+        /// <param name="caseCase245">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</param>
+        /// <param name="caseCase246">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</param>
+        /// <param name="caseCase247">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</param>
+        /// <param name="caseCase248">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</param>
+        /// <param name="caseCase249">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</param>
+        /// <param name="caseCase250">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</param>
+        /// <param name="caseCase251">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</param>
+        /// <param name="caseCase252">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</param>
+        /// <param name="caseCase253">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</param>
+        /// <param name="caseCase254">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</param>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Union" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Union" /> is a struct and this is the default value of <see cref="TestCases.Union" />.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public void Switch<TSwitchContext>
+        (
+            TSwitchContext context,
+            System.Action<TSwitchContext,TestCases.Union.Case1>? caseCase1,
+            System.Action<TSwitchContext,TestCases.Union.Case2>? caseCase2,
+            System.Action<TSwitchContext,TestCases.Union.Case3>? caseCase3,
+            System.Action<TSwitchContext,TestCases.Union.Case4>? caseCase4,
+            System.Action<TSwitchContext,TestCases.Union.Case5>? caseCase5,
+            System.Action<TSwitchContext,TestCases.Union.Case6>? caseCase6,
+            System.Action<TSwitchContext,TestCases.Union.Case7>? caseCase7,
+            System.Action<TSwitchContext,TestCases.Union.Case8>? caseCase8,
+            System.Action<TSwitchContext,TestCases.Union.Case9>? caseCase9,
+            System.Action<TSwitchContext,TestCases.Union.Case10>? caseCase10,
+            System.Action<TSwitchContext,TestCases.Union.Case11>? caseCase11,
+            System.Action<TSwitchContext,TestCases.Union.Case12>? caseCase12,
+            System.Action<TSwitchContext,TestCases.Union.Case13>? caseCase13,
+            System.Action<TSwitchContext,TestCases.Union.Case14>? caseCase14,
+            System.Action<TSwitchContext,TestCases.Union.Case15>? caseCase15,
+            System.Action<TSwitchContext,TestCases.Union.Case16>? caseCase16,
+            System.Action<TSwitchContext,TestCases.Union.Case17>? caseCase17,
+            System.Action<TSwitchContext,TestCases.Union.Case18>? caseCase18,
+            System.Action<TSwitchContext,TestCases.Union.Case19>? caseCase19,
+            System.Action<TSwitchContext,TestCases.Union.Case20>? caseCase20,
+            System.Action<TSwitchContext,TestCases.Union.Case21>? caseCase21,
+            System.Action<TSwitchContext,TestCases.Union.Case22>? caseCase22,
+            System.Action<TSwitchContext,TestCases.Union.Case23>? caseCase23,
+            System.Action<TSwitchContext,TestCases.Union.Case24>? caseCase24,
+            System.Action<TSwitchContext,TestCases.Union.Case25>? caseCase25,
+            System.Action<TSwitchContext,TestCases.Union.Case26>? caseCase26,
+            System.Action<TSwitchContext,TestCases.Union.Case27>? caseCase27,
+            System.Action<TSwitchContext,TestCases.Union.Case28>? caseCase28,
+            System.Action<TSwitchContext,TestCases.Union.Case29>? caseCase29,
+            System.Action<TSwitchContext,TestCases.Union.Case30>? caseCase30,
+            System.Action<TSwitchContext,TestCases.Union.Case31>? caseCase31,
+            System.Action<TSwitchContext,TestCases.Union.Case32>? caseCase32,
+            System.Action<TSwitchContext,TestCases.Union.Case33>? caseCase33,
+            System.Action<TSwitchContext,TestCases.Union.Case34>? caseCase34,
+            System.Action<TSwitchContext,TestCases.Union.Case35>? caseCase35,
+            System.Action<TSwitchContext,TestCases.Union.Case36>? caseCase36,
+            System.Action<TSwitchContext,TestCases.Union.Case37>? caseCase37,
+            System.Action<TSwitchContext,TestCases.Union.Case38>? caseCase38,
+            System.Action<TSwitchContext,TestCases.Union.Case39>? caseCase39,
+            System.Action<TSwitchContext,TestCases.Union.Case40>? caseCase40,
+            System.Action<TSwitchContext,TestCases.Union.Case41>? caseCase41,
+            System.Action<TSwitchContext,TestCases.Union.Case42>? caseCase42,
+            System.Action<TSwitchContext,TestCases.Union.Case43>? caseCase43,
+            System.Action<TSwitchContext,TestCases.Union.Case44>? caseCase44,
+            System.Action<TSwitchContext,TestCases.Union.Case45>? caseCase45,
+            System.Action<TSwitchContext,TestCases.Union.Case46>? caseCase46,
+            System.Action<TSwitchContext,TestCases.Union.Case47>? caseCase47,
+            System.Action<TSwitchContext,TestCases.Union.Case48>? caseCase48,
+            System.Action<TSwitchContext,TestCases.Union.Case49>? caseCase49,
+            System.Action<TSwitchContext,TestCases.Union.Case50>? caseCase50,
+            System.Action<TSwitchContext,TestCases.Union.Case51>? caseCase51,
+            System.Action<TSwitchContext,TestCases.Union.Case52>? caseCase52,
+            System.Action<TSwitchContext,TestCases.Union.Case53>? caseCase53,
+            System.Action<TSwitchContext,TestCases.Union.Case54>? caseCase54,
+            System.Action<TSwitchContext,TestCases.Union.Case55>? caseCase55,
+            System.Action<TSwitchContext,TestCases.Union.Case56>? caseCase56,
+            System.Action<TSwitchContext,TestCases.Union.Case57>? caseCase57,
+            System.Action<TSwitchContext,TestCases.Union.Case58>? caseCase58,
+            System.Action<TSwitchContext,TestCases.Union.Case59>? caseCase59,
+            System.Action<TSwitchContext,TestCases.Union.Case60>? caseCase60,
+            System.Action<TSwitchContext,TestCases.Union.Case61>? caseCase61,
+            System.Action<TSwitchContext,TestCases.Union.Case62>? caseCase62,
+            System.Action<TSwitchContext,TestCases.Union.Case63>? caseCase63,
+            System.Action<TSwitchContext,TestCases.Union.Case64>? caseCase64,
+            System.Action<TSwitchContext,TestCases.Union.Case65>? caseCase65,
+            System.Action<TSwitchContext,TestCases.Union.Case66>? caseCase66,
+            System.Action<TSwitchContext,TestCases.Union.Case67>? caseCase67,
+            System.Action<TSwitchContext,TestCases.Union.Case68>? caseCase68,
+            System.Action<TSwitchContext,TestCases.Union.Case69>? caseCase69,
+            System.Action<TSwitchContext,TestCases.Union.Case70>? caseCase70,
+            System.Action<TSwitchContext,TestCases.Union.Case71>? caseCase71,
+            System.Action<TSwitchContext,TestCases.Union.Case72>? caseCase72,
+            System.Action<TSwitchContext,TestCases.Union.Case73>? caseCase73,
+            System.Action<TSwitchContext,TestCases.Union.Case74>? caseCase74,
+            System.Action<TSwitchContext,TestCases.Union.Case75>? caseCase75,
+            System.Action<TSwitchContext,TestCases.Union.Case76>? caseCase76,
+            System.Action<TSwitchContext,TestCases.Union.Case77>? caseCase77,
+            System.Action<TSwitchContext,TestCases.Union.Case78>? caseCase78,
+            System.Action<TSwitchContext,TestCases.Union.Case79>? caseCase79,
+            System.Action<TSwitchContext,TestCases.Union.Case80>? caseCase80,
+            System.Action<TSwitchContext,TestCases.Union.Case81>? caseCase81,
+            System.Action<TSwitchContext,TestCases.Union.Case82>? caseCase82,
+            System.Action<TSwitchContext,TestCases.Union.Case83>? caseCase83,
+            System.Action<TSwitchContext,TestCases.Union.Case84>? caseCase84,
+            System.Action<TSwitchContext,TestCases.Union.Case85>? caseCase85,
+            System.Action<TSwitchContext,TestCases.Union.Case86>? caseCase86,
+            System.Action<TSwitchContext,TestCases.Union.Case87>? caseCase87,
+            System.Action<TSwitchContext,TestCases.Union.Case88>? caseCase88,
+            System.Action<TSwitchContext,TestCases.Union.Case89>? caseCase89,
+            System.Action<TSwitchContext,TestCases.Union.Case90>? caseCase90,
+            System.Action<TSwitchContext,TestCases.Union.Case91>? caseCase91,
+            System.Action<TSwitchContext,TestCases.Union.Case92>? caseCase92,
+            System.Action<TSwitchContext,TestCases.Union.Case93>? caseCase93,
+            System.Action<TSwitchContext,TestCases.Union.Case94>? caseCase94,
+            System.Action<TSwitchContext,TestCases.Union.Case95>? caseCase95,
+            System.Action<TSwitchContext,TestCases.Union.Case96>? caseCase96,
+            System.Action<TSwitchContext,TestCases.Union.Case97>? caseCase97,
+            System.Action<TSwitchContext,TestCases.Union.Case98>? caseCase98,
+            System.Action<TSwitchContext,TestCases.Union.Case99>? caseCase99,
+            System.Action<TSwitchContext,TestCases.Union.Case100>? caseCase100,
+            System.Action<TSwitchContext,TestCases.Union.Case101>? caseCase101,
+            System.Action<TSwitchContext,TestCases.Union.Case102>? caseCase102,
+            System.Action<TSwitchContext,TestCases.Union.Case103>? caseCase103,
+            System.Action<TSwitchContext,TestCases.Union.Case104>? caseCase104,
+            System.Action<TSwitchContext,TestCases.Union.Case105>? caseCase105,
+            System.Action<TSwitchContext,TestCases.Union.Case106>? caseCase106,
+            System.Action<TSwitchContext,TestCases.Union.Case107>? caseCase107,
+            System.Action<TSwitchContext,TestCases.Union.Case108>? caseCase108,
+            System.Action<TSwitchContext,TestCases.Union.Case109>? caseCase109,
+            System.Action<TSwitchContext,TestCases.Union.Case110>? caseCase110,
+            System.Action<TSwitchContext,TestCases.Union.Case111>? caseCase111,
+            System.Action<TSwitchContext,TestCases.Union.Case112>? caseCase112,
+            System.Action<TSwitchContext,TestCases.Union.Case113>? caseCase113,
+            System.Action<TSwitchContext,TestCases.Union.Case114>? caseCase114,
+            System.Action<TSwitchContext,TestCases.Union.Case115>? caseCase115,
+            System.Action<TSwitchContext,TestCases.Union.Case116>? caseCase116,
+            System.Action<TSwitchContext,TestCases.Union.Case117>? caseCase117,
+            System.Action<TSwitchContext,TestCases.Union.Case118>? caseCase118,
+            System.Action<TSwitchContext,TestCases.Union.Case119>? caseCase119,
+            System.Action<TSwitchContext,TestCases.Union.Case120>? caseCase120,
+            System.Action<TSwitchContext,TestCases.Union.Case121>? caseCase121,
+            System.Action<TSwitchContext,TestCases.Union.Case122>? caseCase122,
+            System.Action<TSwitchContext,TestCases.Union.Case123>? caseCase123,
+            System.Action<TSwitchContext,TestCases.Union.Case124>? caseCase124,
+            System.Action<TSwitchContext,TestCases.Union.Case125>? caseCase125,
+            System.Action<TSwitchContext,TestCases.Union.Case126>? caseCase126,
+            System.Action<TSwitchContext,TestCases.Union.Case127>? caseCase127,
+            System.Action<TSwitchContext,TestCases.Union.Case128>? caseCase128,
+            System.Action<TSwitchContext,TestCases.Union.Case129>? caseCase129,
+            System.Action<TSwitchContext,TestCases.Union.Case130>? caseCase130,
+            System.Action<TSwitchContext,TestCases.Union.Case131>? caseCase131,
+            System.Action<TSwitchContext,TestCases.Union.Case132>? caseCase132,
+            System.Action<TSwitchContext,TestCases.Union.Case133>? caseCase133,
+            System.Action<TSwitchContext,TestCases.Union.Case134>? caseCase134,
+            System.Action<TSwitchContext,TestCases.Union.Case135>? caseCase135,
+            System.Action<TSwitchContext,TestCases.Union.Case136>? caseCase136,
+            System.Action<TSwitchContext,TestCases.Union.Case137>? caseCase137,
+            System.Action<TSwitchContext,TestCases.Union.Case138>? caseCase138,
+            System.Action<TSwitchContext,TestCases.Union.Case139>? caseCase139,
+            System.Action<TSwitchContext,TestCases.Union.Case140>? caseCase140,
+            System.Action<TSwitchContext,TestCases.Union.Case141>? caseCase141,
+            System.Action<TSwitchContext,TestCases.Union.Case142>? caseCase142,
+            System.Action<TSwitchContext,TestCases.Union.Case143>? caseCase143,
+            System.Action<TSwitchContext,TestCases.Union.Case144>? caseCase144,
+            System.Action<TSwitchContext,TestCases.Union.Case145>? caseCase145,
+            System.Action<TSwitchContext,TestCases.Union.Case146>? caseCase146,
+            System.Action<TSwitchContext,TestCases.Union.Case147>? caseCase147,
+            System.Action<TSwitchContext,TestCases.Union.Case148>? caseCase148,
+            System.Action<TSwitchContext,TestCases.Union.Case149>? caseCase149,
+            System.Action<TSwitchContext,TestCases.Union.Case150>? caseCase150,
+            System.Action<TSwitchContext,TestCases.Union.Case151>? caseCase151,
+            System.Action<TSwitchContext,TestCases.Union.Case152>? caseCase152,
+            System.Action<TSwitchContext,TestCases.Union.Case153>? caseCase153,
+            System.Action<TSwitchContext,TestCases.Union.Case154>? caseCase154,
+            System.Action<TSwitchContext,TestCases.Union.Case155>? caseCase155,
+            System.Action<TSwitchContext,TestCases.Union.Case156>? caseCase156,
+            System.Action<TSwitchContext,TestCases.Union.Case157>? caseCase157,
+            System.Action<TSwitchContext,TestCases.Union.Case158>? caseCase158,
+            System.Action<TSwitchContext,TestCases.Union.Case159>? caseCase159,
+            System.Action<TSwitchContext,TestCases.Union.Case160>? caseCase160,
+            System.Action<TSwitchContext,TestCases.Union.Case161>? caseCase161,
+            System.Action<TSwitchContext,TestCases.Union.Case162>? caseCase162,
+            System.Action<TSwitchContext,TestCases.Union.Case163>? caseCase163,
+            System.Action<TSwitchContext,TestCases.Union.Case164>? caseCase164,
+            System.Action<TSwitchContext,TestCases.Union.Case165>? caseCase165,
+            System.Action<TSwitchContext,TestCases.Union.Case166>? caseCase166,
+            System.Action<TSwitchContext,TestCases.Union.Case167>? caseCase167,
+            System.Action<TSwitchContext,TestCases.Union.Case168>? caseCase168,
+            System.Action<TSwitchContext,TestCases.Union.Case169>? caseCase169,
+            System.Action<TSwitchContext,TestCases.Union.Case170>? caseCase170,
+            System.Action<TSwitchContext,TestCases.Union.Case171>? caseCase171,
+            System.Action<TSwitchContext,TestCases.Union.Case172>? caseCase172,
+            System.Action<TSwitchContext,TestCases.Union.Case173>? caseCase173,
+            System.Action<TSwitchContext,TestCases.Union.Case174>? caseCase174,
+            System.Action<TSwitchContext,TestCases.Union.Case175>? caseCase175,
+            System.Action<TSwitchContext,TestCases.Union.Case176>? caseCase176,
+            System.Action<TSwitchContext,TestCases.Union.Case177>? caseCase177,
+            System.Action<TSwitchContext,TestCases.Union.Case178>? caseCase178,
+            System.Action<TSwitchContext,TestCases.Union.Case179>? caseCase179,
+            System.Action<TSwitchContext,TestCases.Union.Case180>? caseCase180,
+            System.Action<TSwitchContext,TestCases.Union.Case181>? caseCase181,
+            System.Action<TSwitchContext,TestCases.Union.Case182>? caseCase182,
+            System.Action<TSwitchContext,TestCases.Union.Case183>? caseCase183,
+            System.Action<TSwitchContext,TestCases.Union.Case184>? caseCase184,
+            System.Action<TSwitchContext,TestCases.Union.Case185>? caseCase185,
+            System.Action<TSwitchContext,TestCases.Union.Case186>? caseCase186,
+            System.Action<TSwitchContext,TestCases.Union.Case187>? caseCase187,
+            System.Action<TSwitchContext,TestCases.Union.Case188>? caseCase188,
+            System.Action<TSwitchContext,TestCases.Union.Case189>? caseCase189,
+            System.Action<TSwitchContext,TestCases.Union.Case190>? caseCase190,
+            System.Action<TSwitchContext,TestCases.Union.Case191>? caseCase191,
+            System.Action<TSwitchContext,TestCases.Union.Case192>? caseCase192,
+            System.Action<TSwitchContext,TestCases.Union.Case193>? caseCase193,
+            System.Action<TSwitchContext,TestCases.Union.Case194>? caseCase194,
+            System.Action<TSwitchContext,TestCases.Union.Case195>? caseCase195,
+            System.Action<TSwitchContext,TestCases.Union.Case196>? caseCase196,
+            System.Action<TSwitchContext,TestCases.Union.Case197>? caseCase197,
+            System.Action<TSwitchContext,TestCases.Union.Case198>? caseCase198,
+            System.Action<TSwitchContext,TestCases.Union.Case199>? caseCase199,
+            System.Action<TSwitchContext,TestCases.Union.Case200>? caseCase200,
+            System.Action<TSwitchContext,TestCases.Union.Case201>? caseCase201,
+            System.Action<TSwitchContext,TestCases.Union.Case202>? caseCase202,
+            System.Action<TSwitchContext,TestCases.Union.Case203>? caseCase203,
+            System.Action<TSwitchContext,TestCases.Union.Case204>? caseCase204,
+            System.Action<TSwitchContext,TestCases.Union.Case205>? caseCase205,
+            System.Action<TSwitchContext,TestCases.Union.Case206>? caseCase206,
+            System.Action<TSwitchContext,TestCases.Union.Case207>? caseCase207,
+            System.Action<TSwitchContext,TestCases.Union.Case208>? caseCase208,
+            System.Action<TSwitchContext,TestCases.Union.Case209>? caseCase209,
+            System.Action<TSwitchContext,TestCases.Union.Case210>? caseCase210,
+            System.Action<TSwitchContext,TestCases.Union.Case211>? caseCase211,
+            System.Action<TSwitchContext,TestCases.Union.Case212>? caseCase212,
+            System.Action<TSwitchContext,TestCases.Union.Case213>? caseCase213,
+            System.Action<TSwitchContext,TestCases.Union.Case214>? caseCase214,
+            System.Action<TSwitchContext,TestCases.Union.Case215>? caseCase215,
+            System.Action<TSwitchContext,TestCases.Union.Case216>? caseCase216,
+            System.Action<TSwitchContext,TestCases.Union.Case217>? caseCase217,
+            System.Action<TSwitchContext,TestCases.Union.Case218>? caseCase218,
+            System.Action<TSwitchContext,TestCases.Union.Case219>? caseCase219,
+            System.Action<TSwitchContext,TestCases.Union.Case220>? caseCase220,
+            System.Action<TSwitchContext,TestCases.Union.Case221>? caseCase221,
+            System.Action<TSwitchContext,TestCases.Union.Case222>? caseCase222,
+            System.Action<TSwitchContext,TestCases.Union.Case223>? caseCase223,
+            System.Action<TSwitchContext,TestCases.Union.Case224>? caseCase224,
+            System.Action<TSwitchContext,TestCases.Union.Case225>? caseCase225,
+            System.Action<TSwitchContext,TestCases.Union.Case226>? caseCase226,
+            System.Action<TSwitchContext,TestCases.Union.Case227>? caseCase227,
+            System.Action<TSwitchContext,TestCases.Union.Case228>? caseCase228,
+            System.Action<TSwitchContext,TestCases.Union.Case229>? caseCase229,
+            System.Action<TSwitchContext,TestCases.Union.Case230>? caseCase230,
+            System.Action<TSwitchContext,TestCases.Union.Case231>? caseCase231,
+            System.Action<TSwitchContext,TestCases.Union.Case232>? caseCase232,
+            System.Action<TSwitchContext,TestCases.Union.Case233>? caseCase233,
+            System.Action<TSwitchContext,TestCases.Union.Case234>? caseCase234,
+            System.Action<TSwitchContext,TestCases.Union.Case235>? caseCase235,
+            System.Action<TSwitchContext,TestCases.Union.Case236>? caseCase236,
+            System.Action<TSwitchContext,TestCases.Union.Case237>? caseCase237,
+            System.Action<TSwitchContext,TestCases.Union.Case238>? caseCase238,
+            System.Action<TSwitchContext,TestCases.Union.Case239>? caseCase239,
+            System.Action<TSwitchContext,TestCases.Union.Case240>? caseCase240,
+            System.Action<TSwitchContext,TestCases.Union.Case241>? caseCase241,
+            System.Action<TSwitchContext,TestCases.Union.Case242>? caseCase242,
+            System.Action<TSwitchContext,TestCases.Union.Case243>? caseCase243,
+            System.Action<TSwitchContext,TestCases.Union.Case244>? caseCase244,
+            System.Action<TSwitchContext,TestCases.Union.Case245>? caseCase245,
+            System.Action<TSwitchContext,TestCases.Union.Case246>? caseCase246,
+            System.Action<TSwitchContext,TestCases.Union.Case247>? caseCase247,
+            System.Action<TSwitchContext,TestCases.Union.Case248>? caseCase248,
+            System.Action<TSwitchContext,TestCases.Union.Case249>? caseCase249,
+            System.Action<TSwitchContext,TestCases.Union.Case250>? caseCase250,
+            System.Action<TSwitchContext,TestCases.Union.Case251>? caseCase251,
+            System.Action<TSwitchContext,TestCases.Union.Case252>? caseCase252,
+            System.Action<TSwitchContext,TestCases.Union.Case253>? caseCase253,
+            System.Action<TSwitchContext,TestCases.Union.Case254>? caseCase254
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseCase1, null))
+                    {
+                        caseCase1.Invoke(context, ((TestCases.Union.Case1)this._value));
+                    }
+                    break;
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseCase2, null))
+                    {
+                        caseCase2.Invoke(context, ((TestCases.Union.Case2)this._value));
+                    }
+                    break;
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseCase3, null))
+                    {
+                        caseCase3.Invoke(context, ((TestCases.Union.Case3)this._value));
+                    }
+                    break;
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseCase4, null))
+                    {
+                        caseCase4.Invoke(context, ((TestCases.Union.Case4)this._value));
+                    }
+                    break;
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseCase5, null))
+                    {
+                        caseCase5.Invoke(context, ((TestCases.Union.Case5)this._value));
+                    }
+                    break;
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseCase6, null))
+                    {
+                        caseCase6.Invoke(context, ((TestCases.Union.Case6)this._value));
+                    }
+                    break;
+                
+                case 7:
+                    if (!System.Object.ReferenceEquals(caseCase7, null))
+                    {
+                        caseCase7.Invoke(context, ((TestCases.Union.Case7)this._value));
+                    }
+                    break;
+                
+                case 8:
+                    if (!System.Object.ReferenceEquals(caseCase8, null))
+                    {
+                        caseCase8.Invoke(context, ((TestCases.Union.Case8)this._value));
+                    }
+                    break;
+                
+                case 9:
+                    if (!System.Object.ReferenceEquals(caseCase9, null))
+                    {
+                        caseCase9.Invoke(context, ((TestCases.Union.Case9)this._value));
+                    }
+                    break;
+                
+                case 10:
+                    if (!System.Object.ReferenceEquals(caseCase10, null))
+                    {
+                        caseCase10.Invoke(context, ((TestCases.Union.Case10)this._value));
+                    }
+                    break;
+                
+                case 11:
+                    if (!System.Object.ReferenceEquals(caseCase11, null))
+                    {
+                        caseCase11.Invoke(context, ((TestCases.Union.Case11)this._value));
+                    }
+                    break;
+                
+                case 12:
+                    if (!System.Object.ReferenceEquals(caseCase12, null))
+                    {
+                        caseCase12.Invoke(context, ((TestCases.Union.Case12)this._value));
+                    }
+                    break;
+                
+                case 13:
+                    if (!System.Object.ReferenceEquals(caseCase13, null))
+                    {
+                        caseCase13.Invoke(context, ((TestCases.Union.Case13)this._value));
+                    }
+                    break;
+                
+                case 14:
+                    if (!System.Object.ReferenceEquals(caseCase14, null))
+                    {
+                        caseCase14.Invoke(context, ((TestCases.Union.Case14)this._value));
+                    }
+                    break;
+                
+                case 15:
+                    if (!System.Object.ReferenceEquals(caseCase15, null))
+                    {
+                        caseCase15.Invoke(context, ((TestCases.Union.Case15)this._value));
+                    }
+                    break;
+                
+                case 16:
+                    if (!System.Object.ReferenceEquals(caseCase16, null))
+                    {
+                        caseCase16.Invoke(context, ((TestCases.Union.Case16)this._value));
+                    }
+                    break;
+                
+                case 17:
+                    if (!System.Object.ReferenceEquals(caseCase17, null))
+                    {
+                        caseCase17.Invoke(context, ((TestCases.Union.Case17)this._value));
+                    }
+                    break;
+                
+                case 18:
+                    if (!System.Object.ReferenceEquals(caseCase18, null))
+                    {
+                        caseCase18.Invoke(context, ((TestCases.Union.Case18)this._value));
+                    }
+                    break;
+                
+                case 19:
+                    if (!System.Object.ReferenceEquals(caseCase19, null))
+                    {
+                        caseCase19.Invoke(context, ((TestCases.Union.Case19)this._value));
+                    }
+                    break;
+                
+                case 20:
+                    if (!System.Object.ReferenceEquals(caseCase20, null))
+                    {
+                        caseCase20.Invoke(context, ((TestCases.Union.Case20)this._value));
+                    }
+                    break;
+                
+                case 21:
+                    if (!System.Object.ReferenceEquals(caseCase21, null))
+                    {
+                        caseCase21.Invoke(context, ((TestCases.Union.Case21)this._value));
+                    }
+                    break;
+                
+                case 22:
+                    if (!System.Object.ReferenceEquals(caseCase22, null))
+                    {
+                        caseCase22.Invoke(context, ((TestCases.Union.Case22)this._value));
+                    }
+                    break;
+                
+                case 23:
+                    if (!System.Object.ReferenceEquals(caseCase23, null))
+                    {
+                        caseCase23.Invoke(context, ((TestCases.Union.Case23)this._value));
+                    }
+                    break;
+                
+                case 24:
+                    if (!System.Object.ReferenceEquals(caseCase24, null))
+                    {
+                        caseCase24.Invoke(context, ((TestCases.Union.Case24)this._value));
+                    }
+                    break;
+                
+                case 25:
+                    if (!System.Object.ReferenceEquals(caseCase25, null))
+                    {
+                        caseCase25.Invoke(context, ((TestCases.Union.Case25)this._value));
+                    }
+                    break;
+                
+                case 26:
+                    if (!System.Object.ReferenceEquals(caseCase26, null))
+                    {
+                        caseCase26.Invoke(context, ((TestCases.Union.Case26)this._value));
+                    }
+                    break;
+                
+                case 27:
+                    if (!System.Object.ReferenceEquals(caseCase27, null))
+                    {
+                        caseCase27.Invoke(context, ((TestCases.Union.Case27)this._value));
+                    }
+                    break;
+                
+                case 28:
+                    if (!System.Object.ReferenceEquals(caseCase28, null))
+                    {
+                        caseCase28.Invoke(context, ((TestCases.Union.Case28)this._value));
+                    }
+                    break;
+                
+                case 29:
+                    if (!System.Object.ReferenceEquals(caseCase29, null))
+                    {
+                        caseCase29.Invoke(context, ((TestCases.Union.Case29)this._value));
+                    }
+                    break;
+                
+                case 30:
+                    if (!System.Object.ReferenceEquals(caseCase30, null))
+                    {
+                        caseCase30.Invoke(context, ((TestCases.Union.Case30)this._value));
+                    }
+                    break;
+                
+                case 31:
+                    if (!System.Object.ReferenceEquals(caseCase31, null))
+                    {
+                        caseCase31.Invoke(context, ((TestCases.Union.Case31)this._value));
+                    }
+                    break;
+                
+                case 32:
+                    if (!System.Object.ReferenceEquals(caseCase32, null))
+                    {
+                        caseCase32.Invoke(context, ((TestCases.Union.Case32)this._value));
+                    }
+                    break;
+                
+                case 33:
+                    if (!System.Object.ReferenceEquals(caseCase33, null))
+                    {
+                        caseCase33.Invoke(context, ((TestCases.Union.Case33)this._value));
+                    }
+                    break;
+                
+                case 34:
+                    if (!System.Object.ReferenceEquals(caseCase34, null))
+                    {
+                        caseCase34.Invoke(context, ((TestCases.Union.Case34)this._value));
+                    }
+                    break;
+                
+                case 35:
+                    if (!System.Object.ReferenceEquals(caseCase35, null))
+                    {
+                        caseCase35.Invoke(context, ((TestCases.Union.Case35)this._value));
+                    }
+                    break;
+                
+                case 36:
+                    if (!System.Object.ReferenceEquals(caseCase36, null))
+                    {
+                        caseCase36.Invoke(context, ((TestCases.Union.Case36)this._value));
+                    }
+                    break;
+                
+                case 37:
+                    if (!System.Object.ReferenceEquals(caseCase37, null))
+                    {
+                        caseCase37.Invoke(context, ((TestCases.Union.Case37)this._value));
+                    }
+                    break;
+                
+                case 38:
+                    if (!System.Object.ReferenceEquals(caseCase38, null))
+                    {
+                        caseCase38.Invoke(context, ((TestCases.Union.Case38)this._value));
+                    }
+                    break;
+                
+                case 39:
+                    if (!System.Object.ReferenceEquals(caseCase39, null))
+                    {
+                        caseCase39.Invoke(context, ((TestCases.Union.Case39)this._value));
+                    }
+                    break;
+                
+                case 40:
+                    if (!System.Object.ReferenceEquals(caseCase40, null))
+                    {
+                        caseCase40.Invoke(context, ((TestCases.Union.Case40)this._value));
+                    }
+                    break;
+                
+                case 41:
+                    if (!System.Object.ReferenceEquals(caseCase41, null))
+                    {
+                        caseCase41.Invoke(context, ((TestCases.Union.Case41)this._value));
+                    }
+                    break;
+                
+                case 42:
+                    if (!System.Object.ReferenceEquals(caseCase42, null))
+                    {
+                        caseCase42.Invoke(context, ((TestCases.Union.Case42)this._value));
+                    }
+                    break;
+                
+                case 43:
+                    if (!System.Object.ReferenceEquals(caseCase43, null))
+                    {
+                        caseCase43.Invoke(context, ((TestCases.Union.Case43)this._value));
+                    }
+                    break;
+                
+                case 44:
+                    if (!System.Object.ReferenceEquals(caseCase44, null))
+                    {
+                        caseCase44.Invoke(context, ((TestCases.Union.Case44)this._value));
+                    }
+                    break;
+                
+                case 45:
+                    if (!System.Object.ReferenceEquals(caseCase45, null))
+                    {
+                        caseCase45.Invoke(context, ((TestCases.Union.Case45)this._value));
+                    }
+                    break;
+                
+                case 46:
+                    if (!System.Object.ReferenceEquals(caseCase46, null))
+                    {
+                        caseCase46.Invoke(context, ((TestCases.Union.Case46)this._value));
+                    }
+                    break;
+                
+                case 47:
+                    if (!System.Object.ReferenceEquals(caseCase47, null))
+                    {
+                        caseCase47.Invoke(context, ((TestCases.Union.Case47)this._value));
+                    }
+                    break;
+                
+                case 48:
+                    if (!System.Object.ReferenceEquals(caseCase48, null))
+                    {
+                        caseCase48.Invoke(context, ((TestCases.Union.Case48)this._value));
+                    }
+                    break;
+                
+                case 49:
+                    if (!System.Object.ReferenceEquals(caseCase49, null))
+                    {
+                        caseCase49.Invoke(context, ((TestCases.Union.Case49)this._value));
+                    }
+                    break;
+                
+                case 50:
+                    if (!System.Object.ReferenceEquals(caseCase50, null))
+                    {
+                        caseCase50.Invoke(context, ((TestCases.Union.Case50)this._value));
+                    }
+                    break;
+                
+                case 51:
+                    if (!System.Object.ReferenceEquals(caseCase51, null))
+                    {
+                        caseCase51.Invoke(context, ((TestCases.Union.Case51)this._value));
+                    }
+                    break;
+                
+                case 52:
+                    if (!System.Object.ReferenceEquals(caseCase52, null))
+                    {
+                        caseCase52.Invoke(context, ((TestCases.Union.Case52)this._value));
+                    }
+                    break;
+                
+                case 53:
+                    if (!System.Object.ReferenceEquals(caseCase53, null))
+                    {
+                        caseCase53.Invoke(context, ((TestCases.Union.Case53)this._value));
+                    }
+                    break;
+                
+                case 54:
+                    if (!System.Object.ReferenceEquals(caseCase54, null))
+                    {
+                        caseCase54.Invoke(context, ((TestCases.Union.Case54)this._value));
+                    }
+                    break;
+                
+                case 55:
+                    if (!System.Object.ReferenceEquals(caseCase55, null))
+                    {
+                        caseCase55.Invoke(context, ((TestCases.Union.Case55)this._value));
+                    }
+                    break;
+                
+                case 56:
+                    if (!System.Object.ReferenceEquals(caseCase56, null))
+                    {
+                        caseCase56.Invoke(context, ((TestCases.Union.Case56)this._value));
+                    }
+                    break;
+                
+                case 57:
+                    if (!System.Object.ReferenceEquals(caseCase57, null))
+                    {
+                        caseCase57.Invoke(context, ((TestCases.Union.Case57)this._value));
+                    }
+                    break;
+                
+                case 58:
+                    if (!System.Object.ReferenceEquals(caseCase58, null))
+                    {
+                        caseCase58.Invoke(context, ((TestCases.Union.Case58)this._value));
+                    }
+                    break;
+                
+                case 59:
+                    if (!System.Object.ReferenceEquals(caseCase59, null))
+                    {
+                        caseCase59.Invoke(context, ((TestCases.Union.Case59)this._value));
+                    }
+                    break;
+                
+                case 60:
+                    if (!System.Object.ReferenceEquals(caseCase60, null))
+                    {
+                        caseCase60.Invoke(context, ((TestCases.Union.Case60)this._value));
+                    }
+                    break;
+                
+                case 61:
+                    if (!System.Object.ReferenceEquals(caseCase61, null))
+                    {
+                        caseCase61.Invoke(context, ((TestCases.Union.Case61)this._value));
+                    }
+                    break;
+                
+                case 62:
+                    if (!System.Object.ReferenceEquals(caseCase62, null))
+                    {
+                        caseCase62.Invoke(context, ((TestCases.Union.Case62)this._value));
+                    }
+                    break;
+                
+                case 63:
+                    if (!System.Object.ReferenceEquals(caseCase63, null))
+                    {
+                        caseCase63.Invoke(context, ((TestCases.Union.Case63)this._value));
+                    }
+                    break;
+                
+                case 64:
+                    if (!System.Object.ReferenceEquals(caseCase64, null))
+                    {
+                        caseCase64.Invoke(context, ((TestCases.Union.Case64)this._value));
+                    }
+                    break;
+                
+                case 65:
+                    if (!System.Object.ReferenceEquals(caseCase65, null))
+                    {
+                        caseCase65.Invoke(context, ((TestCases.Union.Case65)this._value));
+                    }
+                    break;
+                
+                case 66:
+                    if (!System.Object.ReferenceEquals(caseCase66, null))
+                    {
+                        caseCase66.Invoke(context, ((TestCases.Union.Case66)this._value));
+                    }
+                    break;
+                
+                case 67:
+                    if (!System.Object.ReferenceEquals(caseCase67, null))
+                    {
+                        caseCase67.Invoke(context, ((TestCases.Union.Case67)this._value));
+                    }
+                    break;
+                
+                case 68:
+                    if (!System.Object.ReferenceEquals(caseCase68, null))
+                    {
+                        caseCase68.Invoke(context, ((TestCases.Union.Case68)this._value));
+                    }
+                    break;
+                
+                case 69:
+                    if (!System.Object.ReferenceEquals(caseCase69, null))
+                    {
+                        caseCase69.Invoke(context, ((TestCases.Union.Case69)this._value));
+                    }
+                    break;
+                
+                case 70:
+                    if (!System.Object.ReferenceEquals(caseCase70, null))
+                    {
+                        caseCase70.Invoke(context, ((TestCases.Union.Case70)this._value));
+                    }
+                    break;
+                
+                case 71:
+                    if (!System.Object.ReferenceEquals(caseCase71, null))
+                    {
+                        caseCase71.Invoke(context, ((TestCases.Union.Case71)this._value));
+                    }
+                    break;
+                
+                case 72:
+                    if (!System.Object.ReferenceEquals(caseCase72, null))
+                    {
+                        caseCase72.Invoke(context, ((TestCases.Union.Case72)this._value));
+                    }
+                    break;
+                
+                case 73:
+                    if (!System.Object.ReferenceEquals(caseCase73, null))
+                    {
+                        caseCase73.Invoke(context, ((TestCases.Union.Case73)this._value));
+                    }
+                    break;
+                
+                case 74:
+                    if (!System.Object.ReferenceEquals(caseCase74, null))
+                    {
+                        caseCase74.Invoke(context, ((TestCases.Union.Case74)this._value));
+                    }
+                    break;
+                
+                case 75:
+                    if (!System.Object.ReferenceEquals(caseCase75, null))
+                    {
+                        caseCase75.Invoke(context, ((TestCases.Union.Case75)this._value));
+                    }
+                    break;
+                
+                case 76:
+                    if (!System.Object.ReferenceEquals(caseCase76, null))
+                    {
+                        caseCase76.Invoke(context, ((TestCases.Union.Case76)this._value));
+                    }
+                    break;
+                
+                case 77:
+                    if (!System.Object.ReferenceEquals(caseCase77, null))
+                    {
+                        caseCase77.Invoke(context, ((TestCases.Union.Case77)this._value));
+                    }
+                    break;
+                
+                case 78:
+                    if (!System.Object.ReferenceEquals(caseCase78, null))
+                    {
+                        caseCase78.Invoke(context, ((TestCases.Union.Case78)this._value));
+                    }
+                    break;
+                
+                case 79:
+                    if (!System.Object.ReferenceEquals(caseCase79, null))
+                    {
+                        caseCase79.Invoke(context, ((TestCases.Union.Case79)this._value));
+                    }
+                    break;
+                
+                case 80:
+                    if (!System.Object.ReferenceEquals(caseCase80, null))
+                    {
+                        caseCase80.Invoke(context, ((TestCases.Union.Case80)this._value));
+                    }
+                    break;
+                
+                case 81:
+                    if (!System.Object.ReferenceEquals(caseCase81, null))
+                    {
+                        caseCase81.Invoke(context, ((TestCases.Union.Case81)this._value));
+                    }
+                    break;
+                
+                case 82:
+                    if (!System.Object.ReferenceEquals(caseCase82, null))
+                    {
+                        caseCase82.Invoke(context, ((TestCases.Union.Case82)this._value));
+                    }
+                    break;
+                
+                case 83:
+                    if (!System.Object.ReferenceEquals(caseCase83, null))
+                    {
+                        caseCase83.Invoke(context, ((TestCases.Union.Case83)this._value));
+                    }
+                    break;
+                
+                case 84:
+                    if (!System.Object.ReferenceEquals(caseCase84, null))
+                    {
+                        caseCase84.Invoke(context, ((TestCases.Union.Case84)this._value));
+                    }
+                    break;
+                
+                case 85:
+                    if (!System.Object.ReferenceEquals(caseCase85, null))
+                    {
+                        caseCase85.Invoke(context, ((TestCases.Union.Case85)this._value));
+                    }
+                    break;
+                
+                case 86:
+                    if (!System.Object.ReferenceEquals(caseCase86, null))
+                    {
+                        caseCase86.Invoke(context, ((TestCases.Union.Case86)this._value));
+                    }
+                    break;
+                
+                case 87:
+                    if (!System.Object.ReferenceEquals(caseCase87, null))
+                    {
+                        caseCase87.Invoke(context, ((TestCases.Union.Case87)this._value));
+                    }
+                    break;
+                
+                case 88:
+                    if (!System.Object.ReferenceEquals(caseCase88, null))
+                    {
+                        caseCase88.Invoke(context, ((TestCases.Union.Case88)this._value));
+                    }
+                    break;
+                
+                case 89:
+                    if (!System.Object.ReferenceEquals(caseCase89, null))
+                    {
+                        caseCase89.Invoke(context, ((TestCases.Union.Case89)this._value));
+                    }
+                    break;
+                
+                case 90:
+                    if (!System.Object.ReferenceEquals(caseCase90, null))
+                    {
+                        caseCase90.Invoke(context, ((TestCases.Union.Case90)this._value));
+                    }
+                    break;
+                
+                case 91:
+                    if (!System.Object.ReferenceEquals(caseCase91, null))
+                    {
+                        caseCase91.Invoke(context, ((TestCases.Union.Case91)this._value));
+                    }
+                    break;
+                
+                case 92:
+                    if (!System.Object.ReferenceEquals(caseCase92, null))
+                    {
+                        caseCase92.Invoke(context, ((TestCases.Union.Case92)this._value));
+                    }
+                    break;
+                
+                case 93:
+                    if (!System.Object.ReferenceEquals(caseCase93, null))
+                    {
+                        caseCase93.Invoke(context, ((TestCases.Union.Case93)this._value));
+                    }
+                    break;
+                
+                case 94:
+                    if (!System.Object.ReferenceEquals(caseCase94, null))
+                    {
+                        caseCase94.Invoke(context, ((TestCases.Union.Case94)this._value));
+                    }
+                    break;
+                
+                case 95:
+                    if (!System.Object.ReferenceEquals(caseCase95, null))
+                    {
+                        caseCase95.Invoke(context, ((TestCases.Union.Case95)this._value));
+                    }
+                    break;
+                
+                case 96:
+                    if (!System.Object.ReferenceEquals(caseCase96, null))
+                    {
+                        caseCase96.Invoke(context, ((TestCases.Union.Case96)this._value));
+                    }
+                    break;
+                
+                case 97:
+                    if (!System.Object.ReferenceEquals(caseCase97, null))
+                    {
+                        caseCase97.Invoke(context, ((TestCases.Union.Case97)this._value));
+                    }
+                    break;
+                
+                case 98:
+                    if (!System.Object.ReferenceEquals(caseCase98, null))
+                    {
+                        caseCase98.Invoke(context, ((TestCases.Union.Case98)this._value));
+                    }
+                    break;
+                
+                case 99:
+                    if (!System.Object.ReferenceEquals(caseCase99, null))
+                    {
+                        caseCase99.Invoke(context, ((TestCases.Union.Case99)this._value));
+                    }
+                    break;
+                
+                case 100:
+                    if (!System.Object.ReferenceEquals(caseCase100, null))
+                    {
+                        caseCase100.Invoke(context, ((TestCases.Union.Case100)this._value));
+                    }
+                    break;
+                
+                case 101:
+                    if (!System.Object.ReferenceEquals(caseCase101, null))
+                    {
+                        caseCase101.Invoke(context, ((TestCases.Union.Case101)this._value));
+                    }
+                    break;
+                
+                case 102:
+                    if (!System.Object.ReferenceEquals(caseCase102, null))
+                    {
+                        caseCase102.Invoke(context, ((TestCases.Union.Case102)this._value));
+                    }
+                    break;
+                
+                case 103:
+                    if (!System.Object.ReferenceEquals(caseCase103, null))
+                    {
+                        caseCase103.Invoke(context, ((TestCases.Union.Case103)this._value));
+                    }
+                    break;
+                
+                case 104:
+                    if (!System.Object.ReferenceEquals(caseCase104, null))
+                    {
+                        caseCase104.Invoke(context, ((TestCases.Union.Case104)this._value));
+                    }
+                    break;
+                
+                case 105:
+                    if (!System.Object.ReferenceEquals(caseCase105, null))
+                    {
+                        caseCase105.Invoke(context, ((TestCases.Union.Case105)this._value));
+                    }
+                    break;
+                
+                case 106:
+                    if (!System.Object.ReferenceEquals(caseCase106, null))
+                    {
+                        caseCase106.Invoke(context, ((TestCases.Union.Case106)this._value));
+                    }
+                    break;
+                
+                case 107:
+                    if (!System.Object.ReferenceEquals(caseCase107, null))
+                    {
+                        caseCase107.Invoke(context, ((TestCases.Union.Case107)this._value));
+                    }
+                    break;
+                
+                case 108:
+                    if (!System.Object.ReferenceEquals(caseCase108, null))
+                    {
+                        caseCase108.Invoke(context, ((TestCases.Union.Case108)this._value));
+                    }
+                    break;
+                
+                case 109:
+                    if (!System.Object.ReferenceEquals(caseCase109, null))
+                    {
+                        caseCase109.Invoke(context, ((TestCases.Union.Case109)this._value));
+                    }
+                    break;
+                
+                case 110:
+                    if (!System.Object.ReferenceEquals(caseCase110, null))
+                    {
+                        caseCase110.Invoke(context, ((TestCases.Union.Case110)this._value));
+                    }
+                    break;
+                
+                case 111:
+                    if (!System.Object.ReferenceEquals(caseCase111, null))
+                    {
+                        caseCase111.Invoke(context, ((TestCases.Union.Case111)this._value));
+                    }
+                    break;
+                
+                case 112:
+                    if (!System.Object.ReferenceEquals(caseCase112, null))
+                    {
+                        caseCase112.Invoke(context, ((TestCases.Union.Case112)this._value));
+                    }
+                    break;
+                
+                case 113:
+                    if (!System.Object.ReferenceEquals(caseCase113, null))
+                    {
+                        caseCase113.Invoke(context, ((TestCases.Union.Case113)this._value));
+                    }
+                    break;
+                
+                case 114:
+                    if (!System.Object.ReferenceEquals(caseCase114, null))
+                    {
+                        caseCase114.Invoke(context, ((TestCases.Union.Case114)this._value));
+                    }
+                    break;
+                
+                case 115:
+                    if (!System.Object.ReferenceEquals(caseCase115, null))
+                    {
+                        caseCase115.Invoke(context, ((TestCases.Union.Case115)this._value));
+                    }
+                    break;
+                
+                case 116:
+                    if (!System.Object.ReferenceEquals(caseCase116, null))
+                    {
+                        caseCase116.Invoke(context, ((TestCases.Union.Case116)this._value));
+                    }
+                    break;
+                
+                case 117:
+                    if (!System.Object.ReferenceEquals(caseCase117, null))
+                    {
+                        caseCase117.Invoke(context, ((TestCases.Union.Case117)this._value));
+                    }
+                    break;
+                
+                case 118:
+                    if (!System.Object.ReferenceEquals(caseCase118, null))
+                    {
+                        caseCase118.Invoke(context, ((TestCases.Union.Case118)this._value));
+                    }
+                    break;
+                
+                case 119:
+                    if (!System.Object.ReferenceEquals(caseCase119, null))
+                    {
+                        caseCase119.Invoke(context, ((TestCases.Union.Case119)this._value));
+                    }
+                    break;
+                
+                case 120:
+                    if (!System.Object.ReferenceEquals(caseCase120, null))
+                    {
+                        caseCase120.Invoke(context, ((TestCases.Union.Case120)this._value));
+                    }
+                    break;
+                
+                case 121:
+                    if (!System.Object.ReferenceEquals(caseCase121, null))
+                    {
+                        caseCase121.Invoke(context, ((TestCases.Union.Case121)this._value));
+                    }
+                    break;
+                
+                case 122:
+                    if (!System.Object.ReferenceEquals(caseCase122, null))
+                    {
+                        caseCase122.Invoke(context, ((TestCases.Union.Case122)this._value));
+                    }
+                    break;
+                
+                case 123:
+                    if (!System.Object.ReferenceEquals(caseCase123, null))
+                    {
+                        caseCase123.Invoke(context, ((TestCases.Union.Case123)this._value));
+                    }
+                    break;
+                
+                case 124:
+                    if (!System.Object.ReferenceEquals(caseCase124, null))
+                    {
+                        caseCase124.Invoke(context, ((TestCases.Union.Case124)this._value));
+                    }
+                    break;
+                
+                case 125:
+                    if (!System.Object.ReferenceEquals(caseCase125, null))
+                    {
+                        caseCase125.Invoke(context, ((TestCases.Union.Case125)this._value));
+                    }
+                    break;
+                
+                case 126:
+                    if (!System.Object.ReferenceEquals(caseCase126, null))
+                    {
+                        caseCase126.Invoke(context, ((TestCases.Union.Case126)this._value));
+                    }
+                    break;
+                
+                case 127:
+                    if (!System.Object.ReferenceEquals(caseCase127, null))
+                    {
+                        caseCase127.Invoke(context, ((TestCases.Union.Case127)this._value));
+                    }
+                    break;
+                
+                case 128:
+                    if (!System.Object.ReferenceEquals(caseCase128, null))
+                    {
+                        caseCase128.Invoke(context, ((TestCases.Union.Case128)this._value));
+                    }
+                    break;
+                
+                case 129:
+                    if (!System.Object.ReferenceEquals(caseCase129, null))
+                    {
+                        caseCase129.Invoke(context, ((TestCases.Union.Case129)this._value));
+                    }
+                    break;
+                
+                case 130:
+                    if (!System.Object.ReferenceEquals(caseCase130, null))
+                    {
+                        caseCase130.Invoke(context, ((TestCases.Union.Case130)this._value));
+                    }
+                    break;
+                
+                case 131:
+                    if (!System.Object.ReferenceEquals(caseCase131, null))
+                    {
+                        caseCase131.Invoke(context, ((TestCases.Union.Case131)this._value));
+                    }
+                    break;
+                
+                case 132:
+                    if (!System.Object.ReferenceEquals(caseCase132, null))
+                    {
+                        caseCase132.Invoke(context, ((TestCases.Union.Case132)this._value));
+                    }
+                    break;
+                
+                case 133:
+                    if (!System.Object.ReferenceEquals(caseCase133, null))
+                    {
+                        caseCase133.Invoke(context, ((TestCases.Union.Case133)this._value));
+                    }
+                    break;
+                
+                case 134:
+                    if (!System.Object.ReferenceEquals(caseCase134, null))
+                    {
+                        caseCase134.Invoke(context, ((TestCases.Union.Case134)this._value));
+                    }
+                    break;
+                
+                case 135:
+                    if (!System.Object.ReferenceEquals(caseCase135, null))
+                    {
+                        caseCase135.Invoke(context, ((TestCases.Union.Case135)this._value));
+                    }
+                    break;
+                
+                case 136:
+                    if (!System.Object.ReferenceEquals(caseCase136, null))
+                    {
+                        caseCase136.Invoke(context, ((TestCases.Union.Case136)this._value));
+                    }
+                    break;
+                
+                case 137:
+                    if (!System.Object.ReferenceEquals(caseCase137, null))
+                    {
+                        caseCase137.Invoke(context, ((TestCases.Union.Case137)this._value));
+                    }
+                    break;
+                
+                case 138:
+                    if (!System.Object.ReferenceEquals(caseCase138, null))
+                    {
+                        caseCase138.Invoke(context, ((TestCases.Union.Case138)this._value));
+                    }
+                    break;
+                
+                case 139:
+                    if (!System.Object.ReferenceEquals(caseCase139, null))
+                    {
+                        caseCase139.Invoke(context, ((TestCases.Union.Case139)this._value));
+                    }
+                    break;
+                
+                case 140:
+                    if (!System.Object.ReferenceEquals(caseCase140, null))
+                    {
+                        caseCase140.Invoke(context, ((TestCases.Union.Case140)this._value));
+                    }
+                    break;
+                
+                case 141:
+                    if (!System.Object.ReferenceEquals(caseCase141, null))
+                    {
+                        caseCase141.Invoke(context, ((TestCases.Union.Case141)this._value));
+                    }
+                    break;
+                
+                case 142:
+                    if (!System.Object.ReferenceEquals(caseCase142, null))
+                    {
+                        caseCase142.Invoke(context, ((TestCases.Union.Case142)this._value));
+                    }
+                    break;
+                
+                case 143:
+                    if (!System.Object.ReferenceEquals(caseCase143, null))
+                    {
+                        caseCase143.Invoke(context, ((TestCases.Union.Case143)this._value));
+                    }
+                    break;
+                
+                case 144:
+                    if (!System.Object.ReferenceEquals(caseCase144, null))
+                    {
+                        caseCase144.Invoke(context, ((TestCases.Union.Case144)this._value));
+                    }
+                    break;
+                
+                case 145:
+                    if (!System.Object.ReferenceEquals(caseCase145, null))
+                    {
+                        caseCase145.Invoke(context, ((TestCases.Union.Case145)this._value));
+                    }
+                    break;
+                
+                case 146:
+                    if (!System.Object.ReferenceEquals(caseCase146, null))
+                    {
+                        caseCase146.Invoke(context, ((TestCases.Union.Case146)this._value));
+                    }
+                    break;
+                
+                case 147:
+                    if (!System.Object.ReferenceEquals(caseCase147, null))
+                    {
+                        caseCase147.Invoke(context, ((TestCases.Union.Case147)this._value));
+                    }
+                    break;
+                
+                case 148:
+                    if (!System.Object.ReferenceEquals(caseCase148, null))
+                    {
+                        caseCase148.Invoke(context, ((TestCases.Union.Case148)this._value));
+                    }
+                    break;
+                
+                case 149:
+                    if (!System.Object.ReferenceEquals(caseCase149, null))
+                    {
+                        caseCase149.Invoke(context, ((TestCases.Union.Case149)this._value));
+                    }
+                    break;
+                
+                case 150:
+                    if (!System.Object.ReferenceEquals(caseCase150, null))
+                    {
+                        caseCase150.Invoke(context, ((TestCases.Union.Case150)this._value));
+                    }
+                    break;
+                
+                case 151:
+                    if (!System.Object.ReferenceEquals(caseCase151, null))
+                    {
+                        caseCase151.Invoke(context, ((TestCases.Union.Case151)this._value));
+                    }
+                    break;
+                
+                case 152:
+                    if (!System.Object.ReferenceEquals(caseCase152, null))
+                    {
+                        caseCase152.Invoke(context, ((TestCases.Union.Case152)this._value));
+                    }
+                    break;
+                
+                case 153:
+                    if (!System.Object.ReferenceEquals(caseCase153, null))
+                    {
+                        caseCase153.Invoke(context, ((TestCases.Union.Case153)this._value));
+                    }
+                    break;
+                
+                case 154:
+                    if (!System.Object.ReferenceEquals(caseCase154, null))
+                    {
+                        caseCase154.Invoke(context, ((TestCases.Union.Case154)this._value));
+                    }
+                    break;
+                
+                case 155:
+                    if (!System.Object.ReferenceEquals(caseCase155, null))
+                    {
+                        caseCase155.Invoke(context, ((TestCases.Union.Case155)this._value));
+                    }
+                    break;
+                
+                case 156:
+                    if (!System.Object.ReferenceEquals(caseCase156, null))
+                    {
+                        caseCase156.Invoke(context, ((TestCases.Union.Case156)this._value));
+                    }
+                    break;
+                
+                case 157:
+                    if (!System.Object.ReferenceEquals(caseCase157, null))
+                    {
+                        caseCase157.Invoke(context, ((TestCases.Union.Case157)this._value));
+                    }
+                    break;
+                
+                case 158:
+                    if (!System.Object.ReferenceEquals(caseCase158, null))
+                    {
+                        caseCase158.Invoke(context, ((TestCases.Union.Case158)this._value));
+                    }
+                    break;
+                
+                case 159:
+                    if (!System.Object.ReferenceEquals(caseCase159, null))
+                    {
+                        caseCase159.Invoke(context, ((TestCases.Union.Case159)this._value));
+                    }
+                    break;
+                
+                case 160:
+                    if (!System.Object.ReferenceEquals(caseCase160, null))
+                    {
+                        caseCase160.Invoke(context, ((TestCases.Union.Case160)this._value));
+                    }
+                    break;
+                
+                case 161:
+                    if (!System.Object.ReferenceEquals(caseCase161, null))
+                    {
+                        caseCase161.Invoke(context, ((TestCases.Union.Case161)this._value));
+                    }
+                    break;
+                
+                case 162:
+                    if (!System.Object.ReferenceEquals(caseCase162, null))
+                    {
+                        caseCase162.Invoke(context, ((TestCases.Union.Case162)this._value));
+                    }
+                    break;
+                
+                case 163:
+                    if (!System.Object.ReferenceEquals(caseCase163, null))
+                    {
+                        caseCase163.Invoke(context, ((TestCases.Union.Case163)this._value));
+                    }
+                    break;
+                
+                case 164:
+                    if (!System.Object.ReferenceEquals(caseCase164, null))
+                    {
+                        caseCase164.Invoke(context, ((TestCases.Union.Case164)this._value));
+                    }
+                    break;
+                
+                case 165:
+                    if (!System.Object.ReferenceEquals(caseCase165, null))
+                    {
+                        caseCase165.Invoke(context, ((TestCases.Union.Case165)this._value));
+                    }
+                    break;
+                
+                case 166:
+                    if (!System.Object.ReferenceEquals(caseCase166, null))
+                    {
+                        caseCase166.Invoke(context, ((TestCases.Union.Case166)this._value));
+                    }
+                    break;
+                
+                case 167:
+                    if (!System.Object.ReferenceEquals(caseCase167, null))
+                    {
+                        caseCase167.Invoke(context, ((TestCases.Union.Case167)this._value));
+                    }
+                    break;
+                
+                case 168:
+                    if (!System.Object.ReferenceEquals(caseCase168, null))
+                    {
+                        caseCase168.Invoke(context, ((TestCases.Union.Case168)this._value));
+                    }
+                    break;
+                
+                case 169:
+                    if (!System.Object.ReferenceEquals(caseCase169, null))
+                    {
+                        caseCase169.Invoke(context, ((TestCases.Union.Case169)this._value));
+                    }
+                    break;
+                
+                case 170:
+                    if (!System.Object.ReferenceEquals(caseCase170, null))
+                    {
+                        caseCase170.Invoke(context, ((TestCases.Union.Case170)this._value));
+                    }
+                    break;
+                
+                case 171:
+                    if (!System.Object.ReferenceEquals(caseCase171, null))
+                    {
+                        caseCase171.Invoke(context, ((TestCases.Union.Case171)this._value));
+                    }
+                    break;
+                
+                case 172:
+                    if (!System.Object.ReferenceEquals(caseCase172, null))
+                    {
+                        caseCase172.Invoke(context, ((TestCases.Union.Case172)this._value));
+                    }
+                    break;
+                
+                case 173:
+                    if (!System.Object.ReferenceEquals(caseCase173, null))
+                    {
+                        caseCase173.Invoke(context, ((TestCases.Union.Case173)this._value));
+                    }
+                    break;
+                
+                case 174:
+                    if (!System.Object.ReferenceEquals(caseCase174, null))
+                    {
+                        caseCase174.Invoke(context, ((TestCases.Union.Case174)this._value));
+                    }
+                    break;
+                
+                case 175:
+                    if (!System.Object.ReferenceEquals(caseCase175, null))
+                    {
+                        caseCase175.Invoke(context, ((TestCases.Union.Case175)this._value));
+                    }
+                    break;
+                
+                case 176:
+                    if (!System.Object.ReferenceEquals(caseCase176, null))
+                    {
+                        caseCase176.Invoke(context, ((TestCases.Union.Case176)this._value));
+                    }
+                    break;
+                
+                case 177:
+                    if (!System.Object.ReferenceEquals(caseCase177, null))
+                    {
+                        caseCase177.Invoke(context, ((TestCases.Union.Case177)this._value));
+                    }
+                    break;
+                
+                case 178:
+                    if (!System.Object.ReferenceEquals(caseCase178, null))
+                    {
+                        caseCase178.Invoke(context, ((TestCases.Union.Case178)this._value));
+                    }
+                    break;
+                
+                case 179:
+                    if (!System.Object.ReferenceEquals(caseCase179, null))
+                    {
+                        caseCase179.Invoke(context, ((TestCases.Union.Case179)this._value));
+                    }
+                    break;
+                
+                case 180:
+                    if (!System.Object.ReferenceEquals(caseCase180, null))
+                    {
+                        caseCase180.Invoke(context, ((TestCases.Union.Case180)this._value));
+                    }
+                    break;
+                
+                case 181:
+                    if (!System.Object.ReferenceEquals(caseCase181, null))
+                    {
+                        caseCase181.Invoke(context, ((TestCases.Union.Case181)this._value));
+                    }
+                    break;
+                
+                case 182:
+                    if (!System.Object.ReferenceEquals(caseCase182, null))
+                    {
+                        caseCase182.Invoke(context, ((TestCases.Union.Case182)this._value));
+                    }
+                    break;
+                
+                case 183:
+                    if (!System.Object.ReferenceEquals(caseCase183, null))
+                    {
+                        caseCase183.Invoke(context, ((TestCases.Union.Case183)this._value));
+                    }
+                    break;
+                
+                case 184:
+                    if (!System.Object.ReferenceEquals(caseCase184, null))
+                    {
+                        caseCase184.Invoke(context, ((TestCases.Union.Case184)this._value));
+                    }
+                    break;
+                
+                case 185:
+                    if (!System.Object.ReferenceEquals(caseCase185, null))
+                    {
+                        caseCase185.Invoke(context, ((TestCases.Union.Case185)this._value));
+                    }
+                    break;
+                
+                case 186:
+                    if (!System.Object.ReferenceEquals(caseCase186, null))
+                    {
+                        caseCase186.Invoke(context, ((TestCases.Union.Case186)this._value));
+                    }
+                    break;
+                
+                case 187:
+                    if (!System.Object.ReferenceEquals(caseCase187, null))
+                    {
+                        caseCase187.Invoke(context, ((TestCases.Union.Case187)this._value));
+                    }
+                    break;
+                
+                case 188:
+                    if (!System.Object.ReferenceEquals(caseCase188, null))
+                    {
+                        caseCase188.Invoke(context, ((TestCases.Union.Case188)this._value));
+                    }
+                    break;
+                
+                case 189:
+                    if (!System.Object.ReferenceEquals(caseCase189, null))
+                    {
+                        caseCase189.Invoke(context, ((TestCases.Union.Case189)this._value));
+                    }
+                    break;
+                
+                case 190:
+                    if (!System.Object.ReferenceEquals(caseCase190, null))
+                    {
+                        caseCase190.Invoke(context, ((TestCases.Union.Case190)this._value));
+                    }
+                    break;
+                
+                case 191:
+                    if (!System.Object.ReferenceEquals(caseCase191, null))
+                    {
+                        caseCase191.Invoke(context, ((TestCases.Union.Case191)this._value));
+                    }
+                    break;
+                
+                case 192:
+                    if (!System.Object.ReferenceEquals(caseCase192, null))
+                    {
+                        caseCase192.Invoke(context, ((TestCases.Union.Case192)this._value));
+                    }
+                    break;
+                
+                case 193:
+                    if (!System.Object.ReferenceEquals(caseCase193, null))
+                    {
+                        caseCase193.Invoke(context, ((TestCases.Union.Case193)this._value));
+                    }
+                    break;
+                
+                case 194:
+                    if (!System.Object.ReferenceEquals(caseCase194, null))
+                    {
+                        caseCase194.Invoke(context, ((TestCases.Union.Case194)this._value));
+                    }
+                    break;
+                
+                case 195:
+                    if (!System.Object.ReferenceEquals(caseCase195, null))
+                    {
+                        caseCase195.Invoke(context, ((TestCases.Union.Case195)this._value));
+                    }
+                    break;
+                
+                case 196:
+                    if (!System.Object.ReferenceEquals(caseCase196, null))
+                    {
+                        caseCase196.Invoke(context, ((TestCases.Union.Case196)this._value));
+                    }
+                    break;
+                
+                case 197:
+                    if (!System.Object.ReferenceEquals(caseCase197, null))
+                    {
+                        caseCase197.Invoke(context, ((TestCases.Union.Case197)this._value));
+                    }
+                    break;
+                
+                case 198:
+                    if (!System.Object.ReferenceEquals(caseCase198, null))
+                    {
+                        caseCase198.Invoke(context, ((TestCases.Union.Case198)this._value));
+                    }
+                    break;
+                
+                case 199:
+                    if (!System.Object.ReferenceEquals(caseCase199, null))
+                    {
+                        caseCase199.Invoke(context, ((TestCases.Union.Case199)this._value));
+                    }
+                    break;
+                
+                case 200:
+                    if (!System.Object.ReferenceEquals(caseCase200, null))
+                    {
+                        caseCase200.Invoke(context, ((TestCases.Union.Case200)this._value));
+                    }
+                    break;
+                
+                case 201:
+                    if (!System.Object.ReferenceEquals(caseCase201, null))
+                    {
+                        caseCase201.Invoke(context, ((TestCases.Union.Case201)this._value));
+                    }
+                    break;
+                
+                case 202:
+                    if (!System.Object.ReferenceEquals(caseCase202, null))
+                    {
+                        caseCase202.Invoke(context, ((TestCases.Union.Case202)this._value));
+                    }
+                    break;
+                
+                case 203:
+                    if (!System.Object.ReferenceEquals(caseCase203, null))
+                    {
+                        caseCase203.Invoke(context, ((TestCases.Union.Case203)this._value));
+                    }
+                    break;
+                
+                case 204:
+                    if (!System.Object.ReferenceEquals(caseCase204, null))
+                    {
+                        caseCase204.Invoke(context, ((TestCases.Union.Case204)this._value));
+                    }
+                    break;
+                
+                case 205:
+                    if (!System.Object.ReferenceEquals(caseCase205, null))
+                    {
+                        caseCase205.Invoke(context, ((TestCases.Union.Case205)this._value));
+                    }
+                    break;
+                
+                case 206:
+                    if (!System.Object.ReferenceEquals(caseCase206, null))
+                    {
+                        caseCase206.Invoke(context, ((TestCases.Union.Case206)this._value));
+                    }
+                    break;
+                
+                case 207:
+                    if (!System.Object.ReferenceEquals(caseCase207, null))
+                    {
+                        caseCase207.Invoke(context, ((TestCases.Union.Case207)this._value));
+                    }
+                    break;
+                
+                case 208:
+                    if (!System.Object.ReferenceEquals(caseCase208, null))
+                    {
+                        caseCase208.Invoke(context, ((TestCases.Union.Case208)this._value));
+                    }
+                    break;
+                
+                case 209:
+                    if (!System.Object.ReferenceEquals(caseCase209, null))
+                    {
+                        caseCase209.Invoke(context, ((TestCases.Union.Case209)this._value));
+                    }
+                    break;
+                
+                case 210:
+                    if (!System.Object.ReferenceEquals(caseCase210, null))
+                    {
+                        caseCase210.Invoke(context, ((TestCases.Union.Case210)this._value));
+                    }
+                    break;
+                
+                case 211:
+                    if (!System.Object.ReferenceEquals(caseCase211, null))
+                    {
+                        caseCase211.Invoke(context, ((TestCases.Union.Case211)this._value));
+                    }
+                    break;
+                
+                case 212:
+                    if (!System.Object.ReferenceEquals(caseCase212, null))
+                    {
+                        caseCase212.Invoke(context, ((TestCases.Union.Case212)this._value));
+                    }
+                    break;
+                
+                case 213:
+                    if (!System.Object.ReferenceEquals(caseCase213, null))
+                    {
+                        caseCase213.Invoke(context, ((TestCases.Union.Case213)this._value));
+                    }
+                    break;
+                
+                case 214:
+                    if (!System.Object.ReferenceEquals(caseCase214, null))
+                    {
+                        caseCase214.Invoke(context, ((TestCases.Union.Case214)this._value));
+                    }
+                    break;
+                
+                case 215:
+                    if (!System.Object.ReferenceEquals(caseCase215, null))
+                    {
+                        caseCase215.Invoke(context, ((TestCases.Union.Case215)this._value));
+                    }
+                    break;
+                
+                case 216:
+                    if (!System.Object.ReferenceEquals(caseCase216, null))
+                    {
+                        caseCase216.Invoke(context, ((TestCases.Union.Case216)this._value));
+                    }
+                    break;
+                
+                case 217:
+                    if (!System.Object.ReferenceEquals(caseCase217, null))
+                    {
+                        caseCase217.Invoke(context, ((TestCases.Union.Case217)this._value));
+                    }
+                    break;
+                
+                case 218:
+                    if (!System.Object.ReferenceEquals(caseCase218, null))
+                    {
+                        caseCase218.Invoke(context, ((TestCases.Union.Case218)this._value));
+                    }
+                    break;
+                
+                case 219:
+                    if (!System.Object.ReferenceEquals(caseCase219, null))
+                    {
+                        caseCase219.Invoke(context, ((TestCases.Union.Case219)this._value));
+                    }
+                    break;
+                
+                case 220:
+                    if (!System.Object.ReferenceEquals(caseCase220, null))
+                    {
+                        caseCase220.Invoke(context, ((TestCases.Union.Case220)this._value));
+                    }
+                    break;
+                
+                case 221:
+                    if (!System.Object.ReferenceEquals(caseCase221, null))
+                    {
+                        caseCase221.Invoke(context, ((TestCases.Union.Case221)this._value));
+                    }
+                    break;
+                
+                case 222:
+                    if (!System.Object.ReferenceEquals(caseCase222, null))
+                    {
+                        caseCase222.Invoke(context, ((TestCases.Union.Case222)this._value));
+                    }
+                    break;
+                
+                case 223:
+                    if (!System.Object.ReferenceEquals(caseCase223, null))
+                    {
+                        caseCase223.Invoke(context, ((TestCases.Union.Case223)this._value));
+                    }
+                    break;
+                
+                case 224:
+                    if (!System.Object.ReferenceEquals(caseCase224, null))
+                    {
+                        caseCase224.Invoke(context, ((TestCases.Union.Case224)this._value));
+                    }
+                    break;
+                
+                case 225:
+                    if (!System.Object.ReferenceEquals(caseCase225, null))
+                    {
+                        caseCase225.Invoke(context, ((TestCases.Union.Case225)this._value));
+                    }
+                    break;
+                
+                case 226:
+                    if (!System.Object.ReferenceEquals(caseCase226, null))
+                    {
+                        caseCase226.Invoke(context, ((TestCases.Union.Case226)this._value));
+                    }
+                    break;
+                
+                case 227:
+                    if (!System.Object.ReferenceEquals(caseCase227, null))
+                    {
+                        caseCase227.Invoke(context, ((TestCases.Union.Case227)this._value));
+                    }
+                    break;
+                
+                case 228:
+                    if (!System.Object.ReferenceEquals(caseCase228, null))
+                    {
+                        caseCase228.Invoke(context, ((TestCases.Union.Case228)this._value));
+                    }
+                    break;
+                
+                case 229:
+                    if (!System.Object.ReferenceEquals(caseCase229, null))
+                    {
+                        caseCase229.Invoke(context, ((TestCases.Union.Case229)this._value));
+                    }
+                    break;
+                
+                case 230:
+                    if (!System.Object.ReferenceEquals(caseCase230, null))
+                    {
+                        caseCase230.Invoke(context, ((TestCases.Union.Case230)this._value));
+                    }
+                    break;
+                
+                case 231:
+                    if (!System.Object.ReferenceEquals(caseCase231, null))
+                    {
+                        caseCase231.Invoke(context, ((TestCases.Union.Case231)this._value));
+                    }
+                    break;
+                
+                case 232:
+                    if (!System.Object.ReferenceEquals(caseCase232, null))
+                    {
+                        caseCase232.Invoke(context, ((TestCases.Union.Case232)this._value));
+                    }
+                    break;
+                
+                case 233:
+                    if (!System.Object.ReferenceEquals(caseCase233, null))
+                    {
+                        caseCase233.Invoke(context, ((TestCases.Union.Case233)this._value));
+                    }
+                    break;
+                
+                case 234:
+                    if (!System.Object.ReferenceEquals(caseCase234, null))
+                    {
+                        caseCase234.Invoke(context, ((TestCases.Union.Case234)this._value));
+                    }
+                    break;
+                
+                case 235:
+                    if (!System.Object.ReferenceEquals(caseCase235, null))
+                    {
+                        caseCase235.Invoke(context, ((TestCases.Union.Case235)this._value));
+                    }
+                    break;
+                
+                case 236:
+                    if (!System.Object.ReferenceEquals(caseCase236, null))
+                    {
+                        caseCase236.Invoke(context, ((TestCases.Union.Case236)this._value));
+                    }
+                    break;
+                
+                case 237:
+                    if (!System.Object.ReferenceEquals(caseCase237, null))
+                    {
+                        caseCase237.Invoke(context, ((TestCases.Union.Case237)this._value));
+                    }
+                    break;
+                
+                case 238:
+                    if (!System.Object.ReferenceEquals(caseCase238, null))
+                    {
+                        caseCase238.Invoke(context, ((TestCases.Union.Case238)this._value));
+                    }
+                    break;
+                
+                case 239:
+                    if (!System.Object.ReferenceEquals(caseCase239, null))
+                    {
+                        caseCase239.Invoke(context, ((TestCases.Union.Case239)this._value));
+                    }
+                    break;
+                
+                case 240:
+                    if (!System.Object.ReferenceEquals(caseCase240, null))
+                    {
+                        caseCase240.Invoke(context, ((TestCases.Union.Case240)this._value));
+                    }
+                    break;
+                
+                case 241:
+                    if (!System.Object.ReferenceEquals(caseCase241, null))
+                    {
+                        caseCase241.Invoke(context, ((TestCases.Union.Case241)this._value));
+                    }
+                    break;
+                
+                case 242:
+                    if (!System.Object.ReferenceEquals(caseCase242, null))
+                    {
+                        caseCase242.Invoke(context, ((TestCases.Union.Case242)this._value));
+                    }
+                    break;
+                
+                case 243:
+                    if (!System.Object.ReferenceEquals(caseCase243, null))
+                    {
+                        caseCase243.Invoke(context, ((TestCases.Union.Case243)this._value));
+                    }
+                    break;
+                
+                case 244:
+                    if (!System.Object.ReferenceEquals(caseCase244, null))
+                    {
+                        caseCase244.Invoke(context, ((TestCases.Union.Case244)this._value));
+                    }
+                    break;
+                
+                case 245:
+                    if (!System.Object.ReferenceEquals(caseCase245, null))
+                    {
+                        caseCase245.Invoke(context, ((TestCases.Union.Case245)this._value));
+                    }
+                    break;
+                
+                case 246:
+                    if (!System.Object.ReferenceEquals(caseCase246, null))
+                    {
+                        caseCase246.Invoke(context, ((TestCases.Union.Case246)this._value));
+                    }
+                    break;
+                
+                case 247:
+                    if (!System.Object.ReferenceEquals(caseCase247, null))
+                    {
+                        caseCase247.Invoke(context, ((TestCases.Union.Case247)this._value));
+                    }
+                    break;
+                
+                case 248:
+                    if (!System.Object.ReferenceEquals(caseCase248, null))
+                    {
+                        caseCase248.Invoke(context, ((TestCases.Union.Case248)this._value));
+                    }
+                    break;
+                
+                case 249:
+                    if (!System.Object.ReferenceEquals(caseCase249, null))
+                    {
+                        caseCase249.Invoke(context, ((TestCases.Union.Case249)this._value));
+                    }
+                    break;
+                
+                case 250:
+                    if (!System.Object.ReferenceEquals(caseCase250, null))
+                    {
+                        caseCase250.Invoke(context, ((TestCases.Union.Case250)this._value));
+                    }
+                    break;
+                
+                case 251:
+                    if (!System.Object.ReferenceEquals(caseCase251, null))
+                    {
+                        caseCase251.Invoke(context, ((TestCases.Union.Case251)this._value));
+                    }
+                    break;
+                
+                case 252:
+                    if (!System.Object.ReferenceEquals(caseCase252, null))
+                    {
+                        caseCase252.Invoke(context, ((TestCases.Union.Case252)this._value));
+                    }
+                    break;
+                
+                case 253:
+                    if (!System.Object.ReferenceEquals(caseCase253, null))
+                    {
+                        caseCase253.Invoke(context, ((TestCases.Union.Case253)this._value));
+                    }
+                    break;
+                
+                case 254:
+                    if (!System.Object.ReferenceEquals(caseCase254, null))
+                    {
+                        caseCase254.Invoke(context, ((TestCases.Union.Case254)this._value));
                     }
                     break;
                 
@@ -46191,6 +53870,5120 @@ namespace TestCases
         ///         <term><paramref name="caseCase254" /></term>
         ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</description>
         ///     </item>
+        ///     <item>
+        ///         <term><paramref name="default" /></term>
+        ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="default"></param>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseCase1">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</param>
+        /// <param name="caseCase2">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</param>
+        /// <param name="caseCase3">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</param>
+        /// <param name="caseCase4">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</param>
+        /// <param name="caseCase5">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</param>
+        /// <param name="caseCase6">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</param>
+        /// <param name="caseCase7">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</param>
+        /// <param name="caseCase8">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</param>
+        /// <param name="caseCase9">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</param>
+        /// <param name="caseCase10">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</param>
+        /// <param name="caseCase11">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</param>
+        /// <param name="caseCase12">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</param>
+        /// <param name="caseCase13">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</param>
+        /// <param name="caseCase14">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</param>
+        /// <param name="caseCase15">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</param>
+        /// <param name="caseCase16">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</param>
+        /// <param name="caseCase17">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</param>
+        /// <param name="caseCase18">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</param>
+        /// <param name="caseCase19">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</param>
+        /// <param name="caseCase20">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</param>
+        /// <param name="caseCase21">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</param>
+        /// <param name="caseCase22">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</param>
+        /// <param name="caseCase23">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</param>
+        /// <param name="caseCase24">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</param>
+        /// <param name="caseCase25">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</param>
+        /// <param name="caseCase26">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</param>
+        /// <param name="caseCase27">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</param>
+        /// <param name="caseCase28">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</param>
+        /// <param name="caseCase29">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</param>
+        /// <param name="caseCase30">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</param>
+        /// <param name="caseCase31">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</param>
+        /// <param name="caseCase32">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</param>
+        /// <param name="caseCase33">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</param>
+        /// <param name="caseCase34">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</param>
+        /// <param name="caseCase35">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</param>
+        /// <param name="caseCase36">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</param>
+        /// <param name="caseCase37">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</param>
+        /// <param name="caseCase38">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</param>
+        /// <param name="caseCase39">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</param>
+        /// <param name="caseCase40">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</param>
+        /// <param name="caseCase41">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</param>
+        /// <param name="caseCase42">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</param>
+        /// <param name="caseCase43">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</param>
+        /// <param name="caseCase44">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</param>
+        /// <param name="caseCase45">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</param>
+        /// <param name="caseCase46">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</param>
+        /// <param name="caseCase47">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</param>
+        /// <param name="caseCase48">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</param>
+        /// <param name="caseCase49">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</param>
+        /// <param name="caseCase50">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</param>
+        /// <param name="caseCase51">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</param>
+        /// <param name="caseCase52">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</param>
+        /// <param name="caseCase53">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</param>
+        /// <param name="caseCase54">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</param>
+        /// <param name="caseCase55">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</param>
+        /// <param name="caseCase56">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</param>
+        /// <param name="caseCase57">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</param>
+        /// <param name="caseCase58">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</param>
+        /// <param name="caseCase59">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</param>
+        /// <param name="caseCase60">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</param>
+        /// <param name="caseCase61">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</param>
+        /// <param name="caseCase62">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</param>
+        /// <param name="caseCase63">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</param>
+        /// <param name="caseCase64">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</param>
+        /// <param name="caseCase65">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</param>
+        /// <param name="caseCase66">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</param>
+        /// <param name="caseCase67">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</param>
+        /// <param name="caseCase68">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</param>
+        /// <param name="caseCase69">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</param>
+        /// <param name="caseCase70">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</param>
+        /// <param name="caseCase71">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</param>
+        /// <param name="caseCase72">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</param>
+        /// <param name="caseCase73">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</param>
+        /// <param name="caseCase74">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</param>
+        /// <param name="caseCase75">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</param>
+        /// <param name="caseCase76">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</param>
+        /// <param name="caseCase77">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</param>
+        /// <param name="caseCase78">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</param>
+        /// <param name="caseCase79">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</param>
+        /// <param name="caseCase80">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</param>
+        /// <param name="caseCase81">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</param>
+        /// <param name="caseCase82">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</param>
+        /// <param name="caseCase83">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</param>
+        /// <param name="caseCase84">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</param>
+        /// <param name="caseCase85">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</param>
+        /// <param name="caseCase86">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</param>
+        /// <param name="caseCase87">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</param>
+        /// <param name="caseCase88">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</param>
+        /// <param name="caseCase89">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</param>
+        /// <param name="caseCase90">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</param>
+        /// <param name="caseCase91">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</param>
+        /// <param name="caseCase92">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</param>
+        /// <param name="caseCase93">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</param>
+        /// <param name="caseCase94">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</param>
+        /// <param name="caseCase95">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</param>
+        /// <param name="caseCase96">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</param>
+        /// <param name="caseCase97">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</param>
+        /// <param name="caseCase98">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</param>
+        /// <param name="caseCase99">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</param>
+        /// <param name="caseCase100">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</param>
+        /// <param name="caseCase101">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</param>
+        /// <param name="caseCase102">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</param>
+        /// <param name="caseCase103">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</param>
+        /// <param name="caseCase104">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</param>
+        /// <param name="caseCase105">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</param>
+        /// <param name="caseCase106">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</param>
+        /// <param name="caseCase107">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</param>
+        /// <param name="caseCase108">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</param>
+        /// <param name="caseCase109">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</param>
+        /// <param name="caseCase110">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</param>
+        /// <param name="caseCase111">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</param>
+        /// <param name="caseCase112">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</param>
+        /// <param name="caseCase113">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</param>
+        /// <param name="caseCase114">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</param>
+        /// <param name="caseCase115">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</param>
+        /// <param name="caseCase116">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</param>
+        /// <param name="caseCase117">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</param>
+        /// <param name="caseCase118">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</param>
+        /// <param name="caseCase119">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</param>
+        /// <param name="caseCase120">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</param>
+        /// <param name="caseCase121">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</param>
+        /// <param name="caseCase122">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</param>
+        /// <param name="caseCase123">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</param>
+        /// <param name="caseCase124">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</param>
+        /// <param name="caseCase125">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</param>
+        /// <param name="caseCase126">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</param>
+        /// <param name="caseCase127">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</param>
+        /// <param name="caseCase128">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</param>
+        /// <param name="caseCase129">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</param>
+        /// <param name="caseCase130">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</param>
+        /// <param name="caseCase131">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</param>
+        /// <param name="caseCase132">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</param>
+        /// <param name="caseCase133">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</param>
+        /// <param name="caseCase134">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</param>
+        /// <param name="caseCase135">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</param>
+        /// <param name="caseCase136">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</param>
+        /// <param name="caseCase137">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</param>
+        /// <param name="caseCase138">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</param>
+        /// <param name="caseCase139">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</param>
+        /// <param name="caseCase140">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</param>
+        /// <param name="caseCase141">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</param>
+        /// <param name="caseCase142">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</param>
+        /// <param name="caseCase143">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</param>
+        /// <param name="caseCase144">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</param>
+        /// <param name="caseCase145">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</param>
+        /// <param name="caseCase146">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</param>
+        /// <param name="caseCase147">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</param>
+        /// <param name="caseCase148">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</param>
+        /// <param name="caseCase149">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</param>
+        /// <param name="caseCase150">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</param>
+        /// <param name="caseCase151">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</param>
+        /// <param name="caseCase152">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</param>
+        /// <param name="caseCase153">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</param>
+        /// <param name="caseCase154">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</param>
+        /// <param name="caseCase155">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</param>
+        /// <param name="caseCase156">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</param>
+        /// <param name="caseCase157">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</param>
+        /// <param name="caseCase158">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</param>
+        /// <param name="caseCase159">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</param>
+        /// <param name="caseCase160">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</param>
+        /// <param name="caseCase161">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</param>
+        /// <param name="caseCase162">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</param>
+        /// <param name="caseCase163">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</param>
+        /// <param name="caseCase164">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</param>
+        /// <param name="caseCase165">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</param>
+        /// <param name="caseCase166">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</param>
+        /// <param name="caseCase167">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</param>
+        /// <param name="caseCase168">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</param>
+        /// <param name="caseCase169">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</param>
+        /// <param name="caseCase170">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</param>
+        /// <param name="caseCase171">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</param>
+        /// <param name="caseCase172">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</param>
+        /// <param name="caseCase173">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</param>
+        /// <param name="caseCase174">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</param>
+        /// <param name="caseCase175">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</param>
+        /// <param name="caseCase176">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</param>
+        /// <param name="caseCase177">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</param>
+        /// <param name="caseCase178">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</param>
+        /// <param name="caseCase179">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</param>
+        /// <param name="caseCase180">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</param>
+        /// <param name="caseCase181">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</param>
+        /// <param name="caseCase182">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</param>
+        /// <param name="caseCase183">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</param>
+        /// <param name="caseCase184">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</param>
+        /// <param name="caseCase185">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</param>
+        /// <param name="caseCase186">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</param>
+        /// <param name="caseCase187">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</param>
+        /// <param name="caseCase188">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</param>
+        /// <param name="caseCase189">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</param>
+        /// <param name="caseCase190">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</param>
+        /// <param name="caseCase191">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</param>
+        /// <param name="caseCase192">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</param>
+        /// <param name="caseCase193">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</param>
+        /// <param name="caseCase194">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</param>
+        /// <param name="caseCase195">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</param>
+        /// <param name="caseCase196">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</param>
+        /// <param name="caseCase197">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</param>
+        /// <param name="caseCase198">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</param>
+        /// <param name="caseCase199">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</param>
+        /// <param name="caseCase200">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</param>
+        /// <param name="caseCase201">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</param>
+        /// <param name="caseCase202">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</param>
+        /// <param name="caseCase203">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</param>
+        /// <param name="caseCase204">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</param>
+        /// <param name="caseCase205">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</param>
+        /// <param name="caseCase206">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</param>
+        /// <param name="caseCase207">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</param>
+        /// <param name="caseCase208">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</param>
+        /// <param name="caseCase209">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</param>
+        /// <param name="caseCase210">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</param>
+        /// <param name="caseCase211">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</param>
+        /// <param name="caseCase212">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</param>
+        /// <param name="caseCase213">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</param>
+        /// <param name="caseCase214">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</param>
+        /// <param name="caseCase215">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</param>
+        /// <param name="caseCase216">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</param>
+        /// <param name="caseCase217">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</param>
+        /// <param name="caseCase218">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</param>
+        /// <param name="caseCase219">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</param>
+        /// <param name="caseCase220">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</param>
+        /// <param name="caseCase221">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</param>
+        /// <param name="caseCase222">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</param>
+        /// <param name="caseCase223">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</param>
+        /// <param name="caseCase224">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</param>
+        /// <param name="caseCase225">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</param>
+        /// <param name="caseCase226">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</param>
+        /// <param name="caseCase227">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</param>
+        /// <param name="caseCase228">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</param>
+        /// <param name="caseCase229">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</param>
+        /// <param name="caseCase230">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</param>
+        /// <param name="caseCase231">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</param>
+        /// <param name="caseCase232">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</param>
+        /// <param name="caseCase233">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</param>
+        /// <param name="caseCase234">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</param>
+        /// <param name="caseCase235">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</param>
+        /// <param name="caseCase236">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</param>
+        /// <param name="caseCase237">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</param>
+        /// <param name="caseCase238">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</param>
+        /// <param name="caseCase239">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</param>
+        /// <param name="caseCase240">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</param>
+        /// <param name="caseCase241">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</param>
+        /// <param name="caseCase242">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</param>
+        /// <param name="caseCase243">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</param>
+        /// <param name="caseCase244">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</param>
+        /// <param name="caseCase245">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</param>
+        /// <param name="caseCase246">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</param>
+        /// <param name="caseCase247">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</param>
+        /// <param name="caseCase248">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</param>
+        /// <param name="caseCase249">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</param>
+        /// <param name="caseCase250">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</param>
+        /// <param name="caseCase251">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</param>
+        /// <param name="caseCase252">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</param>
+        /// <param name="caseCase253">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</param>
+        /// <param name="caseCase254">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</param>
+        /// <returns>the result of invoking the relevant delegate.</returns>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Union" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Union" /> is a struct and this is the default value of <see cref="TestCases.Union" />.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown when both the delegate that should have been invoked and <paramref name="default" /> are null.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public TMatchResult Match<TMatchResult, TMatchContext>
+        (
+            TMatchContext context,
+            System.Func<TMatchContext, TMatchResult> @default,
+            System.Func<TMatchContext, TestCases.Union.Case1, TMatchResult>? caseCase1 = null,
+            System.Func<TMatchContext, TestCases.Union.Case2, TMatchResult>? caseCase2 = null,
+            System.Func<TMatchContext, TestCases.Union.Case3, TMatchResult>? caseCase3 = null,
+            System.Func<TMatchContext, TestCases.Union.Case4, TMatchResult>? caseCase4 = null,
+            System.Func<TMatchContext, TestCases.Union.Case5, TMatchResult>? caseCase5 = null,
+            System.Func<TMatchContext, TestCases.Union.Case6, TMatchResult>? caseCase6 = null,
+            System.Func<TMatchContext, TestCases.Union.Case7, TMatchResult>? caseCase7 = null,
+            System.Func<TMatchContext, TestCases.Union.Case8, TMatchResult>? caseCase8 = null,
+            System.Func<TMatchContext, TestCases.Union.Case9, TMatchResult>? caseCase9 = null,
+            System.Func<TMatchContext, TestCases.Union.Case10, TMatchResult>? caseCase10 = null,
+            System.Func<TMatchContext, TestCases.Union.Case11, TMatchResult>? caseCase11 = null,
+            System.Func<TMatchContext, TestCases.Union.Case12, TMatchResult>? caseCase12 = null,
+            System.Func<TMatchContext, TestCases.Union.Case13, TMatchResult>? caseCase13 = null,
+            System.Func<TMatchContext, TestCases.Union.Case14, TMatchResult>? caseCase14 = null,
+            System.Func<TMatchContext, TestCases.Union.Case15, TMatchResult>? caseCase15 = null,
+            System.Func<TMatchContext, TestCases.Union.Case16, TMatchResult>? caseCase16 = null,
+            System.Func<TMatchContext, TestCases.Union.Case17, TMatchResult>? caseCase17 = null,
+            System.Func<TMatchContext, TestCases.Union.Case18, TMatchResult>? caseCase18 = null,
+            System.Func<TMatchContext, TestCases.Union.Case19, TMatchResult>? caseCase19 = null,
+            System.Func<TMatchContext, TestCases.Union.Case20, TMatchResult>? caseCase20 = null,
+            System.Func<TMatchContext, TestCases.Union.Case21, TMatchResult>? caseCase21 = null,
+            System.Func<TMatchContext, TestCases.Union.Case22, TMatchResult>? caseCase22 = null,
+            System.Func<TMatchContext, TestCases.Union.Case23, TMatchResult>? caseCase23 = null,
+            System.Func<TMatchContext, TestCases.Union.Case24, TMatchResult>? caseCase24 = null,
+            System.Func<TMatchContext, TestCases.Union.Case25, TMatchResult>? caseCase25 = null,
+            System.Func<TMatchContext, TestCases.Union.Case26, TMatchResult>? caseCase26 = null,
+            System.Func<TMatchContext, TestCases.Union.Case27, TMatchResult>? caseCase27 = null,
+            System.Func<TMatchContext, TestCases.Union.Case28, TMatchResult>? caseCase28 = null,
+            System.Func<TMatchContext, TestCases.Union.Case29, TMatchResult>? caseCase29 = null,
+            System.Func<TMatchContext, TestCases.Union.Case30, TMatchResult>? caseCase30 = null,
+            System.Func<TMatchContext, TestCases.Union.Case31, TMatchResult>? caseCase31 = null,
+            System.Func<TMatchContext, TestCases.Union.Case32, TMatchResult>? caseCase32 = null,
+            System.Func<TMatchContext, TestCases.Union.Case33, TMatchResult>? caseCase33 = null,
+            System.Func<TMatchContext, TestCases.Union.Case34, TMatchResult>? caseCase34 = null,
+            System.Func<TMatchContext, TestCases.Union.Case35, TMatchResult>? caseCase35 = null,
+            System.Func<TMatchContext, TestCases.Union.Case36, TMatchResult>? caseCase36 = null,
+            System.Func<TMatchContext, TestCases.Union.Case37, TMatchResult>? caseCase37 = null,
+            System.Func<TMatchContext, TestCases.Union.Case38, TMatchResult>? caseCase38 = null,
+            System.Func<TMatchContext, TestCases.Union.Case39, TMatchResult>? caseCase39 = null,
+            System.Func<TMatchContext, TestCases.Union.Case40, TMatchResult>? caseCase40 = null,
+            System.Func<TMatchContext, TestCases.Union.Case41, TMatchResult>? caseCase41 = null,
+            System.Func<TMatchContext, TestCases.Union.Case42, TMatchResult>? caseCase42 = null,
+            System.Func<TMatchContext, TestCases.Union.Case43, TMatchResult>? caseCase43 = null,
+            System.Func<TMatchContext, TestCases.Union.Case44, TMatchResult>? caseCase44 = null,
+            System.Func<TMatchContext, TestCases.Union.Case45, TMatchResult>? caseCase45 = null,
+            System.Func<TMatchContext, TestCases.Union.Case46, TMatchResult>? caseCase46 = null,
+            System.Func<TMatchContext, TestCases.Union.Case47, TMatchResult>? caseCase47 = null,
+            System.Func<TMatchContext, TestCases.Union.Case48, TMatchResult>? caseCase48 = null,
+            System.Func<TMatchContext, TestCases.Union.Case49, TMatchResult>? caseCase49 = null,
+            System.Func<TMatchContext, TestCases.Union.Case50, TMatchResult>? caseCase50 = null,
+            System.Func<TMatchContext, TestCases.Union.Case51, TMatchResult>? caseCase51 = null,
+            System.Func<TMatchContext, TestCases.Union.Case52, TMatchResult>? caseCase52 = null,
+            System.Func<TMatchContext, TestCases.Union.Case53, TMatchResult>? caseCase53 = null,
+            System.Func<TMatchContext, TestCases.Union.Case54, TMatchResult>? caseCase54 = null,
+            System.Func<TMatchContext, TestCases.Union.Case55, TMatchResult>? caseCase55 = null,
+            System.Func<TMatchContext, TestCases.Union.Case56, TMatchResult>? caseCase56 = null,
+            System.Func<TMatchContext, TestCases.Union.Case57, TMatchResult>? caseCase57 = null,
+            System.Func<TMatchContext, TestCases.Union.Case58, TMatchResult>? caseCase58 = null,
+            System.Func<TMatchContext, TestCases.Union.Case59, TMatchResult>? caseCase59 = null,
+            System.Func<TMatchContext, TestCases.Union.Case60, TMatchResult>? caseCase60 = null,
+            System.Func<TMatchContext, TestCases.Union.Case61, TMatchResult>? caseCase61 = null,
+            System.Func<TMatchContext, TestCases.Union.Case62, TMatchResult>? caseCase62 = null,
+            System.Func<TMatchContext, TestCases.Union.Case63, TMatchResult>? caseCase63 = null,
+            System.Func<TMatchContext, TestCases.Union.Case64, TMatchResult>? caseCase64 = null,
+            System.Func<TMatchContext, TestCases.Union.Case65, TMatchResult>? caseCase65 = null,
+            System.Func<TMatchContext, TestCases.Union.Case66, TMatchResult>? caseCase66 = null,
+            System.Func<TMatchContext, TestCases.Union.Case67, TMatchResult>? caseCase67 = null,
+            System.Func<TMatchContext, TestCases.Union.Case68, TMatchResult>? caseCase68 = null,
+            System.Func<TMatchContext, TestCases.Union.Case69, TMatchResult>? caseCase69 = null,
+            System.Func<TMatchContext, TestCases.Union.Case70, TMatchResult>? caseCase70 = null,
+            System.Func<TMatchContext, TestCases.Union.Case71, TMatchResult>? caseCase71 = null,
+            System.Func<TMatchContext, TestCases.Union.Case72, TMatchResult>? caseCase72 = null,
+            System.Func<TMatchContext, TestCases.Union.Case73, TMatchResult>? caseCase73 = null,
+            System.Func<TMatchContext, TestCases.Union.Case74, TMatchResult>? caseCase74 = null,
+            System.Func<TMatchContext, TestCases.Union.Case75, TMatchResult>? caseCase75 = null,
+            System.Func<TMatchContext, TestCases.Union.Case76, TMatchResult>? caseCase76 = null,
+            System.Func<TMatchContext, TestCases.Union.Case77, TMatchResult>? caseCase77 = null,
+            System.Func<TMatchContext, TestCases.Union.Case78, TMatchResult>? caseCase78 = null,
+            System.Func<TMatchContext, TestCases.Union.Case79, TMatchResult>? caseCase79 = null,
+            System.Func<TMatchContext, TestCases.Union.Case80, TMatchResult>? caseCase80 = null,
+            System.Func<TMatchContext, TestCases.Union.Case81, TMatchResult>? caseCase81 = null,
+            System.Func<TMatchContext, TestCases.Union.Case82, TMatchResult>? caseCase82 = null,
+            System.Func<TMatchContext, TestCases.Union.Case83, TMatchResult>? caseCase83 = null,
+            System.Func<TMatchContext, TestCases.Union.Case84, TMatchResult>? caseCase84 = null,
+            System.Func<TMatchContext, TestCases.Union.Case85, TMatchResult>? caseCase85 = null,
+            System.Func<TMatchContext, TestCases.Union.Case86, TMatchResult>? caseCase86 = null,
+            System.Func<TMatchContext, TestCases.Union.Case87, TMatchResult>? caseCase87 = null,
+            System.Func<TMatchContext, TestCases.Union.Case88, TMatchResult>? caseCase88 = null,
+            System.Func<TMatchContext, TestCases.Union.Case89, TMatchResult>? caseCase89 = null,
+            System.Func<TMatchContext, TestCases.Union.Case90, TMatchResult>? caseCase90 = null,
+            System.Func<TMatchContext, TestCases.Union.Case91, TMatchResult>? caseCase91 = null,
+            System.Func<TMatchContext, TestCases.Union.Case92, TMatchResult>? caseCase92 = null,
+            System.Func<TMatchContext, TestCases.Union.Case93, TMatchResult>? caseCase93 = null,
+            System.Func<TMatchContext, TestCases.Union.Case94, TMatchResult>? caseCase94 = null,
+            System.Func<TMatchContext, TestCases.Union.Case95, TMatchResult>? caseCase95 = null,
+            System.Func<TMatchContext, TestCases.Union.Case96, TMatchResult>? caseCase96 = null,
+            System.Func<TMatchContext, TestCases.Union.Case97, TMatchResult>? caseCase97 = null,
+            System.Func<TMatchContext, TestCases.Union.Case98, TMatchResult>? caseCase98 = null,
+            System.Func<TMatchContext, TestCases.Union.Case99, TMatchResult>? caseCase99 = null,
+            System.Func<TMatchContext, TestCases.Union.Case100, TMatchResult>? caseCase100 = null,
+            System.Func<TMatchContext, TestCases.Union.Case101, TMatchResult>? caseCase101 = null,
+            System.Func<TMatchContext, TestCases.Union.Case102, TMatchResult>? caseCase102 = null,
+            System.Func<TMatchContext, TestCases.Union.Case103, TMatchResult>? caseCase103 = null,
+            System.Func<TMatchContext, TestCases.Union.Case104, TMatchResult>? caseCase104 = null,
+            System.Func<TMatchContext, TestCases.Union.Case105, TMatchResult>? caseCase105 = null,
+            System.Func<TMatchContext, TestCases.Union.Case106, TMatchResult>? caseCase106 = null,
+            System.Func<TMatchContext, TestCases.Union.Case107, TMatchResult>? caseCase107 = null,
+            System.Func<TMatchContext, TestCases.Union.Case108, TMatchResult>? caseCase108 = null,
+            System.Func<TMatchContext, TestCases.Union.Case109, TMatchResult>? caseCase109 = null,
+            System.Func<TMatchContext, TestCases.Union.Case110, TMatchResult>? caseCase110 = null,
+            System.Func<TMatchContext, TestCases.Union.Case111, TMatchResult>? caseCase111 = null,
+            System.Func<TMatchContext, TestCases.Union.Case112, TMatchResult>? caseCase112 = null,
+            System.Func<TMatchContext, TestCases.Union.Case113, TMatchResult>? caseCase113 = null,
+            System.Func<TMatchContext, TestCases.Union.Case114, TMatchResult>? caseCase114 = null,
+            System.Func<TMatchContext, TestCases.Union.Case115, TMatchResult>? caseCase115 = null,
+            System.Func<TMatchContext, TestCases.Union.Case116, TMatchResult>? caseCase116 = null,
+            System.Func<TMatchContext, TestCases.Union.Case117, TMatchResult>? caseCase117 = null,
+            System.Func<TMatchContext, TestCases.Union.Case118, TMatchResult>? caseCase118 = null,
+            System.Func<TMatchContext, TestCases.Union.Case119, TMatchResult>? caseCase119 = null,
+            System.Func<TMatchContext, TestCases.Union.Case120, TMatchResult>? caseCase120 = null,
+            System.Func<TMatchContext, TestCases.Union.Case121, TMatchResult>? caseCase121 = null,
+            System.Func<TMatchContext, TestCases.Union.Case122, TMatchResult>? caseCase122 = null,
+            System.Func<TMatchContext, TestCases.Union.Case123, TMatchResult>? caseCase123 = null,
+            System.Func<TMatchContext, TestCases.Union.Case124, TMatchResult>? caseCase124 = null,
+            System.Func<TMatchContext, TestCases.Union.Case125, TMatchResult>? caseCase125 = null,
+            System.Func<TMatchContext, TestCases.Union.Case126, TMatchResult>? caseCase126 = null,
+            System.Func<TMatchContext, TestCases.Union.Case127, TMatchResult>? caseCase127 = null,
+            System.Func<TMatchContext, TestCases.Union.Case128, TMatchResult>? caseCase128 = null,
+            System.Func<TMatchContext, TestCases.Union.Case129, TMatchResult>? caseCase129 = null,
+            System.Func<TMatchContext, TestCases.Union.Case130, TMatchResult>? caseCase130 = null,
+            System.Func<TMatchContext, TestCases.Union.Case131, TMatchResult>? caseCase131 = null,
+            System.Func<TMatchContext, TestCases.Union.Case132, TMatchResult>? caseCase132 = null,
+            System.Func<TMatchContext, TestCases.Union.Case133, TMatchResult>? caseCase133 = null,
+            System.Func<TMatchContext, TestCases.Union.Case134, TMatchResult>? caseCase134 = null,
+            System.Func<TMatchContext, TestCases.Union.Case135, TMatchResult>? caseCase135 = null,
+            System.Func<TMatchContext, TestCases.Union.Case136, TMatchResult>? caseCase136 = null,
+            System.Func<TMatchContext, TestCases.Union.Case137, TMatchResult>? caseCase137 = null,
+            System.Func<TMatchContext, TestCases.Union.Case138, TMatchResult>? caseCase138 = null,
+            System.Func<TMatchContext, TestCases.Union.Case139, TMatchResult>? caseCase139 = null,
+            System.Func<TMatchContext, TestCases.Union.Case140, TMatchResult>? caseCase140 = null,
+            System.Func<TMatchContext, TestCases.Union.Case141, TMatchResult>? caseCase141 = null,
+            System.Func<TMatchContext, TestCases.Union.Case142, TMatchResult>? caseCase142 = null,
+            System.Func<TMatchContext, TestCases.Union.Case143, TMatchResult>? caseCase143 = null,
+            System.Func<TMatchContext, TestCases.Union.Case144, TMatchResult>? caseCase144 = null,
+            System.Func<TMatchContext, TestCases.Union.Case145, TMatchResult>? caseCase145 = null,
+            System.Func<TMatchContext, TestCases.Union.Case146, TMatchResult>? caseCase146 = null,
+            System.Func<TMatchContext, TestCases.Union.Case147, TMatchResult>? caseCase147 = null,
+            System.Func<TMatchContext, TestCases.Union.Case148, TMatchResult>? caseCase148 = null,
+            System.Func<TMatchContext, TestCases.Union.Case149, TMatchResult>? caseCase149 = null,
+            System.Func<TMatchContext, TestCases.Union.Case150, TMatchResult>? caseCase150 = null,
+            System.Func<TMatchContext, TestCases.Union.Case151, TMatchResult>? caseCase151 = null,
+            System.Func<TMatchContext, TestCases.Union.Case152, TMatchResult>? caseCase152 = null,
+            System.Func<TMatchContext, TestCases.Union.Case153, TMatchResult>? caseCase153 = null,
+            System.Func<TMatchContext, TestCases.Union.Case154, TMatchResult>? caseCase154 = null,
+            System.Func<TMatchContext, TestCases.Union.Case155, TMatchResult>? caseCase155 = null,
+            System.Func<TMatchContext, TestCases.Union.Case156, TMatchResult>? caseCase156 = null,
+            System.Func<TMatchContext, TestCases.Union.Case157, TMatchResult>? caseCase157 = null,
+            System.Func<TMatchContext, TestCases.Union.Case158, TMatchResult>? caseCase158 = null,
+            System.Func<TMatchContext, TestCases.Union.Case159, TMatchResult>? caseCase159 = null,
+            System.Func<TMatchContext, TestCases.Union.Case160, TMatchResult>? caseCase160 = null,
+            System.Func<TMatchContext, TestCases.Union.Case161, TMatchResult>? caseCase161 = null,
+            System.Func<TMatchContext, TestCases.Union.Case162, TMatchResult>? caseCase162 = null,
+            System.Func<TMatchContext, TestCases.Union.Case163, TMatchResult>? caseCase163 = null,
+            System.Func<TMatchContext, TestCases.Union.Case164, TMatchResult>? caseCase164 = null,
+            System.Func<TMatchContext, TestCases.Union.Case165, TMatchResult>? caseCase165 = null,
+            System.Func<TMatchContext, TestCases.Union.Case166, TMatchResult>? caseCase166 = null,
+            System.Func<TMatchContext, TestCases.Union.Case167, TMatchResult>? caseCase167 = null,
+            System.Func<TMatchContext, TestCases.Union.Case168, TMatchResult>? caseCase168 = null,
+            System.Func<TMatchContext, TestCases.Union.Case169, TMatchResult>? caseCase169 = null,
+            System.Func<TMatchContext, TestCases.Union.Case170, TMatchResult>? caseCase170 = null,
+            System.Func<TMatchContext, TestCases.Union.Case171, TMatchResult>? caseCase171 = null,
+            System.Func<TMatchContext, TestCases.Union.Case172, TMatchResult>? caseCase172 = null,
+            System.Func<TMatchContext, TestCases.Union.Case173, TMatchResult>? caseCase173 = null,
+            System.Func<TMatchContext, TestCases.Union.Case174, TMatchResult>? caseCase174 = null,
+            System.Func<TMatchContext, TestCases.Union.Case175, TMatchResult>? caseCase175 = null,
+            System.Func<TMatchContext, TestCases.Union.Case176, TMatchResult>? caseCase176 = null,
+            System.Func<TMatchContext, TestCases.Union.Case177, TMatchResult>? caseCase177 = null,
+            System.Func<TMatchContext, TestCases.Union.Case178, TMatchResult>? caseCase178 = null,
+            System.Func<TMatchContext, TestCases.Union.Case179, TMatchResult>? caseCase179 = null,
+            System.Func<TMatchContext, TestCases.Union.Case180, TMatchResult>? caseCase180 = null,
+            System.Func<TMatchContext, TestCases.Union.Case181, TMatchResult>? caseCase181 = null,
+            System.Func<TMatchContext, TestCases.Union.Case182, TMatchResult>? caseCase182 = null,
+            System.Func<TMatchContext, TestCases.Union.Case183, TMatchResult>? caseCase183 = null,
+            System.Func<TMatchContext, TestCases.Union.Case184, TMatchResult>? caseCase184 = null,
+            System.Func<TMatchContext, TestCases.Union.Case185, TMatchResult>? caseCase185 = null,
+            System.Func<TMatchContext, TestCases.Union.Case186, TMatchResult>? caseCase186 = null,
+            System.Func<TMatchContext, TestCases.Union.Case187, TMatchResult>? caseCase187 = null,
+            System.Func<TMatchContext, TestCases.Union.Case188, TMatchResult>? caseCase188 = null,
+            System.Func<TMatchContext, TestCases.Union.Case189, TMatchResult>? caseCase189 = null,
+            System.Func<TMatchContext, TestCases.Union.Case190, TMatchResult>? caseCase190 = null,
+            System.Func<TMatchContext, TestCases.Union.Case191, TMatchResult>? caseCase191 = null,
+            System.Func<TMatchContext, TestCases.Union.Case192, TMatchResult>? caseCase192 = null,
+            System.Func<TMatchContext, TestCases.Union.Case193, TMatchResult>? caseCase193 = null,
+            System.Func<TMatchContext, TestCases.Union.Case194, TMatchResult>? caseCase194 = null,
+            System.Func<TMatchContext, TestCases.Union.Case195, TMatchResult>? caseCase195 = null,
+            System.Func<TMatchContext, TestCases.Union.Case196, TMatchResult>? caseCase196 = null,
+            System.Func<TMatchContext, TestCases.Union.Case197, TMatchResult>? caseCase197 = null,
+            System.Func<TMatchContext, TestCases.Union.Case198, TMatchResult>? caseCase198 = null,
+            System.Func<TMatchContext, TestCases.Union.Case199, TMatchResult>? caseCase199 = null,
+            System.Func<TMatchContext, TestCases.Union.Case200, TMatchResult>? caseCase200 = null,
+            System.Func<TMatchContext, TestCases.Union.Case201, TMatchResult>? caseCase201 = null,
+            System.Func<TMatchContext, TestCases.Union.Case202, TMatchResult>? caseCase202 = null,
+            System.Func<TMatchContext, TestCases.Union.Case203, TMatchResult>? caseCase203 = null,
+            System.Func<TMatchContext, TestCases.Union.Case204, TMatchResult>? caseCase204 = null,
+            System.Func<TMatchContext, TestCases.Union.Case205, TMatchResult>? caseCase205 = null,
+            System.Func<TMatchContext, TestCases.Union.Case206, TMatchResult>? caseCase206 = null,
+            System.Func<TMatchContext, TestCases.Union.Case207, TMatchResult>? caseCase207 = null,
+            System.Func<TMatchContext, TestCases.Union.Case208, TMatchResult>? caseCase208 = null,
+            System.Func<TMatchContext, TestCases.Union.Case209, TMatchResult>? caseCase209 = null,
+            System.Func<TMatchContext, TestCases.Union.Case210, TMatchResult>? caseCase210 = null,
+            System.Func<TMatchContext, TestCases.Union.Case211, TMatchResult>? caseCase211 = null,
+            System.Func<TMatchContext, TestCases.Union.Case212, TMatchResult>? caseCase212 = null,
+            System.Func<TMatchContext, TestCases.Union.Case213, TMatchResult>? caseCase213 = null,
+            System.Func<TMatchContext, TestCases.Union.Case214, TMatchResult>? caseCase214 = null,
+            System.Func<TMatchContext, TestCases.Union.Case215, TMatchResult>? caseCase215 = null,
+            System.Func<TMatchContext, TestCases.Union.Case216, TMatchResult>? caseCase216 = null,
+            System.Func<TMatchContext, TestCases.Union.Case217, TMatchResult>? caseCase217 = null,
+            System.Func<TMatchContext, TestCases.Union.Case218, TMatchResult>? caseCase218 = null,
+            System.Func<TMatchContext, TestCases.Union.Case219, TMatchResult>? caseCase219 = null,
+            System.Func<TMatchContext, TestCases.Union.Case220, TMatchResult>? caseCase220 = null,
+            System.Func<TMatchContext, TestCases.Union.Case221, TMatchResult>? caseCase221 = null,
+            System.Func<TMatchContext, TestCases.Union.Case222, TMatchResult>? caseCase222 = null,
+            System.Func<TMatchContext, TestCases.Union.Case223, TMatchResult>? caseCase223 = null,
+            System.Func<TMatchContext, TestCases.Union.Case224, TMatchResult>? caseCase224 = null,
+            System.Func<TMatchContext, TestCases.Union.Case225, TMatchResult>? caseCase225 = null,
+            System.Func<TMatchContext, TestCases.Union.Case226, TMatchResult>? caseCase226 = null,
+            System.Func<TMatchContext, TestCases.Union.Case227, TMatchResult>? caseCase227 = null,
+            System.Func<TMatchContext, TestCases.Union.Case228, TMatchResult>? caseCase228 = null,
+            System.Func<TMatchContext, TestCases.Union.Case229, TMatchResult>? caseCase229 = null,
+            System.Func<TMatchContext, TestCases.Union.Case230, TMatchResult>? caseCase230 = null,
+            System.Func<TMatchContext, TestCases.Union.Case231, TMatchResult>? caseCase231 = null,
+            System.Func<TMatchContext, TestCases.Union.Case232, TMatchResult>? caseCase232 = null,
+            System.Func<TMatchContext, TestCases.Union.Case233, TMatchResult>? caseCase233 = null,
+            System.Func<TMatchContext, TestCases.Union.Case234, TMatchResult>? caseCase234 = null,
+            System.Func<TMatchContext, TestCases.Union.Case235, TMatchResult>? caseCase235 = null,
+            System.Func<TMatchContext, TestCases.Union.Case236, TMatchResult>? caseCase236 = null,
+            System.Func<TMatchContext, TestCases.Union.Case237, TMatchResult>? caseCase237 = null,
+            System.Func<TMatchContext, TestCases.Union.Case238, TMatchResult>? caseCase238 = null,
+            System.Func<TMatchContext, TestCases.Union.Case239, TMatchResult>? caseCase239 = null,
+            System.Func<TMatchContext, TestCases.Union.Case240, TMatchResult>? caseCase240 = null,
+            System.Func<TMatchContext, TestCases.Union.Case241, TMatchResult>? caseCase241 = null,
+            System.Func<TMatchContext, TestCases.Union.Case242, TMatchResult>? caseCase242 = null,
+            System.Func<TMatchContext, TestCases.Union.Case243, TMatchResult>? caseCase243 = null,
+            System.Func<TMatchContext, TestCases.Union.Case244, TMatchResult>? caseCase244 = null,
+            System.Func<TMatchContext, TestCases.Union.Case245, TMatchResult>? caseCase245 = null,
+            System.Func<TMatchContext, TestCases.Union.Case246, TMatchResult>? caseCase246 = null,
+            System.Func<TMatchContext, TestCases.Union.Case247, TMatchResult>? caseCase247 = null,
+            System.Func<TMatchContext, TestCases.Union.Case248, TMatchResult>? caseCase248 = null,
+            System.Func<TMatchContext, TestCases.Union.Case249, TMatchResult>? caseCase249 = null,
+            System.Func<TMatchContext, TestCases.Union.Case250, TMatchResult>? caseCase250 = null,
+            System.Func<TMatchContext, TestCases.Union.Case251, TMatchResult>? caseCase251 = null,
+            System.Func<TMatchContext, TestCases.Union.Case252, TMatchResult>? caseCase252 = null,
+            System.Func<TMatchContext, TestCases.Union.Case253, TMatchResult>? caseCase253 = null,
+            System.Func<TMatchContext, TestCases.Union.Case254, TMatchResult>? caseCase254 = null
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseCase1, null))
+                    {
+                        return caseCase1.Invoke(context, ((TestCases.Union.Case1)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseCase2, null))
+                    {
+                        return caseCase2.Invoke(context, ((TestCases.Union.Case2)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseCase3, null))
+                    {
+                        return caseCase3.Invoke(context, ((TestCases.Union.Case3)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseCase4, null))
+                    {
+                        return caseCase4.Invoke(context, ((TestCases.Union.Case4)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseCase5, null))
+                    {
+                        return caseCase5.Invoke(context, ((TestCases.Union.Case5)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseCase6, null))
+                    {
+                        return caseCase6.Invoke(context, ((TestCases.Union.Case6)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 7:
+                    if (!System.Object.ReferenceEquals(caseCase7, null))
+                    {
+                        return caseCase7.Invoke(context, ((TestCases.Union.Case7)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 8:
+                    if (!System.Object.ReferenceEquals(caseCase8, null))
+                    {
+                        return caseCase8.Invoke(context, ((TestCases.Union.Case8)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 9:
+                    if (!System.Object.ReferenceEquals(caseCase9, null))
+                    {
+                        return caseCase9.Invoke(context, ((TestCases.Union.Case9)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 10:
+                    if (!System.Object.ReferenceEquals(caseCase10, null))
+                    {
+                        return caseCase10.Invoke(context, ((TestCases.Union.Case10)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 11:
+                    if (!System.Object.ReferenceEquals(caseCase11, null))
+                    {
+                        return caseCase11.Invoke(context, ((TestCases.Union.Case11)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 12:
+                    if (!System.Object.ReferenceEquals(caseCase12, null))
+                    {
+                        return caseCase12.Invoke(context, ((TestCases.Union.Case12)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 13:
+                    if (!System.Object.ReferenceEquals(caseCase13, null))
+                    {
+                        return caseCase13.Invoke(context, ((TestCases.Union.Case13)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 14:
+                    if (!System.Object.ReferenceEquals(caseCase14, null))
+                    {
+                        return caseCase14.Invoke(context, ((TestCases.Union.Case14)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 15:
+                    if (!System.Object.ReferenceEquals(caseCase15, null))
+                    {
+                        return caseCase15.Invoke(context, ((TestCases.Union.Case15)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 16:
+                    if (!System.Object.ReferenceEquals(caseCase16, null))
+                    {
+                        return caseCase16.Invoke(context, ((TestCases.Union.Case16)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 17:
+                    if (!System.Object.ReferenceEquals(caseCase17, null))
+                    {
+                        return caseCase17.Invoke(context, ((TestCases.Union.Case17)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 18:
+                    if (!System.Object.ReferenceEquals(caseCase18, null))
+                    {
+                        return caseCase18.Invoke(context, ((TestCases.Union.Case18)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 19:
+                    if (!System.Object.ReferenceEquals(caseCase19, null))
+                    {
+                        return caseCase19.Invoke(context, ((TestCases.Union.Case19)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 20:
+                    if (!System.Object.ReferenceEquals(caseCase20, null))
+                    {
+                        return caseCase20.Invoke(context, ((TestCases.Union.Case20)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 21:
+                    if (!System.Object.ReferenceEquals(caseCase21, null))
+                    {
+                        return caseCase21.Invoke(context, ((TestCases.Union.Case21)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 22:
+                    if (!System.Object.ReferenceEquals(caseCase22, null))
+                    {
+                        return caseCase22.Invoke(context, ((TestCases.Union.Case22)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 23:
+                    if (!System.Object.ReferenceEquals(caseCase23, null))
+                    {
+                        return caseCase23.Invoke(context, ((TestCases.Union.Case23)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 24:
+                    if (!System.Object.ReferenceEquals(caseCase24, null))
+                    {
+                        return caseCase24.Invoke(context, ((TestCases.Union.Case24)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 25:
+                    if (!System.Object.ReferenceEquals(caseCase25, null))
+                    {
+                        return caseCase25.Invoke(context, ((TestCases.Union.Case25)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 26:
+                    if (!System.Object.ReferenceEquals(caseCase26, null))
+                    {
+                        return caseCase26.Invoke(context, ((TestCases.Union.Case26)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 27:
+                    if (!System.Object.ReferenceEquals(caseCase27, null))
+                    {
+                        return caseCase27.Invoke(context, ((TestCases.Union.Case27)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 28:
+                    if (!System.Object.ReferenceEquals(caseCase28, null))
+                    {
+                        return caseCase28.Invoke(context, ((TestCases.Union.Case28)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 29:
+                    if (!System.Object.ReferenceEquals(caseCase29, null))
+                    {
+                        return caseCase29.Invoke(context, ((TestCases.Union.Case29)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 30:
+                    if (!System.Object.ReferenceEquals(caseCase30, null))
+                    {
+                        return caseCase30.Invoke(context, ((TestCases.Union.Case30)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 31:
+                    if (!System.Object.ReferenceEquals(caseCase31, null))
+                    {
+                        return caseCase31.Invoke(context, ((TestCases.Union.Case31)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 32:
+                    if (!System.Object.ReferenceEquals(caseCase32, null))
+                    {
+                        return caseCase32.Invoke(context, ((TestCases.Union.Case32)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 33:
+                    if (!System.Object.ReferenceEquals(caseCase33, null))
+                    {
+                        return caseCase33.Invoke(context, ((TestCases.Union.Case33)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 34:
+                    if (!System.Object.ReferenceEquals(caseCase34, null))
+                    {
+                        return caseCase34.Invoke(context, ((TestCases.Union.Case34)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 35:
+                    if (!System.Object.ReferenceEquals(caseCase35, null))
+                    {
+                        return caseCase35.Invoke(context, ((TestCases.Union.Case35)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 36:
+                    if (!System.Object.ReferenceEquals(caseCase36, null))
+                    {
+                        return caseCase36.Invoke(context, ((TestCases.Union.Case36)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 37:
+                    if (!System.Object.ReferenceEquals(caseCase37, null))
+                    {
+                        return caseCase37.Invoke(context, ((TestCases.Union.Case37)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 38:
+                    if (!System.Object.ReferenceEquals(caseCase38, null))
+                    {
+                        return caseCase38.Invoke(context, ((TestCases.Union.Case38)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 39:
+                    if (!System.Object.ReferenceEquals(caseCase39, null))
+                    {
+                        return caseCase39.Invoke(context, ((TestCases.Union.Case39)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 40:
+                    if (!System.Object.ReferenceEquals(caseCase40, null))
+                    {
+                        return caseCase40.Invoke(context, ((TestCases.Union.Case40)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 41:
+                    if (!System.Object.ReferenceEquals(caseCase41, null))
+                    {
+                        return caseCase41.Invoke(context, ((TestCases.Union.Case41)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 42:
+                    if (!System.Object.ReferenceEquals(caseCase42, null))
+                    {
+                        return caseCase42.Invoke(context, ((TestCases.Union.Case42)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 43:
+                    if (!System.Object.ReferenceEquals(caseCase43, null))
+                    {
+                        return caseCase43.Invoke(context, ((TestCases.Union.Case43)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 44:
+                    if (!System.Object.ReferenceEquals(caseCase44, null))
+                    {
+                        return caseCase44.Invoke(context, ((TestCases.Union.Case44)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 45:
+                    if (!System.Object.ReferenceEquals(caseCase45, null))
+                    {
+                        return caseCase45.Invoke(context, ((TestCases.Union.Case45)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 46:
+                    if (!System.Object.ReferenceEquals(caseCase46, null))
+                    {
+                        return caseCase46.Invoke(context, ((TestCases.Union.Case46)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 47:
+                    if (!System.Object.ReferenceEquals(caseCase47, null))
+                    {
+                        return caseCase47.Invoke(context, ((TestCases.Union.Case47)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 48:
+                    if (!System.Object.ReferenceEquals(caseCase48, null))
+                    {
+                        return caseCase48.Invoke(context, ((TestCases.Union.Case48)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 49:
+                    if (!System.Object.ReferenceEquals(caseCase49, null))
+                    {
+                        return caseCase49.Invoke(context, ((TestCases.Union.Case49)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 50:
+                    if (!System.Object.ReferenceEquals(caseCase50, null))
+                    {
+                        return caseCase50.Invoke(context, ((TestCases.Union.Case50)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 51:
+                    if (!System.Object.ReferenceEquals(caseCase51, null))
+                    {
+                        return caseCase51.Invoke(context, ((TestCases.Union.Case51)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 52:
+                    if (!System.Object.ReferenceEquals(caseCase52, null))
+                    {
+                        return caseCase52.Invoke(context, ((TestCases.Union.Case52)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 53:
+                    if (!System.Object.ReferenceEquals(caseCase53, null))
+                    {
+                        return caseCase53.Invoke(context, ((TestCases.Union.Case53)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 54:
+                    if (!System.Object.ReferenceEquals(caseCase54, null))
+                    {
+                        return caseCase54.Invoke(context, ((TestCases.Union.Case54)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 55:
+                    if (!System.Object.ReferenceEquals(caseCase55, null))
+                    {
+                        return caseCase55.Invoke(context, ((TestCases.Union.Case55)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 56:
+                    if (!System.Object.ReferenceEquals(caseCase56, null))
+                    {
+                        return caseCase56.Invoke(context, ((TestCases.Union.Case56)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 57:
+                    if (!System.Object.ReferenceEquals(caseCase57, null))
+                    {
+                        return caseCase57.Invoke(context, ((TestCases.Union.Case57)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 58:
+                    if (!System.Object.ReferenceEquals(caseCase58, null))
+                    {
+                        return caseCase58.Invoke(context, ((TestCases.Union.Case58)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 59:
+                    if (!System.Object.ReferenceEquals(caseCase59, null))
+                    {
+                        return caseCase59.Invoke(context, ((TestCases.Union.Case59)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 60:
+                    if (!System.Object.ReferenceEquals(caseCase60, null))
+                    {
+                        return caseCase60.Invoke(context, ((TestCases.Union.Case60)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 61:
+                    if (!System.Object.ReferenceEquals(caseCase61, null))
+                    {
+                        return caseCase61.Invoke(context, ((TestCases.Union.Case61)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 62:
+                    if (!System.Object.ReferenceEquals(caseCase62, null))
+                    {
+                        return caseCase62.Invoke(context, ((TestCases.Union.Case62)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 63:
+                    if (!System.Object.ReferenceEquals(caseCase63, null))
+                    {
+                        return caseCase63.Invoke(context, ((TestCases.Union.Case63)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 64:
+                    if (!System.Object.ReferenceEquals(caseCase64, null))
+                    {
+                        return caseCase64.Invoke(context, ((TestCases.Union.Case64)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 65:
+                    if (!System.Object.ReferenceEquals(caseCase65, null))
+                    {
+                        return caseCase65.Invoke(context, ((TestCases.Union.Case65)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 66:
+                    if (!System.Object.ReferenceEquals(caseCase66, null))
+                    {
+                        return caseCase66.Invoke(context, ((TestCases.Union.Case66)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 67:
+                    if (!System.Object.ReferenceEquals(caseCase67, null))
+                    {
+                        return caseCase67.Invoke(context, ((TestCases.Union.Case67)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 68:
+                    if (!System.Object.ReferenceEquals(caseCase68, null))
+                    {
+                        return caseCase68.Invoke(context, ((TestCases.Union.Case68)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 69:
+                    if (!System.Object.ReferenceEquals(caseCase69, null))
+                    {
+                        return caseCase69.Invoke(context, ((TestCases.Union.Case69)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 70:
+                    if (!System.Object.ReferenceEquals(caseCase70, null))
+                    {
+                        return caseCase70.Invoke(context, ((TestCases.Union.Case70)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 71:
+                    if (!System.Object.ReferenceEquals(caseCase71, null))
+                    {
+                        return caseCase71.Invoke(context, ((TestCases.Union.Case71)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 72:
+                    if (!System.Object.ReferenceEquals(caseCase72, null))
+                    {
+                        return caseCase72.Invoke(context, ((TestCases.Union.Case72)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 73:
+                    if (!System.Object.ReferenceEquals(caseCase73, null))
+                    {
+                        return caseCase73.Invoke(context, ((TestCases.Union.Case73)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 74:
+                    if (!System.Object.ReferenceEquals(caseCase74, null))
+                    {
+                        return caseCase74.Invoke(context, ((TestCases.Union.Case74)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 75:
+                    if (!System.Object.ReferenceEquals(caseCase75, null))
+                    {
+                        return caseCase75.Invoke(context, ((TestCases.Union.Case75)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 76:
+                    if (!System.Object.ReferenceEquals(caseCase76, null))
+                    {
+                        return caseCase76.Invoke(context, ((TestCases.Union.Case76)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 77:
+                    if (!System.Object.ReferenceEquals(caseCase77, null))
+                    {
+                        return caseCase77.Invoke(context, ((TestCases.Union.Case77)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 78:
+                    if (!System.Object.ReferenceEquals(caseCase78, null))
+                    {
+                        return caseCase78.Invoke(context, ((TestCases.Union.Case78)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 79:
+                    if (!System.Object.ReferenceEquals(caseCase79, null))
+                    {
+                        return caseCase79.Invoke(context, ((TestCases.Union.Case79)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 80:
+                    if (!System.Object.ReferenceEquals(caseCase80, null))
+                    {
+                        return caseCase80.Invoke(context, ((TestCases.Union.Case80)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 81:
+                    if (!System.Object.ReferenceEquals(caseCase81, null))
+                    {
+                        return caseCase81.Invoke(context, ((TestCases.Union.Case81)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 82:
+                    if (!System.Object.ReferenceEquals(caseCase82, null))
+                    {
+                        return caseCase82.Invoke(context, ((TestCases.Union.Case82)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 83:
+                    if (!System.Object.ReferenceEquals(caseCase83, null))
+                    {
+                        return caseCase83.Invoke(context, ((TestCases.Union.Case83)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 84:
+                    if (!System.Object.ReferenceEquals(caseCase84, null))
+                    {
+                        return caseCase84.Invoke(context, ((TestCases.Union.Case84)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 85:
+                    if (!System.Object.ReferenceEquals(caseCase85, null))
+                    {
+                        return caseCase85.Invoke(context, ((TestCases.Union.Case85)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 86:
+                    if (!System.Object.ReferenceEquals(caseCase86, null))
+                    {
+                        return caseCase86.Invoke(context, ((TestCases.Union.Case86)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 87:
+                    if (!System.Object.ReferenceEquals(caseCase87, null))
+                    {
+                        return caseCase87.Invoke(context, ((TestCases.Union.Case87)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 88:
+                    if (!System.Object.ReferenceEquals(caseCase88, null))
+                    {
+                        return caseCase88.Invoke(context, ((TestCases.Union.Case88)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 89:
+                    if (!System.Object.ReferenceEquals(caseCase89, null))
+                    {
+                        return caseCase89.Invoke(context, ((TestCases.Union.Case89)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 90:
+                    if (!System.Object.ReferenceEquals(caseCase90, null))
+                    {
+                        return caseCase90.Invoke(context, ((TestCases.Union.Case90)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 91:
+                    if (!System.Object.ReferenceEquals(caseCase91, null))
+                    {
+                        return caseCase91.Invoke(context, ((TestCases.Union.Case91)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 92:
+                    if (!System.Object.ReferenceEquals(caseCase92, null))
+                    {
+                        return caseCase92.Invoke(context, ((TestCases.Union.Case92)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 93:
+                    if (!System.Object.ReferenceEquals(caseCase93, null))
+                    {
+                        return caseCase93.Invoke(context, ((TestCases.Union.Case93)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 94:
+                    if (!System.Object.ReferenceEquals(caseCase94, null))
+                    {
+                        return caseCase94.Invoke(context, ((TestCases.Union.Case94)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 95:
+                    if (!System.Object.ReferenceEquals(caseCase95, null))
+                    {
+                        return caseCase95.Invoke(context, ((TestCases.Union.Case95)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 96:
+                    if (!System.Object.ReferenceEquals(caseCase96, null))
+                    {
+                        return caseCase96.Invoke(context, ((TestCases.Union.Case96)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 97:
+                    if (!System.Object.ReferenceEquals(caseCase97, null))
+                    {
+                        return caseCase97.Invoke(context, ((TestCases.Union.Case97)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 98:
+                    if (!System.Object.ReferenceEquals(caseCase98, null))
+                    {
+                        return caseCase98.Invoke(context, ((TestCases.Union.Case98)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 99:
+                    if (!System.Object.ReferenceEquals(caseCase99, null))
+                    {
+                        return caseCase99.Invoke(context, ((TestCases.Union.Case99)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 100:
+                    if (!System.Object.ReferenceEquals(caseCase100, null))
+                    {
+                        return caseCase100.Invoke(context, ((TestCases.Union.Case100)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 101:
+                    if (!System.Object.ReferenceEquals(caseCase101, null))
+                    {
+                        return caseCase101.Invoke(context, ((TestCases.Union.Case101)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 102:
+                    if (!System.Object.ReferenceEquals(caseCase102, null))
+                    {
+                        return caseCase102.Invoke(context, ((TestCases.Union.Case102)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 103:
+                    if (!System.Object.ReferenceEquals(caseCase103, null))
+                    {
+                        return caseCase103.Invoke(context, ((TestCases.Union.Case103)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 104:
+                    if (!System.Object.ReferenceEquals(caseCase104, null))
+                    {
+                        return caseCase104.Invoke(context, ((TestCases.Union.Case104)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 105:
+                    if (!System.Object.ReferenceEquals(caseCase105, null))
+                    {
+                        return caseCase105.Invoke(context, ((TestCases.Union.Case105)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 106:
+                    if (!System.Object.ReferenceEquals(caseCase106, null))
+                    {
+                        return caseCase106.Invoke(context, ((TestCases.Union.Case106)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 107:
+                    if (!System.Object.ReferenceEquals(caseCase107, null))
+                    {
+                        return caseCase107.Invoke(context, ((TestCases.Union.Case107)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 108:
+                    if (!System.Object.ReferenceEquals(caseCase108, null))
+                    {
+                        return caseCase108.Invoke(context, ((TestCases.Union.Case108)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 109:
+                    if (!System.Object.ReferenceEquals(caseCase109, null))
+                    {
+                        return caseCase109.Invoke(context, ((TestCases.Union.Case109)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 110:
+                    if (!System.Object.ReferenceEquals(caseCase110, null))
+                    {
+                        return caseCase110.Invoke(context, ((TestCases.Union.Case110)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 111:
+                    if (!System.Object.ReferenceEquals(caseCase111, null))
+                    {
+                        return caseCase111.Invoke(context, ((TestCases.Union.Case111)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 112:
+                    if (!System.Object.ReferenceEquals(caseCase112, null))
+                    {
+                        return caseCase112.Invoke(context, ((TestCases.Union.Case112)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 113:
+                    if (!System.Object.ReferenceEquals(caseCase113, null))
+                    {
+                        return caseCase113.Invoke(context, ((TestCases.Union.Case113)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 114:
+                    if (!System.Object.ReferenceEquals(caseCase114, null))
+                    {
+                        return caseCase114.Invoke(context, ((TestCases.Union.Case114)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 115:
+                    if (!System.Object.ReferenceEquals(caseCase115, null))
+                    {
+                        return caseCase115.Invoke(context, ((TestCases.Union.Case115)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 116:
+                    if (!System.Object.ReferenceEquals(caseCase116, null))
+                    {
+                        return caseCase116.Invoke(context, ((TestCases.Union.Case116)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 117:
+                    if (!System.Object.ReferenceEquals(caseCase117, null))
+                    {
+                        return caseCase117.Invoke(context, ((TestCases.Union.Case117)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 118:
+                    if (!System.Object.ReferenceEquals(caseCase118, null))
+                    {
+                        return caseCase118.Invoke(context, ((TestCases.Union.Case118)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 119:
+                    if (!System.Object.ReferenceEquals(caseCase119, null))
+                    {
+                        return caseCase119.Invoke(context, ((TestCases.Union.Case119)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 120:
+                    if (!System.Object.ReferenceEquals(caseCase120, null))
+                    {
+                        return caseCase120.Invoke(context, ((TestCases.Union.Case120)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 121:
+                    if (!System.Object.ReferenceEquals(caseCase121, null))
+                    {
+                        return caseCase121.Invoke(context, ((TestCases.Union.Case121)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 122:
+                    if (!System.Object.ReferenceEquals(caseCase122, null))
+                    {
+                        return caseCase122.Invoke(context, ((TestCases.Union.Case122)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 123:
+                    if (!System.Object.ReferenceEquals(caseCase123, null))
+                    {
+                        return caseCase123.Invoke(context, ((TestCases.Union.Case123)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 124:
+                    if (!System.Object.ReferenceEquals(caseCase124, null))
+                    {
+                        return caseCase124.Invoke(context, ((TestCases.Union.Case124)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 125:
+                    if (!System.Object.ReferenceEquals(caseCase125, null))
+                    {
+                        return caseCase125.Invoke(context, ((TestCases.Union.Case125)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 126:
+                    if (!System.Object.ReferenceEquals(caseCase126, null))
+                    {
+                        return caseCase126.Invoke(context, ((TestCases.Union.Case126)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 127:
+                    if (!System.Object.ReferenceEquals(caseCase127, null))
+                    {
+                        return caseCase127.Invoke(context, ((TestCases.Union.Case127)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 128:
+                    if (!System.Object.ReferenceEquals(caseCase128, null))
+                    {
+                        return caseCase128.Invoke(context, ((TestCases.Union.Case128)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 129:
+                    if (!System.Object.ReferenceEquals(caseCase129, null))
+                    {
+                        return caseCase129.Invoke(context, ((TestCases.Union.Case129)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 130:
+                    if (!System.Object.ReferenceEquals(caseCase130, null))
+                    {
+                        return caseCase130.Invoke(context, ((TestCases.Union.Case130)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 131:
+                    if (!System.Object.ReferenceEquals(caseCase131, null))
+                    {
+                        return caseCase131.Invoke(context, ((TestCases.Union.Case131)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 132:
+                    if (!System.Object.ReferenceEquals(caseCase132, null))
+                    {
+                        return caseCase132.Invoke(context, ((TestCases.Union.Case132)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 133:
+                    if (!System.Object.ReferenceEquals(caseCase133, null))
+                    {
+                        return caseCase133.Invoke(context, ((TestCases.Union.Case133)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 134:
+                    if (!System.Object.ReferenceEquals(caseCase134, null))
+                    {
+                        return caseCase134.Invoke(context, ((TestCases.Union.Case134)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 135:
+                    if (!System.Object.ReferenceEquals(caseCase135, null))
+                    {
+                        return caseCase135.Invoke(context, ((TestCases.Union.Case135)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 136:
+                    if (!System.Object.ReferenceEquals(caseCase136, null))
+                    {
+                        return caseCase136.Invoke(context, ((TestCases.Union.Case136)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 137:
+                    if (!System.Object.ReferenceEquals(caseCase137, null))
+                    {
+                        return caseCase137.Invoke(context, ((TestCases.Union.Case137)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 138:
+                    if (!System.Object.ReferenceEquals(caseCase138, null))
+                    {
+                        return caseCase138.Invoke(context, ((TestCases.Union.Case138)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 139:
+                    if (!System.Object.ReferenceEquals(caseCase139, null))
+                    {
+                        return caseCase139.Invoke(context, ((TestCases.Union.Case139)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 140:
+                    if (!System.Object.ReferenceEquals(caseCase140, null))
+                    {
+                        return caseCase140.Invoke(context, ((TestCases.Union.Case140)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 141:
+                    if (!System.Object.ReferenceEquals(caseCase141, null))
+                    {
+                        return caseCase141.Invoke(context, ((TestCases.Union.Case141)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 142:
+                    if (!System.Object.ReferenceEquals(caseCase142, null))
+                    {
+                        return caseCase142.Invoke(context, ((TestCases.Union.Case142)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 143:
+                    if (!System.Object.ReferenceEquals(caseCase143, null))
+                    {
+                        return caseCase143.Invoke(context, ((TestCases.Union.Case143)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 144:
+                    if (!System.Object.ReferenceEquals(caseCase144, null))
+                    {
+                        return caseCase144.Invoke(context, ((TestCases.Union.Case144)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 145:
+                    if (!System.Object.ReferenceEquals(caseCase145, null))
+                    {
+                        return caseCase145.Invoke(context, ((TestCases.Union.Case145)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 146:
+                    if (!System.Object.ReferenceEquals(caseCase146, null))
+                    {
+                        return caseCase146.Invoke(context, ((TestCases.Union.Case146)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 147:
+                    if (!System.Object.ReferenceEquals(caseCase147, null))
+                    {
+                        return caseCase147.Invoke(context, ((TestCases.Union.Case147)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 148:
+                    if (!System.Object.ReferenceEquals(caseCase148, null))
+                    {
+                        return caseCase148.Invoke(context, ((TestCases.Union.Case148)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 149:
+                    if (!System.Object.ReferenceEquals(caseCase149, null))
+                    {
+                        return caseCase149.Invoke(context, ((TestCases.Union.Case149)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 150:
+                    if (!System.Object.ReferenceEquals(caseCase150, null))
+                    {
+                        return caseCase150.Invoke(context, ((TestCases.Union.Case150)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 151:
+                    if (!System.Object.ReferenceEquals(caseCase151, null))
+                    {
+                        return caseCase151.Invoke(context, ((TestCases.Union.Case151)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 152:
+                    if (!System.Object.ReferenceEquals(caseCase152, null))
+                    {
+                        return caseCase152.Invoke(context, ((TestCases.Union.Case152)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 153:
+                    if (!System.Object.ReferenceEquals(caseCase153, null))
+                    {
+                        return caseCase153.Invoke(context, ((TestCases.Union.Case153)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 154:
+                    if (!System.Object.ReferenceEquals(caseCase154, null))
+                    {
+                        return caseCase154.Invoke(context, ((TestCases.Union.Case154)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 155:
+                    if (!System.Object.ReferenceEquals(caseCase155, null))
+                    {
+                        return caseCase155.Invoke(context, ((TestCases.Union.Case155)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 156:
+                    if (!System.Object.ReferenceEquals(caseCase156, null))
+                    {
+                        return caseCase156.Invoke(context, ((TestCases.Union.Case156)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 157:
+                    if (!System.Object.ReferenceEquals(caseCase157, null))
+                    {
+                        return caseCase157.Invoke(context, ((TestCases.Union.Case157)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 158:
+                    if (!System.Object.ReferenceEquals(caseCase158, null))
+                    {
+                        return caseCase158.Invoke(context, ((TestCases.Union.Case158)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 159:
+                    if (!System.Object.ReferenceEquals(caseCase159, null))
+                    {
+                        return caseCase159.Invoke(context, ((TestCases.Union.Case159)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 160:
+                    if (!System.Object.ReferenceEquals(caseCase160, null))
+                    {
+                        return caseCase160.Invoke(context, ((TestCases.Union.Case160)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 161:
+                    if (!System.Object.ReferenceEquals(caseCase161, null))
+                    {
+                        return caseCase161.Invoke(context, ((TestCases.Union.Case161)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 162:
+                    if (!System.Object.ReferenceEquals(caseCase162, null))
+                    {
+                        return caseCase162.Invoke(context, ((TestCases.Union.Case162)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 163:
+                    if (!System.Object.ReferenceEquals(caseCase163, null))
+                    {
+                        return caseCase163.Invoke(context, ((TestCases.Union.Case163)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 164:
+                    if (!System.Object.ReferenceEquals(caseCase164, null))
+                    {
+                        return caseCase164.Invoke(context, ((TestCases.Union.Case164)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 165:
+                    if (!System.Object.ReferenceEquals(caseCase165, null))
+                    {
+                        return caseCase165.Invoke(context, ((TestCases.Union.Case165)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 166:
+                    if (!System.Object.ReferenceEquals(caseCase166, null))
+                    {
+                        return caseCase166.Invoke(context, ((TestCases.Union.Case166)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 167:
+                    if (!System.Object.ReferenceEquals(caseCase167, null))
+                    {
+                        return caseCase167.Invoke(context, ((TestCases.Union.Case167)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 168:
+                    if (!System.Object.ReferenceEquals(caseCase168, null))
+                    {
+                        return caseCase168.Invoke(context, ((TestCases.Union.Case168)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 169:
+                    if (!System.Object.ReferenceEquals(caseCase169, null))
+                    {
+                        return caseCase169.Invoke(context, ((TestCases.Union.Case169)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 170:
+                    if (!System.Object.ReferenceEquals(caseCase170, null))
+                    {
+                        return caseCase170.Invoke(context, ((TestCases.Union.Case170)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 171:
+                    if (!System.Object.ReferenceEquals(caseCase171, null))
+                    {
+                        return caseCase171.Invoke(context, ((TestCases.Union.Case171)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 172:
+                    if (!System.Object.ReferenceEquals(caseCase172, null))
+                    {
+                        return caseCase172.Invoke(context, ((TestCases.Union.Case172)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 173:
+                    if (!System.Object.ReferenceEquals(caseCase173, null))
+                    {
+                        return caseCase173.Invoke(context, ((TestCases.Union.Case173)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 174:
+                    if (!System.Object.ReferenceEquals(caseCase174, null))
+                    {
+                        return caseCase174.Invoke(context, ((TestCases.Union.Case174)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 175:
+                    if (!System.Object.ReferenceEquals(caseCase175, null))
+                    {
+                        return caseCase175.Invoke(context, ((TestCases.Union.Case175)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 176:
+                    if (!System.Object.ReferenceEquals(caseCase176, null))
+                    {
+                        return caseCase176.Invoke(context, ((TestCases.Union.Case176)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 177:
+                    if (!System.Object.ReferenceEquals(caseCase177, null))
+                    {
+                        return caseCase177.Invoke(context, ((TestCases.Union.Case177)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 178:
+                    if (!System.Object.ReferenceEquals(caseCase178, null))
+                    {
+                        return caseCase178.Invoke(context, ((TestCases.Union.Case178)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 179:
+                    if (!System.Object.ReferenceEquals(caseCase179, null))
+                    {
+                        return caseCase179.Invoke(context, ((TestCases.Union.Case179)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 180:
+                    if (!System.Object.ReferenceEquals(caseCase180, null))
+                    {
+                        return caseCase180.Invoke(context, ((TestCases.Union.Case180)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 181:
+                    if (!System.Object.ReferenceEquals(caseCase181, null))
+                    {
+                        return caseCase181.Invoke(context, ((TestCases.Union.Case181)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 182:
+                    if (!System.Object.ReferenceEquals(caseCase182, null))
+                    {
+                        return caseCase182.Invoke(context, ((TestCases.Union.Case182)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 183:
+                    if (!System.Object.ReferenceEquals(caseCase183, null))
+                    {
+                        return caseCase183.Invoke(context, ((TestCases.Union.Case183)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 184:
+                    if (!System.Object.ReferenceEquals(caseCase184, null))
+                    {
+                        return caseCase184.Invoke(context, ((TestCases.Union.Case184)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 185:
+                    if (!System.Object.ReferenceEquals(caseCase185, null))
+                    {
+                        return caseCase185.Invoke(context, ((TestCases.Union.Case185)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 186:
+                    if (!System.Object.ReferenceEquals(caseCase186, null))
+                    {
+                        return caseCase186.Invoke(context, ((TestCases.Union.Case186)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 187:
+                    if (!System.Object.ReferenceEquals(caseCase187, null))
+                    {
+                        return caseCase187.Invoke(context, ((TestCases.Union.Case187)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 188:
+                    if (!System.Object.ReferenceEquals(caseCase188, null))
+                    {
+                        return caseCase188.Invoke(context, ((TestCases.Union.Case188)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 189:
+                    if (!System.Object.ReferenceEquals(caseCase189, null))
+                    {
+                        return caseCase189.Invoke(context, ((TestCases.Union.Case189)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 190:
+                    if (!System.Object.ReferenceEquals(caseCase190, null))
+                    {
+                        return caseCase190.Invoke(context, ((TestCases.Union.Case190)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 191:
+                    if (!System.Object.ReferenceEquals(caseCase191, null))
+                    {
+                        return caseCase191.Invoke(context, ((TestCases.Union.Case191)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 192:
+                    if (!System.Object.ReferenceEquals(caseCase192, null))
+                    {
+                        return caseCase192.Invoke(context, ((TestCases.Union.Case192)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 193:
+                    if (!System.Object.ReferenceEquals(caseCase193, null))
+                    {
+                        return caseCase193.Invoke(context, ((TestCases.Union.Case193)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 194:
+                    if (!System.Object.ReferenceEquals(caseCase194, null))
+                    {
+                        return caseCase194.Invoke(context, ((TestCases.Union.Case194)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 195:
+                    if (!System.Object.ReferenceEquals(caseCase195, null))
+                    {
+                        return caseCase195.Invoke(context, ((TestCases.Union.Case195)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 196:
+                    if (!System.Object.ReferenceEquals(caseCase196, null))
+                    {
+                        return caseCase196.Invoke(context, ((TestCases.Union.Case196)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 197:
+                    if (!System.Object.ReferenceEquals(caseCase197, null))
+                    {
+                        return caseCase197.Invoke(context, ((TestCases.Union.Case197)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 198:
+                    if (!System.Object.ReferenceEquals(caseCase198, null))
+                    {
+                        return caseCase198.Invoke(context, ((TestCases.Union.Case198)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 199:
+                    if (!System.Object.ReferenceEquals(caseCase199, null))
+                    {
+                        return caseCase199.Invoke(context, ((TestCases.Union.Case199)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 200:
+                    if (!System.Object.ReferenceEquals(caseCase200, null))
+                    {
+                        return caseCase200.Invoke(context, ((TestCases.Union.Case200)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 201:
+                    if (!System.Object.ReferenceEquals(caseCase201, null))
+                    {
+                        return caseCase201.Invoke(context, ((TestCases.Union.Case201)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 202:
+                    if (!System.Object.ReferenceEquals(caseCase202, null))
+                    {
+                        return caseCase202.Invoke(context, ((TestCases.Union.Case202)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 203:
+                    if (!System.Object.ReferenceEquals(caseCase203, null))
+                    {
+                        return caseCase203.Invoke(context, ((TestCases.Union.Case203)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 204:
+                    if (!System.Object.ReferenceEquals(caseCase204, null))
+                    {
+                        return caseCase204.Invoke(context, ((TestCases.Union.Case204)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 205:
+                    if (!System.Object.ReferenceEquals(caseCase205, null))
+                    {
+                        return caseCase205.Invoke(context, ((TestCases.Union.Case205)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 206:
+                    if (!System.Object.ReferenceEquals(caseCase206, null))
+                    {
+                        return caseCase206.Invoke(context, ((TestCases.Union.Case206)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 207:
+                    if (!System.Object.ReferenceEquals(caseCase207, null))
+                    {
+                        return caseCase207.Invoke(context, ((TestCases.Union.Case207)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 208:
+                    if (!System.Object.ReferenceEquals(caseCase208, null))
+                    {
+                        return caseCase208.Invoke(context, ((TestCases.Union.Case208)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 209:
+                    if (!System.Object.ReferenceEquals(caseCase209, null))
+                    {
+                        return caseCase209.Invoke(context, ((TestCases.Union.Case209)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 210:
+                    if (!System.Object.ReferenceEquals(caseCase210, null))
+                    {
+                        return caseCase210.Invoke(context, ((TestCases.Union.Case210)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 211:
+                    if (!System.Object.ReferenceEquals(caseCase211, null))
+                    {
+                        return caseCase211.Invoke(context, ((TestCases.Union.Case211)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 212:
+                    if (!System.Object.ReferenceEquals(caseCase212, null))
+                    {
+                        return caseCase212.Invoke(context, ((TestCases.Union.Case212)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 213:
+                    if (!System.Object.ReferenceEquals(caseCase213, null))
+                    {
+                        return caseCase213.Invoke(context, ((TestCases.Union.Case213)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 214:
+                    if (!System.Object.ReferenceEquals(caseCase214, null))
+                    {
+                        return caseCase214.Invoke(context, ((TestCases.Union.Case214)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 215:
+                    if (!System.Object.ReferenceEquals(caseCase215, null))
+                    {
+                        return caseCase215.Invoke(context, ((TestCases.Union.Case215)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 216:
+                    if (!System.Object.ReferenceEquals(caseCase216, null))
+                    {
+                        return caseCase216.Invoke(context, ((TestCases.Union.Case216)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 217:
+                    if (!System.Object.ReferenceEquals(caseCase217, null))
+                    {
+                        return caseCase217.Invoke(context, ((TestCases.Union.Case217)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 218:
+                    if (!System.Object.ReferenceEquals(caseCase218, null))
+                    {
+                        return caseCase218.Invoke(context, ((TestCases.Union.Case218)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 219:
+                    if (!System.Object.ReferenceEquals(caseCase219, null))
+                    {
+                        return caseCase219.Invoke(context, ((TestCases.Union.Case219)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 220:
+                    if (!System.Object.ReferenceEquals(caseCase220, null))
+                    {
+                        return caseCase220.Invoke(context, ((TestCases.Union.Case220)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 221:
+                    if (!System.Object.ReferenceEquals(caseCase221, null))
+                    {
+                        return caseCase221.Invoke(context, ((TestCases.Union.Case221)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 222:
+                    if (!System.Object.ReferenceEquals(caseCase222, null))
+                    {
+                        return caseCase222.Invoke(context, ((TestCases.Union.Case222)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 223:
+                    if (!System.Object.ReferenceEquals(caseCase223, null))
+                    {
+                        return caseCase223.Invoke(context, ((TestCases.Union.Case223)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 224:
+                    if (!System.Object.ReferenceEquals(caseCase224, null))
+                    {
+                        return caseCase224.Invoke(context, ((TestCases.Union.Case224)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 225:
+                    if (!System.Object.ReferenceEquals(caseCase225, null))
+                    {
+                        return caseCase225.Invoke(context, ((TestCases.Union.Case225)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 226:
+                    if (!System.Object.ReferenceEquals(caseCase226, null))
+                    {
+                        return caseCase226.Invoke(context, ((TestCases.Union.Case226)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 227:
+                    if (!System.Object.ReferenceEquals(caseCase227, null))
+                    {
+                        return caseCase227.Invoke(context, ((TestCases.Union.Case227)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 228:
+                    if (!System.Object.ReferenceEquals(caseCase228, null))
+                    {
+                        return caseCase228.Invoke(context, ((TestCases.Union.Case228)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 229:
+                    if (!System.Object.ReferenceEquals(caseCase229, null))
+                    {
+                        return caseCase229.Invoke(context, ((TestCases.Union.Case229)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 230:
+                    if (!System.Object.ReferenceEquals(caseCase230, null))
+                    {
+                        return caseCase230.Invoke(context, ((TestCases.Union.Case230)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 231:
+                    if (!System.Object.ReferenceEquals(caseCase231, null))
+                    {
+                        return caseCase231.Invoke(context, ((TestCases.Union.Case231)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 232:
+                    if (!System.Object.ReferenceEquals(caseCase232, null))
+                    {
+                        return caseCase232.Invoke(context, ((TestCases.Union.Case232)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 233:
+                    if (!System.Object.ReferenceEquals(caseCase233, null))
+                    {
+                        return caseCase233.Invoke(context, ((TestCases.Union.Case233)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 234:
+                    if (!System.Object.ReferenceEquals(caseCase234, null))
+                    {
+                        return caseCase234.Invoke(context, ((TestCases.Union.Case234)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 235:
+                    if (!System.Object.ReferenceEquals(caseCase235, null))
+                    {
+                        return caseCase235.Invoke(context, ((TestCases.Union.Case235)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 236:
+                    if (!System.Object.ReferenceEquals(caseCase236, null))
+                    {
+                        return caseCase236.Invoke(context, ((TestCases.Union.Case236)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 237:
+                    if (!System.Object.ReferenceEquals(caseCase237, null))
+                    {
+                        return caseCase237.Invoke(context, ((TestCases.Union.Case237)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 238:
+                    if (!System.Object.ReferenceEquals(caseCase238, null))
+                    {
+                        return caseCase238.Invoke(context, ((TestCases.Union.Case238)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 239:
+                    if (!System.Object.ReferenceEquals(caseCase239, null))
+                    {
+                        return caseCase239.Invoke(context, ((TestCases.Union.Case239)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 240:
+                    if (!System.Object.ReferenceEquals(caseCase240, null))
+                    {
+                        return caseCase240.Invoke(context, ((TestCases.Union.Case240)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 241:
+                    if (!System.Object.ReferenceEquals(caseCase241, null))
+                    {
+                        return caseCase241.Invoke(context, ((TestCases.Union.Case241)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 242:
+                    if (!System.Object.ReferenceEquals(caseCase242, null))
+                    {
+                        return caseCase242.Invoke(context, ((TestCases.Union.Case242)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 243:
+                    if (!System.Object.ReferenceEquals(caseCase243, null))
+                    {
+                        return caseCase243.Invoke(context, ((TestCases.Union.Case243)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 244:
+                    if (!System.Object.ReferenceEquals(caseCase244, null))
+                    {
+                        return caseCase244.Invoke(context, ((TestCases.Union.Case244)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 245:
+                    if (!System.Object.ReferenceEquals(caseCase245, null))
+                    {
+                        return caseCase245.Invoke(context, ((TestCases.Union.Case245)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 246:
+                    if (!System.Object.ReferenceEquals(caseCase246, null))
+                    {
+                        return caseCase246.Invoke(context, ((TestCases.Union.Case246)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 247:
+                    if (!System.Object.ReferenceEquals(caseCase247, null))
+                    {
+                        return caseCase247.Invoke(context, ((TestCases.Union.Case247)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 248:
+                    if (!System.Object.ReferenceEquals(caseCase248, null))
+                    {
+                        return caseCase248.Invoke(context, ((TestCases.Union.Case248)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 249:
+                    if (!System.Object.ReferenceEquals(caseCase249, null))
+                    {
+                        return caseCase249.Invoke(context, ((TestCases.Union.Case249)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 250:
+                    if (!System.Object.ReferenceEquals(caseCase250, null))
+                    {
+                        return caseCase250.Invoke(context, ((TestCases.Union.Case250)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 251:
+                    if (!System.Object.ReferenceEquals(caseCase251, null))
+                    {
+                        return caseCase251.Invoke(context, ((TestCases.Union.Case251)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 252:
+                    if (!System.Object.ReferenceEquals(caseCase252, null))
+                    {
+                        return caseCase252.Invoke(context, ((TestCases.Union.Case252)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 253:
+                    if (!System.Object.ReferenceEquals(caseCase253, null))
+                    {
+                        return caseCase253.Invoke(context, ((TestCases.Union.Case253)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 254:
+                    if (!System.Object.ReferenceEquals(caseCase254, null))
+                    {
+                        return caseCase254.Invoke(context, ((TestCases.Union.Case254)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Union" /> represents and returns its result.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseCase1" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase2" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase3" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase4" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase5" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase6" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase7" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase8" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase9" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase10" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase11" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase12" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase13" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase14" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase15" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase16" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase17" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase18" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase19" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase20" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase21" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase22" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase23" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase24" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase25" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase26" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase27" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase28" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase29" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase30" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase31" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase32" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase33" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase34" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase35" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase36" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase37" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase38" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase39" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase40" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase41" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase42" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase43" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase44" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase45" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase46" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase47" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase48" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase49" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase50" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase51" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase52" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase53" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase54" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase55" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase56" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase57" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase58" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase59" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase60" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase61" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase62" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase63" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase64" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase65" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase66" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase67" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase68" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase69" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase70" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase71" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase72" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase73" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase74" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase75" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase76" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase77" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase78" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase79" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase80" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase81" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase82" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase83" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase84" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase85" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase86" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase87" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase88" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase89" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase90" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase91" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase92" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase93" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase94" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase95" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase96" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase97" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase98" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase99" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase100" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase101" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase102" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase103" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase104" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase105" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase106" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase107" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase108" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase109" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase110" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase111" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase112" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase113" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase114" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase115" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase116" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase117" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase118" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase119" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase120" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase121" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase122" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase123" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase124" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase125" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase126" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase127" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase128" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase129" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase130" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase131" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase132" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase133" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase134" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase135" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase136" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase137" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase138" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase139" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase140" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase141" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase142" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase143" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase144" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase145" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase146" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase147" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase148" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase149" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase150" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase151" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase152" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase153" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase154" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase155" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase156" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase157" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase158" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase159" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase160" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase161" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase162" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase163" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase164" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase165" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase166" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase167" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase168" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase169" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase170" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase171" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase172" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase173" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase174" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase175" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase176" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase177" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase178" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase179" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase180" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase181" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase182" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase183" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase184" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase185" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase186" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase187" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase188" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase189" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase190" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase191" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase192" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase193" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase194" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase195" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase196" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase197" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase198" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase199" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase200" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase201" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase202" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase203" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase204" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase205" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase206" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase207" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase208" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase209" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase210" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase211" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase212" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase213" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase214" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase215" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase216" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase217" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase218" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase219" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase220" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase221" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase222" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase223" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase224" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase225" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase226" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase227" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase228" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase229" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase230" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase231" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase232" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase233" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase234" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase235" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase236" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase237" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase238" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase239" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase240" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase241" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase242" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase243" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase244" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase245" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase246" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase247" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase248" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase249" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase250" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase251" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase252" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase253" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase254" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</description>
+        ///     </item>
         /// </list>
         /// </summary>
         /// <param name="caseCase1">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</param>
@@ -49248,6 +62041,4098 @@ namespace TestCases
                     if (!System.Object.ReferenceEquals(caseCase254, null))
                     {
                         return caseCase254.Invoke(((TestCases.Union.Case254)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase254));
+                    }
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.Union" /> represents and returns its result.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseCase1" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase2" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase3" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase4" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase5" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase6" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase7" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase8" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase9" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase10" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase11" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase12" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase13" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase14" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase15" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase16" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase17" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase18" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase19" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase20" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase21" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase22" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase23" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase24" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase25" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase26" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase27" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase28" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase29" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase30" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase31" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase32" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase33" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase34" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase35" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase36" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase37" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase38" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase39" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase40" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase41" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase42" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase43" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase44" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase45" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase46" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase47" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase48" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase49" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase50" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase51" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase52" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase53" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase54" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase55" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase56" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase57" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase58" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase59" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase60" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase61" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase62" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase63" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase64" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase65" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase66" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase67" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase68" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase69" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase70" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase71" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase72" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase73" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase74" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase75" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase76" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase77" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase78" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase79" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase80" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase81" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase82" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase83" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase84" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase85" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase86" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase87" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase88" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase89" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase90" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase91" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase92" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase93" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase94" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase95" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase96" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase97" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase98" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase99" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase100" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase101" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase102" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase103" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase104" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase105" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase106" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase107" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase108" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase109" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase110" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase111" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase112" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase113" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase114" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase115" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase116" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase117" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase118" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase119" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase120" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase121" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase122" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase123" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase124" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase125" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase126" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase127" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase128" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase129" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase130" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase131" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase132" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase133" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase134" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase135" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase136" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase137" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase138" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase139" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase140" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase141" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase142" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase143" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase144" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase145" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase146" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase147" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase148" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase149" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase150" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase151" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase152" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase153" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase154" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase155" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase156" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase157" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase158" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase159" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase160" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase161" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase162" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase163" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase164" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase165" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase166" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase167" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase168" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase169" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase170" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase171" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase172" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase173" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase174" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase175" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase176" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase177" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase178" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase179" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase180" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase181" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase182" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase183" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase184" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase185" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase186" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase187" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase188" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase189" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase190" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase191" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase192" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase193" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase194" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase195" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase196" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase197" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase198" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase199" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase200" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase201" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase202" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase203" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase204" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase205" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase206" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase207" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase208" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase209" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase210" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase211" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase212" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase213" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase214" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase215" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase216" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase217" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase218" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase219" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase220" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase221" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase222" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase223" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase224" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase225" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase226" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase227" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase228" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase229" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase230" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase231" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase232" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase233" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase234" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase235" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase236" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase237" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase238" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase239" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase240" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase241" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase242" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase243" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase244" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase245" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase246" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase247" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase248" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase249" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase250" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase251" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase252" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase253" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseCase254" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseCase1">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case1" />.</param>
+        /// <param name="caseCase2">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case2" />.</param>
+        /// <param name="caseCase3">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case3" />.</param>
+        /// <param name="caseCase4">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case4" />.</param>
+        /// <param name="caseCase5">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case5" />.</param>
+        /// <param name="caseCase6">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case6" />.</param>
+        /// <param name="caseCase7">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case7" />.</param>
+        /// <param name="caseCase8">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case8" />.</param>
+        /// <param name="caseCase9">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case9" />.</param>
+        /// <param name="caseCase10">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case10" />.</param>
+        /// <param name="caseCase11">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case11" />.</param>
+        /// <param name="caseCase12">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case12" />.</param>
+        /// <param name="caseCase13">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case13" />.</param>
+        /// <param name="caseCase14">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case14" />.</param>
+        /// <param name="caseCase15">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case15" />.</param>
+        /// <param name="caseCase16">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case16" />.</param>
+        /// <param name="caseCase17">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case17" />.</param>
+        /// <param name="caseCase18">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case18" />.</param>
+        /// <param name="caseCase19">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case19" />.</param>
+        /// <param name="caseCase20">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case20" />.</param>
+        /// <param name="caseCase21">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case21" />.</param>
+        /// <param name="caseCase22">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case22" />.</param>
+        /// <param name="caseCase23">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case23" />.</param>
+        /// <param name="caseCase24">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case24" />.</param>
+        /// <param name="caseCase25">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case25" />.</param>
+        /// <param name="caseCase26">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case26" />.</param>
+        /// <param name="caseCase27">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case27" />.</param>
+        /// <param name="caseCase28">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case28" />.</param>
+        /// <param name="caseCase29">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case29" />.</param>
+        /// <param name="caseCase30">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case30" />.</param>
+        /// <param name="caseCase31">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case31" />.</param>
+        /// <param name="caseCase32">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case32" />.</param>
+        /// <param name="caseCase33">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case33" />.</param>
+        /// <param name="caseCase34">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case34" />.</param>
+        /// <param name="caseCase35">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case35" />.</param>
+        /// <param name="caseCase36">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case36" />.</param>
+        /// <param name="caseCase37">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case37" />.</param>
+        /// <param name="caseCase38">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case38" />.</param>
+        /// <param name="caseCase39">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case39" />.</param>
+        /// <param name="caseCase40">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case40" />.</param>
+        /// <param name="caseCase41">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case41" />.</param>
+        /// <param name="caseCase42">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case42" />.</param>
+        /// <param name="caseCase43">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case43" />.</param>
+        /// <param name="caseCase44">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case44" />.</param>
+        /// <param name="caseCase45">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case45" />.</param>
+        /// <param name="caseCase46">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case46" />.</param>
+        /// <param name="caseCase47">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case47" />.</param>
+        /// <param name="caseCase48">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case48" />.</param>
+        /// <param name="caseCase49">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case49" />.</param>
+        /// <param name="caseCase50">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case50" />.</param>
+        /// <param name="caseCase51">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case51" />.</param>
+        /// <param name="caseCase52">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case52" />.</param>
+        /// <param name="caseCase53">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case53" />.</param>
+        /// <param name="caseCase54">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case54" />.</param>
+        /// <param name="caseCase55">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case55" />.</param>
+        /// <param name="caseCase56">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case56" />.</param>
+        /// <param name="caseCase57">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case57" />.</param>
+        /// <param name="caseCase58">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case58" />.</param>
+        /// <param name="caseCase59">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case59" />.</param>
+        /// <param name="caseCase60">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case60" />.</param>
+        /// <param name="caseCase61">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case61" />.</param>
+        /// <param name="caseCase62">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case62" />.</param>
+        /// <param name="caseCase63">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case63" />.</param>
+        /// <param name="caseCase64">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case64" />.</param>
+        /// <param name="caseCase65">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case65" />.</param>
+        /// <param name="caseCase66">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case66" />.</param>
+        /// <param name="caseCase67">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case67" />.</param>
+        /// <param name="caseCase68">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case68" />.</param>
+        /// <param name="caseCase69">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case69" />.</param>
+        /// <param name="caseCase70">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case70" />.</param>
+        /// <param name="caseCase71">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case71" />.</param>
+        /// <param name="caseCase72">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case72" />.</param>
+        /// <param name="caseCase73">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case73" />.</param>
+        /// <param name="caseCase74">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case74" />.</param>
+        /// <param name="caseCase75">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case75" />.</param>
+        /// <param name="caseCase76">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case76" />.</param>
+        /// <param name="caseCase77">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case77" />.</param>
+        /// <param name="caseCase78">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case78" />.</param>
+        /// <param name="caseCase79">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case79" />.</param>
+        /// <param name="caseCase80">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case80" />.</param>
+        /// <param name="caseCase81">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case81" />.</param>
+        /// <param name="caseCase82">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case82" />.</param>
+        /// <param name="caseCase83">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case83" />.</param>
+        /// <param name="caseCase84">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case84" />.</param>
+        /// <param name="caseCase85">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case85" />.</param>
+        /// <param name="caseCase86">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case86" />.</param>
+        /// <param name="caseCase87">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case87" />.</param>
+        /// <param name="caseCase88">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case88" />.</param>
+        /// <param name="caseCase89">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case89" />.</param>
+        /// <param name="caseCase90">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case90" />.</param>
+        /// <param name="caseCase91">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case91" />.</param>
+        /// <param name="caseCase92">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case92" />.</param>
+        /// <param name="caseCase93">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case93" />.</param>
+        /// <param name="caseCase94">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case94" />.</param>
+        /// <param name="caseCase95">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case95" />.</param>
+        /// <param name="caseCase96">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case96" />.</param>
+        /// <param name="caseCase97">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case97" />.</param>
+        /// <param name="caseCase98">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case98" />.</param>
+        /// <param name="caseCase99">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case99" />.</param>
+        /// <param name="caseCase100">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case100" />.</param>
+        /// <param name="caseCase101">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case101" />.</param>
+        /// <param name="caseCase102">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case102" />.</param>
+        /// <param name="caseCase103">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case103" />.</param>
+        /// <param name="caseCase104">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case104" />.</param>
+        /// <param name="caseCase105">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case105" />.</param>
+        /// <param name="caseCase106">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case106" />.</param>
+        /// <param name="caseCase107">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case107" />.</param>
+        /// <param name="caseCase108">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case108" />.</param>
+        /// <param name="caseCase109">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case109" />.</param>
+        /// <param name="caseCase110">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case110" />.</param>
+        /// <param name="caseCase111">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case111" />.</param>
+        /// <param name="caseCase112">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case112" />.</param>
+        /// <param name="caseCase113">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case113" />.</param>
+        /// <param name="caseCase114">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case114" />.</param>
+        /// <param name="caseCase115">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case115" />.</param>
+        /// <param name="caseCase116">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case116" />.</param>
+        /// <param name="caseCase117">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case117" />.</param>
+        /// <param name="caseCase118">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case118" />.</param>
+        /// <param name="caseCase119">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case119" />.</param>
+        /// <param name="caseCase120">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case120" />.</param>
+        /// <param name="caseCase121">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case121" />.</param>
+        /// <param name="caseCase122">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case122" />.</param>
+        /// <param name="caseCase123">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case123" />.</param>
+        /// <param name="caseCase124">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case124" />.</param>
+        /// <param name="caseCase125">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case125" />.</param>
+        /// <param name="caseCase126">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case126" />.</param>
+        /// <param name="caseCase127">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case127" />.</param>
+        /// <param name="caseCase128">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case128" />.</param>
+        /// <param name="caseCase129">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case129" />.</param>
+        /// <param name="caseCase130">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case130" />.</param>
+        /// <param name="caseCase131">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case131" />.</param>
+        /// <param name="caseCase132">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case132" />.</param>
+        /// <param name="caseCase133">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case133" />.</param>
+        /// <param name="caseCase134">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case134" />.</param>
+        /// <param name="caseCase135">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case135" />.</param>
+        /// <param name="caseCase136">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case136" />.</param>
+        /// <param name="caseCase137">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case137" />.</param>
+        /// <param name="caseCase138">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case138" />.</param>
+        /// <param name="caseCase139">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case139" />.</param>
+        /// <param name="caseCase140">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case140" />.</param>
+        /// <param name="caseCase141">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case141" />.</param>
+        /// <param name="caseCase142">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case142" />.</param>
+        /// <param name="caseCase143">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case143" />.</param>
+        /// <param name="caseCase144">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case144" />.</param>
+        /// <param name="caseCase145">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case145" />.</param>
+        /// <param name="caseCase146">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case146" />.</param>
+        /// <param name="caseCase147">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case147" />.</param>
+        /// <param name="caseCase148">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case148" />.</param>
+        /// <param name="caseCase149">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case149" />.</param>
+        /// <param name="caseCase150">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case150" />.</param>
+        /// <param name="caseCase151">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case151" />.</param>
+        /// <param name="caseCase152">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case152" />.</param>
+        /// <param name="caseCase153">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case153" />.</param>
+        /// <param name="caseCase154">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case154" />.</param>
+        /// <param name="caseCase155">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case155" />.</param>
+        /// <param name="caseCase156">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case156" />.</param>
+        /// <param name="caseCase157">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case157" />.</param>
+        /// <param name="caseCase158">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case158" />.</param>
+        /// <param name="caseCase159">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case159" />.</param>
+        /// <param name="caseCase160">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case160" />.</param>
+        /// <param name="caseCase161">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case161" />.</param>
+        /// <param name="caseCase162">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case162" />.</param>
+        /// <param name="caseCase163">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case163" />.</param>
+        /// <param name="caseCase164">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case164" />.</param>
+        /// <param name="caseCase165">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case165" />.</param>
+        /// <param name="caseCase166">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case166" />.</param>
+        /// <param name="caseCase167">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case167" />.</param>
+        /// <param name="caseCase168">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case168" />.</param>
+        /// <param name="caseCase169">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case169" />.</param>
+        /// <param name="caseCase170">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case170" />.</param>
+        /// <param name="caseCase171">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case171" />.</param>
+        /// <param name="caseCase172">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case172" />.</param>
+        /// <param name="caseCase173">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case173" />.</param>
+        /// <param name="caseCase174">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case174" />.</param>
+        /// <param name="caseCase175">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case175" />.</param>
+        /// <param name="caseCase176">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case176" />.</param>
+        /// <param name="caseCase177">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case177" />.</param>
+        /// <param name="caseCase178">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case178" />.</param>
+        /// <param name="caseCase179">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case179" />.</param>
+        /// <param name="caseCase180">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case180" />.</param>
+        /// <param name="caseCase181">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case181" />.</param>
+        /// <param name="caseCase182">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case182" />.</param>
+        /// <param name="caseCase183">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case183" />.</param>
+        /// <param name="caseCase184">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case184" />.</param>
+        /// <param name="caseCase185">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case185" />.</param>
+        /// <param name="caseCase186">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case186" />.</param>
+        /// <param name="caseCase187">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case187" />.</param>
+        /// <param name="caseCase188">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case188" />.</param>
+        /// <param name="caseCase189">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case189" />.</param>
+        /// <param name="caseCase190">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case190" />.</param>
+        /// <param name="caseCase191">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case191" />.</param>
+        /// <param name="caseCase192">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case192" />.</param>
+        /// <param name="caseCase193">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case193" />.</param>
+        /// <param name="caseCase194">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case194" />.</param>
+        /// <param name="caseCase195">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case195" />.</param>
+        /// <param name="caseCase196">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case196" />.</param>
+        /// <param name="caseCase197">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case197" />.</param>
+        /// <param name="caseCase198">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case198" />.</param>
+        /// <param name="caseCase199">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case199" />.</param>
+        /// <param name="caseCase200">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case200" />.</param>
+        /// <param name="caseCase201">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case201" />.</param>
+        /// <param name="caseCase202">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case202" />.</param>
+        /// <param name="caseCase203">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case203" />.</param>
+        /// <param name="caseCase204">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case204" />.</param>
+        /// <param name="caseCase205">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case205" />.</param>
+        /// <param name="caseCase206">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case206" />.</param>
+        /// <param name="caseCase207">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case207" />.</param>
+        /// <param name="caseCase208">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case208" />.</param>
+        /// <param name="caseCase209">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case209" />.</param>
+        /// <param name="caseCase210">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case210" />.</param>
+        /// <param name="caseCase211">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case211" />.</param>
+        /// <param name="caseCase212">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case212" />.</param>
+        /// <param name="caseCase213">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case213" />.</param>
+        /// <param name="caseCase214">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case214" />.</param>
+        /// <param name="caseCase215">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case215" />.</param>
+        /// <param name="caseCase216">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case216" />.</param>
+        /// <param name="caseCase217">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case217" />.</param>
+        /// <param name="caseCase218">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case218" />.</param>
+        /// <param name="caseCase219">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case219" />.</param>
+        /// <param name="caseCase220">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case220" />.</param>
+        /// <param name="caseCase221">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case221" />.</param>
+        /// <param name="caseCase222">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case222" />.</param>
+        /// <param name="caseCase223">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case223" />.</param>
+        /// <param name="caseCase224">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case224" />.</param>
+        /// <param name="caseCase225">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case225" />.</param>
+        /// <param name="caseCase226">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case226" />.</param>
+        /// <param name="caseCase227">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case227" />.</param>
+        /// <param name="caseCase228">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case228" />.</param>
+        /// <param name="caseCase229">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case229" />.</param>
+        /// <param name="caseCase230">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case230" />.</param>
+        /// <param name="caseCase231">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case231" />.</param>
+        /// <param name="caseCase232">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case232" />.</param>
+        /// <param name="caseCase233">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case233" />.</param>
+        /// <param name="caseCase234">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case234" />.</param>
+        /// <param name="caseCase235">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case235" />.</param>
+        /// <param name="caseCase236">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case236" />.</param>
+        /// <param name="caseCase237">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case237" />.</param>
+        /// <param name="caseCase238">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case238" />.</param>
+        /// <param name="caseCase239">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case239" />.</param>
+        /// <param name="caseCase240">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case240" />.</param>
+        /// <param name="caseCase241">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case241" />.</param>
+        /// <param name="caseCase242">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case242" />.</param>
+        /// <param name="caseCase243">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case243" />.</param>
+        /// <param name="caseCase244">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case244" />.</param>
+        /// <param name="caseCase245">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case245" />.</param>
+        /// <param name="caseCase246">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case246" />.</param>
+        /// <param name="caseCase247">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case247" />.</param>
+        /// <param name="caseCase248">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case248" />.</param>
+        /// <param name="caseCase249">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case249" />.</param>
+        /// <param name="caseCase250">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case250" />.</param>
+        /// <param name="caseCase251">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case251" />.</param>
+        /// <param name="caseCase252">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case252" />.</param>
+        /// <param name="caseCase253">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case253" />.</param>
+        /// <param name="caseCase254">The delegate to invoke when the <see cref="TestCases.Union" /> represents a <see cref="TestCases.Union.Case254" />.</param>
+        /// <returns>the result of invoking the relevant delegate.</returns>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.Union" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.Union" /> is a struct and this is the default value of <see cref="TestCases.Union" />.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown when the delegate that should have been invoked is null.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public TMatchResult Match<TMatchResult, TMatchContext>
+        (
+            TMatchContext context,
+            System.Func<TMatchContext, TestCases.Union.Case1, TMatchResult> caseCase1,
+            System.Func<TMatchContext, TestCases.Union.Case2, TMatchResult> caseCase2,
+            System.Func<TMatchContext, TestCases.Union.Case3, TMatchResult> caseCase3,
+            System.Func<TMatchContext, TestCases.Union.Case4, TMatchResult> caseCase4,
+            System.Func<TMatchContext, TestCases.Union.Case5, TMatchResult> caseCase5,
+            System.Func<TMatchContext, TestCases.Union.Case6, TMatchResult> caseCase6,
+            System.Func<TMatchContext, TestCases.Union.Case7, TMatchResult> caseCase7,
+            System.Func<TMatchContext, TestCases.Union.Case8, TMatchResult> caseCase8,
+            System.Func<TMatchContext, TestCases.Union.Case9, TMatchResult> caseCase9,
+            System.Func<TMatchContext, TestCases.Union.Case10, TMatchResult> caseCase10,
+            System.Func<TMatchContext, TestCases.Union.Case11, TMatchResult> caseCase11,
+            System.Func<TMatchContext, TestCases.Union.Case12, TMatchResult> caseCase12,
+            System.Func<TMatchContext, TestCases.Union.Case13, TMatchResult> caseCase13,
+            System.Func<TMatchContext, TestCases.Union.Case14, TMatchResult> caseCase14,
+            System.Func<TMatchContext, TestCases.Union.Case15, TMatchResult> caseCase15,
+            System.Func<TMatchContext, TestCases.Union.Case16, TMatchResult> caseCase16,
+            System.Func<TMatchContext, TestCases.Union.Case17, TMatchResult> caseCase17,
+            System.Func<TMatchContext, TestCases.Union.Case18, TMatchResult> caseCase18,
+            System.Func<TMatchContext, TestCases.Union.Case19, TMatchResult> caseCase19,
+            System.Func<TMatchContext, TestCases.Union.Case20, TMatchResult> caseCase20,
+            System.Func<TMatchContext, TestCases.Union.Case21, TMatchResult> caseCase21,
+            System.Func<TMatchContext, TestCases.Union.Case22, TMatchResult> caseCase22,
+            System.Func<TMatchContext, TestCases.Union.Case23, TMatchResult> caseCase23,
+            System.Func<TMatchContext, TestCases.Union.Case24, TMatchResult> caseCase24,
+            System.Func<TMatchContext, TestCases.Union.Case25, TMatchResult> caseCase25,
+            System.Func<TMatchContext, TestCases.Union.Case26, TMatchResult> caseCase26,
+            System.Func<TMatchContext, TestCases.Union.Case27, TMatchResult> caseCase27,
+            System.Func<TMatchContext, TestCases.Union.Case28, TMatchResult> caseCase28,
+            System.Func<TMatchContext, TestCases.Union.Case29, TMatchResult> caseCase29,
+            System.Func<TMatchContext, TestCases.Union.Case30, TMatchResult> caseCase30,
+            System.Func<TMatchContext, TestCases.Union.Case31, TMatchResult> caseCase31,
+            System.Func<TMatchContext, TestCases.Union.Case32, TMatchResult> caseCase32,
+            System.Func<TMatchContext, TestCases.Union.Case33, TMatchResult> caseCase33,
+            System.Func<TMatchContext, TestCases.Union.Case34, TMatchResult> caseCase34,
+            System.Func<TMatchContext, TestCases.Union.Case35, TMatchResult> caseCase35,
+            System.Func<TMatchContext, TestCases.Union.Case36, TMatchResult> caseCase36,
+            System.Func<TMatchContext, TestCases.Union.Case37, TMatchResult> caseCase37,
+            System.Func<TMatchContext, TestCases.Union.Case38, TMatchResult> caseCase38,
+            System.Func<TMatchContext, TestCases.Union.Case39, TMatchResult> caseCase39,
+            System.Func<TMatchContext, TestCases.Union.Case40, TMatchResult> caseCase40,
+            System.Func<TMatchContext, TestCases.Union.Case41, TMatchResult> caseCase41,
+            System.Func<TMatchContext, TestCases.Union.Case42, TMatchResult> caseCase42,
+            System.Func<TMatchContext, TestCases.Union.Case43, TMatchResult> caseCase43,
+            System.Func<TMatchContext, TestCases.Union.Case44, TMatchResult> caseCase44,
+            System.Func<TMatchContext, TestCases.Union.Case45, TMatchResult> caseCase45,
+            System.Func<TMatchContext, TestCases.Union.Case46, TMatchResult> caseCase46,
+            System.Func<TMatchContext, TestCases.Union.Case47, TMatchResult> caseCase47,
+            System.Func<TMatchContext, TestCases.Union.Case48, TMatchResult> caseCase48,
+            System.Func<TMatchContext, TestCases.Union.Case49, TMatchResult> caseCase49,
+            System.Func<TMatchContext, TestCases.Union.Case50, TMatchResult> caseCase50,
+            System.Func<TMatchContext, TestCases.Union.Case51, TMatchResult> caseCase51,
+            System.Func<TMatchContext, TestCases.Union.Case52, TMatchResult> caseCase52,
+            System.Func<TMatchContext, TestCases.Union.Case53, TMatchResult> caseCase53,
+            System.Func<TMatchContext, TestCases.Union.Case54, TMatchResult> caseCase54,
+            System.Func<TMatchContext, TestCases.Union.Case55, TMatchResult> caseCase55,
+            System.Func<TMatchContext, TestCases.Union.Case56, TMatchResult> caseCase56,
+            System.Func<TMatchContext, TestCases.Union.Case57, TMatchResult> caseCase57,
+            System.Func<TMatchContext, TestCases.Union.Case58, TMatchResult> caseCase58,
+            System.Func<TMatchContext, TestCases.Union.Case59, TMatchResult> caseCase59,
+            System.Func<TMatchContext, TestCases.Union.Case60, TMatchResult> caseCase60,
+            System.Func<TMatchContext, TestCases.Union.Case61, TMatchResult> caseCase61,
+            System.Func<TMatchContext, TestCases.Union.Case62, TMatchResult> caseCase62,
+            System.Func<TMatchContext, TestCases.Union.Case63, TMatchResult> caseCase63,
+            System.Func<TMatchContext, TestCases.Union.Case64, TMatchResult> caseCase64,
+            System.Func<TMatchContext, TestCases.Union.Case65, TMatchResult> caseCase65,
+            System.Func<TMatchContext, TestCases.Union.Case66, TMatchResult> caseCase66,
+            System.Func<TMatchContext, TestCases.Union.Case67, TMatchResult> caseCase67,
+            System.Func<TMatchContext, TestCases.Union.Case68, TMatchResult> caseCase68,
+            System.Func<TMatchContext, TestCases.Union.Case69, TMatchResult> caseCase69,
+            System.Func<TMatchContext, TestCases.Union.Case70, TMatchResult> caseCase70,
+            System.Func<TMatchContext, TestCases.Union.Case71, TMatchResult> caseCase71,
+            System.Func<TMatchContext, TestCases.Union.Case72, TMatchResult> caseCase72,
+            System.Func<TMatchContext, TestCases.Union.Case73, TMatchResult> caseCase73,
+            System.Func<TMatchContext, TestCases.Union.Case74, TMatchResult> caseCase74,
+            System.Func<TMatchContext, TestCases.Union.Case75, TMatchResult> caseCase75,
+            System.Func<TMatchContext, TestCases.Union.Case76, TMatchResult> caseCase76,
+            System.Func<TMatchContext, TestCases.Union.Case77, TMatchResult> caseCase77,
+            System.Func<TMatchContext, TestCases.Union.Case78, TMatchResult> caseCase78,
+            System.Func<TMatchContext, TestCases.Union.Case79, TMatchResult> caseCase79,
+            System.Func<TMatchContext, TestCases.Union.Case80, TMatchResult> caseCase80,
+            System.Func<TMatchContext, TestCases.Union.Case81, TMatchResult> caseCase81,
+            System.Func<TMatchContext, TestCases.Union.Case82, TMatchResult> caseCase82,
+            System.Func<TMatchContext, TestCases.Union.Case83, TMatchResult> caseCase83,
+            System.Func<TMatchContext, TestCases.Union.Case84, TMatchResult> caseCase84,
+            System.Func<TMatchContext, TestCases.Union.Case85, TMatchResult> caseCase85,
+            System.Func<TMatchContext, TestCases.Union.Case86, TMatchResult> caseCase86,
+            System.Func<TMatchContext, TestCases.Union.Case87, TMatchResult> caseCase87,
+            System.Func<TMatchContext, TestCases.Union.Case88, TMatchResult> caseCase88,
+            System.Func<TMatchContext, TestCases.Union.Case89, TMatchResult> caseCase89,
+            System.Func<TMatchContext, TestCases.Union.Case90, TMatchResult> caseCase90,
+            System.Func<TMatchContext, TestCases.Union.Case91, TMatchResult> caseCase91,
+            System.Func<TMatchContext, TestCases.Union.Case92, TMatchResult> caseCase92,
+            System.Func<TMatchContext, TestCases.Union.Case93, TMatchResult> caseCase93,
+            System.Func<TMatchContext, TestCases.Union.Case94, TMatchResult> caseCase94,
+            System.Func<TMatchContext, TestCases.Union.Case95, TMatchResult> caseCase95,
+            System.Func<TMatchContext, TestCases.Union.Case96, TMatchResult> caseCase96,
+            System.Func<TMatchContext, TestCases.Union.Case97, TMatchResult> caseCase97,
+            System.Func<TMatchContext, TestCases.Union.Case98, TMatchResult> caseCase98,
+            System.Func<TMatchContext, TestCases.Union.Case99, TMatchResult> caseCase99,
+            System.Func<TMatchContext, TestCases.Union.Case100, TMatchResult> caseCase100,
+            System.Func<TMatchContext, TestCases.Union.Case101, TMatchResult> caseCase101,
+            System.Func<TMatchContext, TestCases.Union.Case102, TMatchResult> caseCase102,
+            System.Func<TMatchContext, TestCases.Union.Case103, TMatchResult> caseCase103,
+            System.Func<TMatchContext, TestCases.Union.Case104, TMatchResult> caseCase104,
+            System.Func<TMatchContext, TestCases.Union.Case105, TMatchResult> caseCase105,
+            System.Func<TMatchContext, TestCases.Union.Case106, TMatchResult> caseCase106,
+            System.Func<TMatchContext, TestCases.Union.Case107, TMatchResult> caseCase107,
+            System.Func<TMatchContext, TestCases.Union.Case108, TMatchResult> caseCase108,
+            System.Func<TMatchContext, TestCases.Union.Case109, TMatchResult> caseCase109,
+            System.Func<TMatchContext, TestCases.Union.Case110, TMatchResult> caseCase110,
+            System.Func<TMatchContext, TestCases.Union.Case111, TMatchResult> caseCase111,
+            System.Func<TMatchContext, TestCases.Union.Case112, TMatchResult> caseCase112,
+            System.Func<TMatchContext, TestCases.Union.Case113, TMatchResult> caseCase113,
+            System.Func<TMatchContext, TestCases.Union.Case114, TMatchResult> caseCase114,
+            System.Func<TMatchContext, TestCases.Union.Case115, TMatchResult> caseCase115,
+            System.Func<TMatchContext, TestCases.Union.Case116, TMatchResult> caseCase116,
+            System.Func<TMatchContext, TestCases.Union.Case117, TMatchResult> caseCase117,
+            System.Func<TMatchContext, TestCases.Union.Case118, TMatchResult> caseCase118,
+            System.Func<TMatchContext, TestCases.Union.Case119, TMatchResult> caseCase119,
+            System.Func<TMatchContext, TestCases.Union.Case120, TMatchResult> caseCase120,
+            System.Func<TMatchContext, TestCases.Union.Case121, TMatchResult> caseCase121,
+            System.Func<TMatchContext, TestCases.Union.Case122, TMatchResult> caseCase122,
+            System.Func<TMatchContext, TestCases.Union.Case123, TMatchResult> caseCase123,
+            System.Func<TMatchContext, TestCases.Union.Case124, TMatchResult> caseCase124,
+            System.Func<TMatchContext, TestCases.Union.Case125, TMatchResult> caseCase125,
+            System.Func<TMatchContext, TestCases.Union.Case126, TMatchResult> caseCase126,
+            System.Func<TMatchContext, TestCases.Union.Case127, TMatchResult> caseCase127,
+            System.Func<TMatchContext, TestCases.Union.Case128, TMatchResult> caseCase128,
+            System.Func<TMatchContext, TestCases.Union.Case129, TMatchResult> caseCase129,
+            System.Func<TMatchContext, TestCases.Union.Case130, TMatchResult> caseCase130,
+            System.Func<TMatchContext, TestCases.Union.Case131, TMatchResult> caseCase131,
+            System.Func<TMatchContext, TestCases.Union.Case132, TMatchResult> caseCase132,
+            System.Func<TMatchContext, TestCases.Union.Case133, TMatchResult> caseCase133,
+            System.Func<TMatchContext, TestCases.Union.Case134, TMatchResult> caseCase134,
+            System.Func<TMatchContext, TestCases.Union.Case135, TMatchResult> caseCase135,
+            System.Func<TMatchContext, TestCases.Union.Case136, TMatchResult> caseCase136,
+            System.Func<TMatchContext, TestCases.Union.Case137, TMatchResult> caseCase137,
+            System.Func<TMatchContext, TestCases.Union.Case138, TMatchResult> caseCase138,
+            System.Func<TMatchContext, TestCases.Union.Case139, TMatchResult> caseCase139,
+            System.Func<TMatchContext, TestCases.Union.Case140, TMatchResult> caseCase140,
+            System.Func<TMatchContext, TestCases.Union.Case141, TMatchResult> caseCase141,
+            System.Func<TMatchContext, TestCases.Union.Case142, TMatchResult> caseCase142,
+            System.Func<TMatchContext, TestCases.Union.Case143, TMatchResult> caseCase143,
+            System.Func<TMatchContext, TestCases.Union.Case144, TMatchResult> caseCase144,
+            System.Func<TMatchContext, TestCases.Union.Case145, TMatchResult> caseCase145,
+            System.Func<TMatchContext, TestCases.Union.Case146, TMatchResult> caseCase146,
+            System.Func<TMatchContext, TestCases.Union.Case147, TMatchResult> caseCase147,
+            System.Func<TMatchContext, TestCases.Union.Case148, TMatchResult> caseCase148,
+            System.Func<TMatchContext, TestCases.Union.Case149, TMatchResult> caseCase149,
+            System.Func<TMatchContext, TestCases.Union.Case150, TMatchResult> caseCase150,
+            System.Func<TMatchContext, TestCases.Union.Case151, TMatchResult> caseCase151,
+            System.Func<TMatchContext, TestCases.Union.Case152, TMatchResult> caseCase152,
+            System.Func<TMatchContext, TestCases.Union.Case153, TMatchResult> caseCase153,
+            System.Func<TMatchContext, TestCases.Union.Case154, TMatchResult> caseCase154,
+            System.Func<TMatchContext, TestCases.Union.Case155, TMatchResult> caseCase155,
+            System.Func<TMatchContext, TestCases.Union.Case156, TMatchResult> caseCase156,
+            System.Func<TMatchContext, TestCases.Union.Case157, TMatchResult> caseCase157,
+            System.Func<TMatchContext, TestCases.Union.Case158, TMatchResult> caseCase158,
+            System.Func<TMatchContext, TestCases.Union.Case159, TMatchResult> caseCase159,
+            System.Func<TMatchContext, TestCases.Union.Case160, TMatchResult> caseCase160,
+            System.Func<TMatchContext, TestCases.Union.Case161, TMatchResult> caseCase161,
+            System.Func<TMatchContext, TestCases.Union.Case162, TMatchResult> caseCase162,
+            System.Func<TMatchContext, TestCases.Union.Case163, TMatchResult> caseCase163,
+            System.Func<TMatchContext, TestCases.Union.Case164, TMatchResult> caseCase164,
+            System.Func<TMatchContext, TestCases.Union.Case165, TMatchResult> caseCase165,
+            System.Func<TMatchContext, TestCases.Union.Case166, TMatchResult> caseCase166,
+            System.Func<TMatchContext, TestCases.Union.Case167, TMatchResult> caseCase167,
+            System.Func<TMatchContext, TestCases.Union.Case168, TMatchResult> caseCase168,
+            System.Func<TMatchContext, TestCases.Union.Case169, TMatchResult> caseCase169,
+            System.Func<TMatchContext, TestCases.Union.Case170, TMatchResult> caseCase170,
+            System.Func<TMatchContext, TestCases.Union.Case171, TMatchResult> caseCase171,
+            System.Func<TMatchContext, TestCases.Union.Case172, TMatchResult> caseCase172,
+            System.Func<TMatchContext, TestCases.Union.Case173, TMatchResult> caseCase173,
+            System.Func<TMatchContext, TestCases.Union.Case174, TMatchResult> caseCase174,
+            System.Func<TMatchContext, TestCases.Union.Case175, TMatchResult> caseCase175,
+            System.Func<TMatchContext, TestCases.Union.Case176, TMatchResult> caseCase176,
+            System.Func<TMatchContext, TestCases.Union.Case177, TMatchResult> caseCase177,
+            System.Func<TMatchContext, TestCases.Union.Case178, TMatchResult> caseCase178,
+            System.Func<TMatchContext, TestCases.Union.Case179, TMatchResult> caseCase179,
+            System.Func<TMatchContext, TestCases.Union.Case180, TMatchResult> caseCase180,
+            System.Func<TMatchContext, TestCases.Union.Case181, TMatchResult> caseCase181,
+            System.Func<TMatchContext, TestCases.Union.Case182, TMatchResult> caseCase182,
+            System.Func<TMatchContext, TestCases.Union.Case183, TMatchResult> caseCase183,
+            System.Func<TMatchContext, TestCases.Union.Case184, TMatchResult> caseCase184,
+            System.Func<TMatchContext, TestCases.Union.Case185, TMatchResult> caseCase185,
+            System.Func<TMatchContext, TestCases.Union.Case186, TMatchResult> caseCase186,
+            System.Func<TMatchContext, TestCases.Union.Case187, TMatchResult> caseCase187,
+            System.Func<TMatchContext, TestCases.Union.Case188, TMatchResult> caseCase188,
+            System.Func<TMatchContext, TestCases.Union.Case189, TMatchResult> caseCase189,
+            System.Func<TMatchContext, TestCases.Union.Case190, TMatchResult> caseCase190,
+            System.Func<TMatchContext, TestCases.Union.Case191, TMatchResult> caseCase191,
+            System.Func<TMatchContext, TestCases.Union.Case192, TMatchResult> caseCase192,
+            System.Func<TMatchContext, TestCases.Union.Case193, TMatchResult> caseCase193,
+            System.Func<TMatchContext, TestCases.Union.Case194, TMatchResult> caseCase194,
+            System.Func<TMatchContext, TestCases.Union.Case195, TMatchResult> caseCase195,
+            System.Func<TMatchContext, TestCases.Union.Case196, TMatchResult> caseCase196,
+            System.Func<TMatchContext, TestCases.Union.Case197, TMatchResult> caseCase197,
+            System.Func<TMatchContext, TestCases.Union.Case198, TMatchResult> caseCase198,
+            System.Func<TMatchContext, TestCases.Union.Case199, TMatchResult> caseCase199,
+            System.Func<TMatchContext, TestCases.Union.Case200, TMatchResult> caseCase200,
+            System.Func<TMatchContext, TestCases.Union.Case201, TMatchResult> caseCase201,
+            System.Func<TMatchContext, TestCases.Union.Case202, TMatchResult> caseCase202,
+            System.Func<TMatchContext, TestCases.Union.Case203, TMatchResult> caseCase203,
+            System.Func<TMatchContext, TestCases.Union.Case204, TMatchResult> caseCase204,
+            System.Func<TMatchContext, TestCases.Union.Case205, TMatchResult> caseCase205,
+            System.Func<TMatchContext, TestCases.Union.Case206, TMatchResult> caseCase206,
+            System.Func<TMatchContext, TestCases.Union.Case207, TMatchResult> caseCase207,
+            System.Func<TMatchContext, TestCases.Union.Case208, TMatchResult> caseCase208,
+            System.Func<TMatchContext, TestCases.Union.Case209, TMatchResult> caseCase209,
+            System.Func<TMatchContext, TestCases.Union.Case210, TMatchResult> caseCase210,
+            System.Func<TMatchContext, TestCases.Union.Case211, TMatchResult> caseCase211,
+            System.Func<TMatchContext, TestCases.Union.Case212, TMatchResult> caseCase212,
+            System.Func<TMatchContext, TestCases.Union.Case213, TMatchResult> caseCase213,
+            System.Func<TMatchContext, TestCases.Union.Case214, TMatchResult> caseCase214,
+            System.Func<TMatchContext, TestCases.Union.Case215, TMatchResult> caseCase215,
+            System.Func<TMatchContext, TestCases.Union.Case216, TMatchResult> caseCase216,
+            System.Func<TMatchContext, TestCases.Union.Case217, TMatchResult> caseCase217,
+            System.Func<TMatchContext, TestCases.Union.Case218, TMatchResult> caseCase218,
+            System.Func<TMatchContext, TestCases.Union.Case219, TMatchResult> caseCase219,
+            System.Func<TMatchContext, TestCases.Union.Case220, TMatchResult> caseCase220,
+            System.Func<TMatchContext, TestCases.Union.Case221, TMatchResult> caseCase221,
+            System.Func<TMatchContext, TestCases.Union.Case222, TMatchResult> caseCase222,
+            System.Func<TMatchContext, TestCases.Union.Case223, TMatchResult> caseCase223,
+            System.Func<TMatchContext, TestCases.Union.Case224, TMatchResult> caseCase224,
+            System.Func<TMatchContext, TestCases.Union.Case225, TMatchResult> caseCase225,
+            System.Func<TMatchContext, TestCases.Union.Case226, TMatchResult> caseCase226,
+            System.Func<TMatchContext, TestCases.Union.Case227, TMatchResult> caseCase227,
+            System.Func<TMatchContext, TestCases.Union.Case228, TMatchResult> caseCase228,
+            System.Func<TMatchContext, TestCases.Union.Case229, TMatchResult> caseCase229,
+            System.Func<TMatchContext, TestCases.Union.Case230, TMatchResult> caseCase230,
+            System.Func<TMatchContext, TestCases.Union.Case231, TMatchResult> caseCase231,
+            System.Func<TMatchContext, TestCases.Union.Case232, TMatchResult> caseCase232,
+            System.Func<TMatchContext, TestCases.Union.Case233, TMatchResult> caseCase233,
+            System.Func<TMatchContext, TestCases.Union.Case234, TMatchResult> caseCase234,
+            System.Func<TMatchContext, TestCases.Union.Case235, TMatchResult> caseCase235,
+            System.Func<TMatchContext, TestCases.Union.Case236, TMatchResult> caseCase236,
+            System.Func<TMatchContext, TestCases.Union.Case237, TMatchResult> caseCase237,
+            System.Func<TMatchContext, TestCases.Union.Case238, TMatchResult> caseCase238,
+            System.Func<TMatchContext, TestCases.Union.Case239, TMatchResult> caseCase239,
+            System.Func<TMatchContext, TestCases.Union.Case240, TMatchResult> caseCase240,
+            System.Func<TMatchContext, TestCases.Union.Case241, TMatchResult> caseCase241,
+            System.Func<TMatchContext, TestCases.Union.Case242, TMatchResult> caseCase242,
+            System.Func<TMatchContext, TestCases.Union.Case243, TMatchResult> caseCase243,
+            System.Func<TMatchContext, TestCases.Union.Case244, TMatchResult> caseCase244,
+            System.Func<TMatchContext, TestCases.Union.Case245, TMatchResult> caseCase245,
+            System.Func<TMatchContext, TestCases.Union.Case246, TMatchResult> caseCase246,
+            System.Func<TMatchContext, TestCases.Union.Case247, TMatchResult> caseCase247,
+            System.Func<TMatchContext, TestCases.Union.Case248, TMatchResult> caseCase248,
+            System.Func<TMatchContext, TestCases.Union.Case249, TMatchResult> caseCase249,
+            System.Func<TMatchContext, TestCases.Union.Case250, TMatchResult> caseCase250,
+            System.Func<TMatchContext, TestCases.Union.Case251, TMatchResult> caseCase251,
+            System.Func<TMatchContext, TestCases.Union.Case252, TMatchResult> caseCase252,
+            System.Func<TMatchContext, TestCases.Union.Case253, TMatchResult> caseCase253,
+            System.Func<TMatchContext, TestCases.Union.Case254, TMatchResult> caseCase254
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseCase1, null))
+                    {
+                        return caseCase1.Invoke(context, ((TestCases.Union.Case1)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase1));
+                    }
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseCase2, null))
+                    {
+                        return caseCase2.Invoke(context, ((TestCases.Union.Case2)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase2));
+                    }
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseCase3, null))
+                    {
+                        return caseCase3.Invoke(context, ((TestCases.Union.Case3)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase3));
+                    }
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseCase4, null))
+                    {
+                        return caseCase4.Invoke(context, ((TestCases.Union.Case4)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase4));
+                    }
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseCase5, null))
+                    {
+                        return caseCase5.Invoke(context, ((TestCases.Union.Case5)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase5));
+                    }
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseCase6, null))
+                    {
+                        return caseCase6.Invoke(context, ((TestCases.Union.Case6)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase6));
+                    }
+                
+                case 7:
+                    if (!System.Object.ReferenceEquals(caseCase7, null))
+                    {
+                        return caseCase7.Invoke(context, ((TestCases.Union.Case7)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase7));
+                    }
+                
+                case 8:
+                    if (!System.Object.ReferenceEquals(caseCase8, null))
+                    {
+                        return caseCase8.Invoke(context, ((TestCases.Union.Case8)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase8));
+                    }
+                
+                case 9:
+                    if (!System.Object.ReferenceEquals(caseCase9, null))
+                    {
+                        return caseCase9.Invoke(context, ((TestCases.Union.Case9)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase9));
+                    }
+                
+                case 10:
+                    if (!System.Object.ReferenceEquals(caseCase10, null))
+                    {
+                        return caseCase10.Invoke(context, ((TestCases.Union.Case10)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase10));
+                    }
+                
+                case 11:
+                    if (!System.Object.ReferenceEquals(caseCase11, null))
+                    {
+                        return caseCase11.Invoke(context, ((TestCases.Union.Case11)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase11));
+                    }
+                
+                case 12:
+                    if (!System.Object.ReferenceEquals(caseCase12, null))
+                    {
+                        return caseCase12.Invoke(context, ((TestCases.Union.Case12)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase12));
+                    }
+                
+                case 13:
+                    if (!System.Object.ReferenceEquals(caseCase13, null))
+                    {
+                        return caseCase13.Invoke(context, ((TestCases.Union.Case13)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase13));
+                    }
+                
+                case 14:
+                    if (!System.Object.ReferenceEquals(caseCase14, null))
+                    {
+                        return caseCase14.Invoke(context, ((TestCases.Union.Case14)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase14));
+                    }
+                
+                case 15:
+                    if (!System.Object.ReferenceEquals(caseCase15, null))
+                    {
+                        return caseCase15.Invoke(context, ((TestCases.Union.Case15)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase15));
+                    }
+                
+                case 16:
+                    if (!System.Object.ReferenceEquals(caseCase16, null))
+                    {
+                        return caseCase16.Invoke(context, ((TestCases.Union.Case16)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase16));
+                    }
+                
+                case 17:
+                    if (!System.Object.ReferenceEquals(caseCase17, null))
+                    {
+                        return caseCase17.Invoke(context, ((TestCases.Union.Case17)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase17));
+                    }
+                
+                case 18:
+                    if (!System.Object.ReferenceEquals(caseCase18, null))
+                    {
+                        return caseCase18.Invoke(context, ((TestCases.Union.Case18)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase18));
+                    }
+                
+                case 19:
+                    if (!System.Object.ReferenceEquals(caseCase19, null))
+                    {
+                        return caseCase19.Invoke(context, ((TestCases.Union.Case19)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase19));
+                    }
+                
+                case 20:
+                    if (!System.Object.ReferenceEquals(caseCase20, null))
+                    {
+                        return caseCase20.Invoke(context, ((TestCases.Union.Case20)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase20));
+                    }
+                
+                case 21:
+                    if (!System.Object.ReferenceEquals(caseCase21, null))
+                    {
+                        return caseCase21.Invoke(context, ((TestCases.Union.Case21)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase21));
+                    }
+                
+                case 22:
+                    if (!System.Object.ReferenceEquals(caseCase22, null))
+                    {
+                        return caseCase22.Invoke(context, ((TestCases.Union.Case22)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase22));
+                    }
+                
+                case 23:
+                    if (!System.Object.ReferenceEquals(caseCase23, null))
+                    {
+                        return caseCase23.Invoke(context, ((TestCases.Union.Case23)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase23));
+                    }
+                
+                case 24:
+                    if (!System.Object.ReferenceEquals(caseCase24, null))
+                    {
+                        return caseCase24.Invoke(context, ((TestCases.Union.Case24)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase24));
+                    }
+                
+                case 25:
+                    if (!System.Object.ReferenceEquals(caseCase25, null))
+                    {
+                        return caseCase25.Invoke(context, ((TestCases.Union.Case25)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase25));
+                    }
+                
+                case 26:
+                    if (!System.Object.ReferenceEquals(caseCase26, null))
+                    {
+                        return caseCase26.Invoke(context, ((TestCases.Union.Case26)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase26));
+                    }
+                
+                case 27:
+                    if (!System.Object.ReferenceEquals(caseCase27, null))
+                    {
+                        return caseCase27.Invoke(context, ((TestCases.Union.Case27)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase27));
+                    }
+                
+                case 28:
+                    if (!System.Object.ReferenceEquals(caseCase28, null))
+                    {
+                        return caseCase28.Invoke(context, ((TestCases.Union.Case28)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase28));
+                    }
+                
+                case 29:
+                    if (!System.Object.ReferenceEquals(caseCase29, null))
+                    {
+                        return caseCase29.Invoke(context, ((TestCases.Union.Case29)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase29));
+                    }
+                
+                case 30:
+                    if (!System.Object.ReferenceEquals(caseCase30, null))
+                    {
+                        return caseCase30.Invoke(context, ((TestCases.Union.Case30)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase30));
+                    }
+                
+                case 31:
+                    if (!System.Object.ReferenceEquals(caseCase31, null))
+                    {
+                        return caseCase31.Invoke(context, ((TestCases.Union.Case31)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase31));
+                    }
+                
+                case 32:
+                    if (!System.Object.ReferenceEquals(caseCase32, null))
+                    {
+                        return caseCase32.Invoke(context, ((TestCases.Union.Case32)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase32));
+                    }
+                
+                case 33:
+                    if (!System.Object.ReferenceEquals(caseCase33, null))
+                    {
+                        return caseCase33.Invoke(context, ((TestCases.Union.Case33)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase33));
+                    }
+                
+                case 34:
+                    if (!System.Object.ReferenceEquals(caseCase34, null))
+                    {
+                        return caseCase34.Invoke(context, ((TestCases.Union.Case34)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase34));
+                    }
+                
+                case 35:
+                    if (!System.Object.ReferenceEquals(caseCase35, null))
+                    {
+                        return caseCase35.Invoke(context, ((TestCases.Union.Case35)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase35));
+                    }
+                
+                case 36:
+                    if (!System.Object.ReferenceEquals(caseCase36, null))
+                    {
+                        return caseCase36.Invoke(context, ((TestCases.Union.Case36)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase36));
+                    }
+                
+                case 37:
+                    if (!System.Object.ReferenceEquals(caseCase37, null))
+                    {
+                        return caseCase37.Invoke(context, ((TestCases.Union.Case37)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase37));
+                    }
+                
+                case 38:
+                    if (!System.Object.ReferenceEquals(caseCase38, null))
+                    {
+                        return caseCase38.Invoke(context, ((TestCases.Union.Case38)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase38));
+                    }
+                
+                case 39:
+                    if (!System.Object.ReferenceEquals(caseCase39, null))
+                    {
+                        return caseCase39.Invoke(context, ((TestCases.Union.Case39)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase39));
+                    }
+                
+                case 40:
+                    if (!System.Object.ReferenceEquals(caseCase40, null))
+                    {
+                        return caseCase40.Invoke(context, ((TestCases.Union.Case40)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase40));
+                    }
+                
+                case 41:
+                    if (!System.Object.ReferenceEquals(caseCase41, null))
+                    {
+                        return caseCase41.Invoke(context, ((TestCases.Union.Case41)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase41));
+                    }
+                
+                case 42:
+                    if (!System.Object.ReferenceEquals(caseCase42, null))
+                    {
+                        return caseCase42.Invoke(context, ((TestCases.Union.Case42)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase42));
+                    }
+                
+                case 43:
+                    if (!System.Object.ReferenceEquals(caseCase43, null))
+                    {
+                        return caseCase43.Invoke(context, ((TestCases.Union.Case43)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase43));
+                    }
+                
+                case 44:
+                    if (!System.Object.ReferenceEquals(caseCase44, null))
+                    {
+                        return caseCase44.Invoke(context, ((TestCases.Union.Case44)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase44));
+                    }
+                
+                case 45:
+                    if (!System.Object.ReferenceEquals(caseCase45, null))
+                    {
+                        return caseCase45.Invoke(context, ((TestCases.Union.Case45)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase45));
+                    }
+                
+                case 46:
+                    if (!System.Object.ReferenceEquals(caseCase46, null))
+                    {
+                        return caseCase46.Invoke(context, ((TestCases.Union.Case46)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase46));
+                    }
+                
+                case 47:
+                    if (!System.Object.ReferenceEquals(caseCase47, null))
+                    {
+                        return caseCase47.Invoke(context, ((TestCases.Union.Case47)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase47));
+                    }
+                
+                case 48:
+                    if (!System.Object.ReferenceEquals(caseCase48, null))
+                    {
+                        return caseCase48.Invoke(context, ((TestCases.Union.Case48)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase48));
+                    }
+                
+                case 49:
+                    if (!System.Object.ReferenceEquals(caseCase49, null))
+                    {
+                        return caseCase49.Invoke(context, ((TestCases.Union.Case49)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase49));
+                    }
+                
+                case 50:
+                    if (!System.Object.ReferenceEquals(caseCase50, null))
+                    {
+                        return caseCase50.Invoke(context, ((TestCases.Union.Case50)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase50));
+                    }
+                
+                case 51:
+                    if (!System.Object.ReferenceEquals(caseCase51, null))
+                    {
+                        return caseCase51.Invoke(context, ((TestCases.Union.Case51)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase51));
+                    }
+                
+                case 52:
+                    if (!System.Object.ReferenceEquals(caseCase52, null))
+                    {
+                        return caseCase52.Invoke(context, ((TestCases.Union.Case52)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase52));
+                    }
+                
+                case 53:
+                    if (!System.Object.ReferenceEquals(caseCase53, null))
+                    {
+                        return caseCase53.Invoke(context, ((TestCases.Union.Case53)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase53));
+                    }
+                
+                case 54:
+                    if (!System.Object.ReferenceEquals(caseCase54, null))
+                    {
+                        return caseCase54.Invoke(context, ((TestCases.Union.Case54)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase54));
+                    }
+                
+                case 55:
+                    if (!System.Object.ReferenceEquals(caseCase55, null))
+                    {
+                        return caseCase55.Invoke(context, ((TestCases.Union.Case55)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase55));
+                    }
+                
+                case 56:
+                    if (!System.Object.ReferenceEquals(caseCase56, null))
+                    {
+                        return caseCase56.Invoke(context, ((TestCases.Union.Case56)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase56));
+                    }
+                
+                case 57:
+                    if (!System.Object.ReferenceEquals(caseCase57, null))
+                    {
+                        return caseCase57.Invoke(context, ((TestCases.Union.Case57)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase57));
+                    }
+                
+                case 58:
+                    if (!System.Object.ReferenceEquals(caseCase58, null))
+                    {
+                        return caseCase58.Invoke(context, ((TestCases.Union.Case58)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase58));
+                    }
+                
+                case 59:
+                    if (!System.Object.ReferenceEquals(caseCase59, null))
+                    {
+                        return caseCase59.Invoke(context, ((TestCases.Union.Case59)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase59));
+                    }
+                
+                case 60:
+                    if (!System.Object.ReferenceEquals(caseCase60, null))
+                    {
+                        return caseCase60.Invoke(context, ((TestCases.Union.Case60)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase60));
+                    }
+                
+                case 61:
+                    if (!System.Object.ReferenceEquals(caseCase61, null))
+                    {
+                        return caseCase61.Invoke(context, ((TestCases.Union.Case61)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase61));
+                    }
+                
+                case 62:
+                    if (!System.Object.ReferenceEquals(caseCase62, null))
+                    {
+                        return caseCase62.Invoke(context, ((TestCases.Union.Case62)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase62));
+                    }
+                
+                case 63:
+                    if (!System.Object.ReferenceEquals(caseCase63, null))
+                    {
+                        return caseCase63.Invoke(context, ((TestCases.Union.Case63)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase63));
+                    }
+                
+                case 64:
+                    if (!System.Object.ReferenceEquals(caseCase64, null))
+                    {
+                        return caseCase64.Invoke(context, ((TestCases.Union.Case64)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase64));
+                    }
+                
+                case 65:
+                    if (!System.Object.ReferenceEquals(caseCase65, null))
+                    {
+                        return caseCase65.Invoke(context, ((TestCases.Union.Case65)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase65));
+                    }
+                
+                case 66:
+                    if (!System.Object.ReferenceEquals(caseCase66, null))
+                    {
+                        return caseCase66.Invoke(context, ((TestCases.Union.Case66)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase66));
+                    }
+                
+                case 67:
+                    if (!System.Object.ReferenceEquals(caseCase67, null))
+                    {
+                        return caseCase67.Invoke(context, ((TestCases.Union.Case67)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase67));
+                    }
+                
+                case 68:
+                    if (!System.Object.ReferenceEquals(caseCase68, null))
+                    {
+                        return caseCase68.Invoke(context, ((TestCases.Union.Case68)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase68));
+                    }
+                
+                case 69:
+                    if (!System.Object.ReferenceEquals(caseCase69, null))
+                    {
+                        return caseCase69.Invoke(context, ((TestCases.Union.Case69)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase69));
+                    }
+                
+                case 70:
+                    if (!System.Object.ReferenceEquals(caseCase70, null))
+                    {
+                        return caseCase70.Invoke(context, ((TestCases.Union.Case70)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase70));
+                    }
+                
+                case 71:
+                    if (!System.Object.ReferenceEquals(caseCase71, null))
+                    {
+                        return caseCase71.Invoke(context, ((TestCases.Union.Case71)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase71));
+                    }
+                
+                case 72:
+                    if (!System.Object.ReferenceEquals(caseCase72, null))
+                    {
+                        return caseCase72.Invoke(context, ((TestCases.Union.Case72)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase72));
+                    }
+                
+                case 73:
+                    if (!System.Object.ReferenceEquals(caseCase73, null))
+                    {
+                        return caseCase73.Invoke(context, ((TestCases.Union.Case73)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase73));
+                    }
+                
+                case 74:
+                    if (!System.Object.ReferenceEquals(caseCase74, null))
+                    {
+                        return caseCase74.Invoke(context, ((TestCases.Union.Case74)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase74));
+                    }
+                
+                case 75:
+                    if (!System.Object.ReferenceEquals(caseCase75, null))
+                    {
+                        return caseCase75.Invoke(context, ((TestCases.Union.Case75)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase75));
+                    }
+                
+                case 76:
+                    if (!System.Object.ReferenceEquals(caseCase76, null))
+                    {
+                        return caseCase76.Invoke(context, ((TestCases.Union.Case76)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase76));
+                    }
+                
+                case 77:
+                    if (!System.Object.ReferenceEquals(caseCase77, null))
+                    {
+                        return caseCase77.Invoke(context, ((TestCases.Union.Case77)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase77));
+                    }
+                
+                case 78:
+                    if (!System.Object.ReferenceEquals(caseCase78, null))
+                    {
+                        return caseCase78.Invoke(context, ((TestCases.Union.Case78)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase78));
+                    }
+                
+                case 79:
+                    if (!System.Object.ReferenceEquals(caseCase79, null))
+                    {
+                        return caseCase79.Invoke(context, ((TestCases.Union.Case79)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase79));
+                    }
+                
+                case 80:
+                    if (!System.Object.ReferenceEquals(caseCase80, null))
+                    {
+                        return caseCase80.Invoke(context, ((TestCases.Union.Case80)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase80));
+                    }
+                
+                case 81:
+                    if (!System.Object.ReferenceEquals(caseCase81, null))
+                    {
+                        return caseCase81.Invoke(context, ((TestCases.Union.Case81)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase81));
+                    }
+                
+                case 82:
+                    if (!System.Object.ReferenceEquals(caseCase82, null))
+                    {
+                        return caseCase82.Invoke(context, ((TestCases.Union.Case82)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase82));
+                    }
+                
+                case 83:
+                    if (!System.Object.ReferenceEquals(caseCase83, null))
+                    {
+                        return caseCase83.Invoke(context, ((TestCases.Union.Case83)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase83));
+                    }
+                
+                case 84:
+                    if (!System.Object.ReferenceEquals(caseCase84, null))
+                    {
+                        return caseCase84.Invoke(context, ((TestCases.Union.Case84)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase84));
+                    }
+                
+                case 85:
+                    if (!System.Object.ReferenceEquals(caseCase85, null))
+                    {
+                        return caseCase85.Invoke(context, ((TestCases.Union.Case85)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase85));
+                    }
+                
+                case 86:
+                    if (!System.Object.ReferenceEquals(caseCase86, null))
+                    {
+                        return caseCase86.Invoke(context, ((TestCases.Union.Case86)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase86));
+                    }
+                
+                case 87:
+                    if (!System.Object.ReferenceEquals(caseCase87, null))
+                    {
+                        return caseCase87.Invoke(context, ((TestCases.Union.Case87)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase87));
+                    }
+                
+                case 88:
+                    if (!System.Object.ReferenceEquals(caseCase88, null))
+                    {
+                        return caseCase88.Invoke(context, ((TestCases.Union.Case88)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase88));
+                    }
+                
+                case 89:
+                    if (!System.Object.ReferenceEquals(caseCase89, null))
+                    {
+                        return caseCase89.Invoke(context, ((TestCases.Union.Case89)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase89));
+                    }
+                
+                case 90:
+                    if (!System.Object.ReferenceEquals(caseCase90, null))
+                    {
+                        return caseCase90.Invoke(context, ((TestCases.Union.Case90)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase90));
+                    }
+                
+                case 91:
+                    if (!System.Object.ReferenceEquals(caseCase91, null))
+                    {
+                        return caseCase91.Invoke(context, ((TestCases.Union.Case91)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase91));
+                    }
+                
+                case 92:
+                    if (!System.Object.ReferenceEquals(caseCase92, null))
+                    {
+                        return caseCase92.Invoke(context, ((TestCases.Union.Case92)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase92));
+                    }
+                
+                case 93:
+                    if (!System.Object.ReferenceEquals(caseCase93, null))
+                    {
+                        return caseCase93.Invoke(context, ((TestCases.Union.Case93)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase93));
+                    }
+                
+                case 94:
+                    if (!System.Object.ReferenceEquals(caseCase94, null))
+                    {
+                        return caseCase94.Invoke(context, ((TestCases.Union.Case94)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase94));
+                    }
+                
+                case 95:
+                    if (!System.Object.ReferenceEquals(caseCase95, null))
+                    {
+                        return caseCase95.Invoke(context, ((TestCases.Union.Case95)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase95));
+                    }
+                
+                case 96:
+                    if (!System.Object.ReferenceEquals(caseCase96, null))
+                    {
+                        return caseCase96.Invoke(context, ((TestCases.Union.Case96)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase96));
+                    }
+                
+                case 97:
+                    if (!System.Object.ReferenceEquals(caseCase97, null))
+                    {
+                        return caseCase97.Invoke(context, ((TestCases.Union.Case97)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase97));
+                    }
+                
+                case 98:
+                    if (!System.Object.ReferenceEquals(caseCase98, null))
+                    {
+                        return caseCase98.Invoke(context, ((TestCases.Union.Case98)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase98));
+                    }
+                
+                case 99:
+                    if (!System.Object.ReferenceEquals(caseCase99, null))
+                    {
+                        return caseCase99.Invoke(context, ((TestCases.Union.Case99)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase99));
+                    }
+                
+                case 100:
+                    if (!System.Object.ReferenceEquals(caseCase100, null))
+                    {
+                        return caseCase100.Invoke(context, ((TestCases.Union.Case100)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase100));
+                    }
+                
+                case 101:
+                    if (!System.Object.ReferenceEquals(caseCase101, null))
+                    {
+                        return caseCase101.Invoke(context, ((TestCases.Union.Case101)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase101));
+                    }
+                
+                case 102:
+                    if (!System.Object.ReferenceEquals(caseCase102, null))
+                    {
+                        return caseCase102.Invoke(context, ((TestCases.Union.Case102)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase102));
+                    }
+                
+                case 103:
+                    if (!System.Object.ReferenceEquals(caseCase103, null))
+                    {
+                        return caseCase103.Invoke(context, ((TestCases.Union.Case103)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase103));
+                    }
+                
+                case 104:
+                    if (!System.Object.ReferenceEquals(caseCase104, null))
+                    {
+                        return caseCase104.Invoke(context, ((TestCases.Union.Case104)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase104));
+                    }
+                
+                case 105:
+                    if (!System.Object.ReferenceEquals(caseCase105, null))
+                    {
+                        return caseCase105.Invoke(context, ((TestCases.Union.Case105)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase105));
+                    }
+                
+                case 106:
+                    if (!System.Object.ReferenceEquals(caseCase106, null))
+                    {
+                        return caseCase106.Invoke(context, ((TestCases.Union.Case106)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase106));
+                    }
+                
+                case 107:
+                    if (!System.Object.ReferenceEquals(caseCase107, null))
+                    {
+                        return caseCase107.Invoke(context, ((TestCases.Union.Case107)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase107));
+                    }
+                
+                case 108:
+                    if (!System.Object.ReferenceEquals(caseCase108, null))
+                    {
+                        return caseCase108.Invoke(context, ((TestCases.Union.Case108)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase108));
+                    }
+                
+                case 109:
+                    if (!System.Object.ReferenceEquals(caseCase109, null))
+                    {
+                        return caseCase109.Invoke(context, ((TestCases.Union.Case109)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase109));
+                    }
+                
+                case 110:
+                    if (!System.Object.ReferenceEquals(caseCase110, null))
+                    {
+                        return caseCase110.Invoke(context, ((TestCases.Union.Case110)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase110));
+                    }
+                
+                case 111:
+                    if (!System.Object.ReferenceEquals(caseCase111, null))
+                    {
+                        return caseCase111.Invoke(context, ((TestCases.Union.Case111)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase111));
+                    }
+                
+                case 112:
+                    if (!System.Object.ReferenceEquals(caseCase112, null))
+                    {
+                        return caseCase112.Invoke(context, ((TestCases.Union.Case112)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase112));
+                    }
+                
+                case 113:
+                    if (!System.Object.ReferenceEquals(caseCase113, null))
+                    {
+                        return caseCase113.Invoke(context, ((TestCases.Union.Case113)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase113));
+                    }
+                
+                case 114:
+                    if (!System.Object.ReferenceEquals(caseCase114, null))
+                    {
+                        return caseCase114.Invoke(context, ((TestCases.Union.Case114)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase114));
+                    }
+                
+                case 115:
+                    if (!System.Object.ReferenceEquals(caseCase115, null))
+                    {
+                        return caseCase115.Invoke(context, ((TestCases.Union.Case115)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase115));
+                    }
+                
+                case 116:
+                    if (!System.Object.ReferenceEquals(caseCase116, null))
+                    {
+                        return caseCase116.Invoke(context, ((TestCases.Union.Case116)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase116));
+                    }
+                
+                case 117:
+                    if (!System.Object.ReferenceEquals(caseCase117, null))
+                    {
+                        return caseCase117.Invoke(context, ((TestCases.Union.Case117)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase117));
+                    }
+                
+                case 118:
+                    if (!System.Object.ReferenceEquals(caseCase118, null))
+                    {
+                        return caseCase118.Invoke(context, ((TestCases.Union.Case118)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase118));
+                    }
+                
+                case 119:
+                    if (!System.Object.ReferenceEquals(caseCase119, null))
+                    {
+                        return caseCase119.Invoke(context, ((TestCases.Union.Case119)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase119));
+                    }
+                
+                case 120:
+                    if (!System.Object.ReferenceEquals(caseCase120, null))
+                    {
+                        return caseCase120.Invoke(context, ((TestCases.Union.Case120)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase120));
+                    }
+                
+                case 121:
+                    if (!System.Object.ReferenceEquals(caseCase121, null))
+                    {
+                        return caseCase121.Invoke(context, ((TestCases.Union.Case121)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase121));
+                    }
+                
+                case 122:
+                    if (!System.Object.ReferenceEquals(caseCase122, null))
+                    {
+                        return caseCase122.Invoke(context, ((TestCases.Union.Case122)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase122));
+                    }
+                
+                case 123:
+                    if (!System.Object.ReferenceEquals(caseCase123, null))
+                    {
+                        return caseCase123.Invoke(context, ((TestCases.Union.Case123)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase123));
+                    }
+                
+                case 124:
+                    if (!System.Object.ReferenceEquals(caseCase124, null))
+                    {
+                        return caseCase124.Invoke(context, ((TestCases.Union.Case124)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase124));
+                    }
+                
+                case 125:
+                    if (!System.Object.ReferenceEquals(caseCase125, null))
+                    {
+                        return caseCase125.Invoke(context, ((TestCases.Union.Case125)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase125));
+                    }
+                
+                case 126:
+                    if (!System.Object.ReferenceEquals(caseCase126, null))
+                    {
+                        return caseCase126.Invoke(context, ((TestCases.Union.Case126)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase126));
+                    }
+                
+                case 127:
+                    if (!System.Object.ReferenceEquals(caseCase127, null))
+                    {
+                        return caseCase127.Invoke(context, ((TestCases.Union.Case127)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase127));
+                    }
+                
+                case 128:
+                    if (!System.Object.ReferenceEquals(caseCase128, null))
+                    {
+                        return caseCase128.Invoke(context, ((TestCases.Union.Case128)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase128));
+                    }
+                
+                case 129:
+                    if (!System.Object.ReferenceEquals(caseCase129, null))
+                    {
+                        return caseCase129.Invoke(context, ((TestCases.Union.Case129)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase129));
+                    }
+                
+                case 130:
+                    if (!System.Object.ReferenceEquals(caseCase130, null))
+                    {
+                        return caseCase130.Invoke(context, ((TestCases.Union.Case130)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase130));
+                    }
+                
+                case 131:
+                    if (!System.Object.ReferenceEquals(caseCase131, null))
+                    {
+                        return caseCase131.Invoke(context, ((TestCases.Union.Case131)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase131));
+                    }
+                
+                case 132:
+                    if (!System.Object.ReferenceEquals(caseCase132, null))
+                    {
+                        return caseCase132.Invoke(context, ((TestCases.Union.Case132)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase132));
+                    }
+                
+                case 133:
+                    if (!System.Object.ReferenceEquals(caseCase133, null))
+                    {
+                        return caseCase133.Invoke(context, ((TestCases.Union.Case133)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase133));
+                    }
+                
+                case 134:
+                    if (!System.Object.ReferenceEquals(caseCase134, null))
+                    {
+                        return caseCase134.Invoke(context, ((TestCases.Union.Case134)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase134));
+                    }
+                
+                case 135:
+                    if (!System.Object.ReferenceEquals(caseCase135, null))
+                    {
+                        return caseCase135.Invoke(context, ((TestCases.Union.Case135)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase135));
+                    }
+                
+                case 136:
+                    if (!System.Object.ReferenceEquals(caseCase136, null))
+                    {
+                        return caseCase136.Invoke(context, ((TestCases.Union.Case136)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase136));
+                    }
+                
+                case 137:
+                    if (!System.Object.ReferenceEquals(caseCase137, null))
+                    {
+                        return caseCase137.Invoke(context, ((TestCases.Union.Case137)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase137));
+                    }
+                
+                case 138:
+                    if (!System.Object.ReferenceEquals(caseCase138, null))
+                    {
+                        return caseCase138.Invoke(context, ((TestCases.Union.Case138)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase138));
+                    }
+                
+                case 139:
+                    if (!System.Object.ReferenceEquals(caseCase139, null))
+                    {
+                        return caseCase139.Invoke(context, ((TestCases.Union.Case139)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase139));
+                    }
+                
+                case 140:
+                    if (!System.Object.ReferenceEquals(caseCase140, null))
+                    {
+                        return caseCase140.Invoke(context, ((TestCases.Union.Case140)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase140));
+                    }
+                
+                case 141:
+                    if (!System.Object.ReferenceEquals(caseCase141, null))
+                    {
+                        return caseCase141.Invoke(context, ((TestCases.Union.Case141)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase141));
+                    }
+                
+                case 142:
+                    if (!System.Object.ReferenceEquals(caseCase142, null))
+                    {
+                        return caseCase142.Invoke(context, ((TestCases.Union.Case142)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase142));
+                    }
+                
+                case 143:
+                    if (!System.Object.ReferenceEquals(caseCase143, null))
+                    {
+                        return caseCase143.Invoke(context, ((TestCases.Union.Case143)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase143));
+                    }
+                
+                case 144:
+                    if (!System.Object.ReferenceEquals(caseCase144, null))
+                    {
+                        return caseCase144.Invoke(context, ((TestCases.Union.Case144)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase144));
+                    }
+                
+                case 145:
+                    if (!System.Object.ReferenceEquals(caseCase145, null))
+                    {
+                        return caseCase145.Invoke(context, ((TestCases.Union.Case145)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase145));
+                    }
+                
+                case 146:
+                    if (!System.Object.ReferenceEquals(caseCase146, null))
+                    {
+                        return caseCase146.Invoke(context, ((TestCases.Union.Case146)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase146));
+                    }
+                
+                case 147:
+                    if (!System.Object.ReferenceEquals(caseCase147, null))
+                    {
+                        return caseCase147.Invoke(context, ((TestCases.Union.Case147)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase147));
+                    }
+                
+                case 148:
+                    if (!System.Object.ReferenceEquals(caseCase148, null))
+                    {
+                        return caseCase148.Invoke(context, ((TestCases.Union.Case148)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase148));
+                    }
+                
+                case 149:
+                    if (!System.Object.ReferenceEquals(caseCase149, null))
+                    {
+                        return caseCase149.Invoke(context, ((TestCases.Union.Case149)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase149));
+                    }
+                
+                case 150:
+                    if (!System.Object.ReferenceEquals(caseCase150, null))
+                    {
+                        return caseCase150.Invoke(context, ((TestCases.Union.Case150)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase150));
+                    }
+                
+                case 151:
+                    if (!System.Object.ReferenceEquals(caseCase151, null))
+                    {
+                        return caseCase151.Invoke(context, ((TestCases.Union.Case151)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase151));
+                    }
+                
+                case 152:
+                    if (!System.Object.ReferenceEquals(caseCase152, null))
+                    {
+                        return caseCase152.Invoke(context, ((TestCases.Union.Case152)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase152));
+                    }
+                
+                case 153:
+                    if (!System.Object.ReferenceEquals(caseCase153, null))
+                    {
+                        return caseCase153.Invoke(context, ((TestCases.Union.Case153)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase153));
+                    }
+                
+                case 154:
+                    if (!System.Object.ReferenceEquals(caseCase154, null))
+                    {
+                        return caseCase154.Invoke(context, ((TestCases.Union.Case154)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase154));
+                    }
+                
+                case 155:
+                    if (!System.Object.ReferenceEquals(caseCase155, null))
+                    {
+                        return caseCase155.Invoke(context, ((TestCases.Union.Case155)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase155));
+                    }
+                
+                case 156:
+                    if (!System.Object.ReferenceEquals(caseCase156, null))
+                    {
+                        return caseCase156.Invoke(context, ((TestCases.Union.Case156)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase156));
+                    }
+                
+                case 157:
+                    if (!System.Object.ReferenceEquals(caseCase157, null))
+                    {
+                        return caseCase157.Invoke(context, ((TestCases.Union.Case157)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase157));
+                    }
+                
+                case 158:
+                    if (!System.Object.ReferenceEquals(caseCase158, null))
+                    {
+                        return caseCase158.Invoke(context, ((TestCases.Union.Case158)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase158));
+                    }
+                
+                case 159:
+                    if (!System.Object.ReferenceEquals(caseCase159, null))
+                    {
+                        return caseCase159.Invoke(context, ((TestCases.Union.Case159)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase159));
+                    }
+                
+                case 160:
+                    if (!System.Object.ReferenceEquals(caseCase160, null))
+                    {
+                        return caseCase160.Invoke(context, ((TestCases.Union.Case160)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase160));
+                    }
+                
+                case 161:
+                    if (!System.Object.ReferenceEquals(caseCase161, null))
+                    {
+                        return caseCase161.Invoke(context, ((TestCases.Union.Case161)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase161));
+                    }
+                
+                case 162:
+                    if (!System.Object.ReferenceEquals(caseCase162, null))
+                    {
+                        return caseCase162.Invoke(context, ((TestCases.Union.Case162)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase162));
+                    }
+                
+                case 163:
+                    if (!System.Object.ReferenceEquals(caseCase163, null))
+                    {
+                        return caseCase163.Invoke(context, ((TestCases.Union.Case163)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase163));
+                    }
+                
+                case 164:
+                    if (!System.Object.ReferenceEquals(caseCase164, null))
+                    {
+                        return caseCase164.Invoke(context, ((TestCases.Union.Case164)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase164));
+                    }
+                
+                case 165:
+                    if (!System.Object.ReferenceEquals(caseCase165, null))
+                    {
+                        return caseCase165.Invoke(context, ((TestCases.Union.Case165)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase165));
+                    }
+                
+                case 166:
+                    if (!System.Object.ReferenceEquals(caseCase166, null))
+                    {
+                        return caseCase166.Invoke(context, ((TestCases.Union.Case166)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase166));
+                    }
+                
+                case 167:
+                    if (!System.Object.ReferenceEquals(caseCase167, null))
+                    {
+                        return caseCase167.Invoke(context, ((TestCases.Union.Case167)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase167));
+                    }
+                
+                case 168:
+                    if (!System.Object.ReferenceEquals(caseCase168, null))
+                    {
+                        return caseCase168.Invoke(context, ((TestCases.Union.Case168)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase168));
+                    }
+                
+                case 169:
+                    if (!System.Object.ReferenceEquals(caseCase169, null))
+                    {
+                        return caseCase169.Invoke(context, ((TestCases.Union.Case169)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase169));
+                    }
+                
+                case 170:
+                    if (!System.Object.ReferenceEquals(caseCase170, null))
+                    {
+                        return caseCase170.Invoke(context, ((TestCases.Union.Case170)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase170));
+                    }
+                
+                case 171:
+                    if (!System.Object.ReferenceEquals(caseCase171, null))
+                    {
+                        return caseCase171.Invoke(context, ((TestCases.Union.Case171)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase171));
+                    }
+                
+                case 172:
+                    if (!System.Object.ReferenceEquals(caseCase172, null))
+                    {
+                        return caseCase172.Invoke(context, ((TestCases.Union.Case172)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase172));
+                    }
+                
+                case 173:
+                    if (!System.Object.ReferenceEquals(caseCase173, null))
+                    {
+                        return caseCase173.Invoke(context, ((TestCases.Union.Case173)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase173));
+                    }
+                
+                case 174:
+                    if (!System.Object.ReferenceEquals(caseCase174, null))
+                    {
+                        return caseCase174.Invoke(context, ((TestCases.Union.Case174)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase174));
+                    }
+                
+                case 175:
+                    if (!System.Object.ReferenceEquals(caseCase175, null))
+                    {
+                        return caseCase175.Invoke(context, ((TestCases.Union.Case175)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase175));
+                    }
+                
+                case 176:
+                    if (!System.Object.ReferenceEquals(caseCase176, null))
+                    {
+                        return caseCase176.Invoke(context, ((TestCases.Union.Case176)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase176));
+                    }
+                
+                case 177:
+                    if (!System.Object.ReferenceEquals(caseCase177, null))
+                    {
+                        return caseCase177.Invoke(context, ((TestCases.Union.Case177)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase177));
+                    }
+                
+                case 178:
+                    if (!System.Object.ReferenceEquals(caseCase178, null))
+                    {
+                        return caseCase178.Invoke(context, ((TestCases.Union.Case178)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase178));
+                    }
+                
+                case 179:
+                    if (!System.Object.ReferenceEquals(caseCase179, null))
+                    {
+                        return caseCase179.Invoke(context, ((TestCases.Union.Case179)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase179));
+                    }
+                
+                case 180:
+                    if (!System.Object.ReferenceEquals(caseCase180, null))
+                    {
+                        return caseCase180.Invoke(context, ((TestCases.Union.Case180)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase180));
+                    }
+                
+                case 181:
+                    if (!System.Object.ReferenceEquals(caseCase181, null))
+                    {
+                        return caseCase181.Invoke(context, ((TestCases.Union.Case181)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase181));
+                    }
+                
+                case 182:
+                    if (!System.Object.ReferenceEquals(caseCase182, null))
+                    {
+                        return caseCase182.Invoke(context, ((TestCases.Union.Case182)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase182));
+                    }
+                
+                case 183:
+                    if (!System.Object.ReferenceEquals(caseCase183, null))
+                    {
+                        return caseCase183.Invoke(context, ((TestCases.Union.Case183)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase183));
+                    }
+                
+                case 184:
+                    if (!System.Object.ReferenceEquals(caseCase184, null))
+                    {
+                        return caseCase184.Invoke(context, ((TestCases.Union.Case184)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase184));
+                    }
+                
+                case 185:
+                    if (!System.Object.ReferenceEquals(caseCase185, null))
+                    {
+                        return caseCase185.Invoke(context, ((TestCases.Union.Case185)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase185));
+                    }
+                
+                case 186:
+                    if (!System.Object.ReferenceEquals(caseCase186, null))
+                    {
+                        return caseCase186.Invoke(context, ((TestCases.Union.Case186)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase186));
+                    }
+                
+                case 187:
+                    if (!System.Object.ReferenceEquals(caseCase187, null))
+                    {
+                        return caseCase187.Invoke(context, ((TestCases.Union.Case187)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase187));
+                    }
+                
+                case 188:
+                    if (!System.Object.ReferenceEquals(caseCase188, null))
+                    {
+                        return caseCase188.Invoke(context, ((TestCases.Union.Case188)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase188));
+                    }
+                
+                case 189:
+                    if (!System.Object.ReferenceEquals(caseCase189, null))
+                    {
+                        return caseCase189.Invoke(context, ((TestCases.Union.Case189)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase189));
+                    }
+                
+                case 190:
+                    if (!System.Object.ReferenceEquals(caseCase190, null))
+                    {
+                        return caseCase190.Invoke(context, ((TestCases.Union.Case190)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase190));
+                    }
+                
+                case 191:
+                    if (!System.Object.ReferenceEquals(caseCase191, null))
+                    {
+                        return caseCase191.Invoke(context, ((TestCases.Union.Case191)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase191));
+                    }
+                
+                case 192:
+                    if (!System.Object.ReferenceEquals(caseCase192, null))
+                    {
+                        return caseCase192.Invoke(context, ((TestCases.Union.Case192)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase192));
+                    }
+                
+                case 193:
+                    if (!System.Object.ReferenceEquals(caseCase193, null))
+                    {
+                        return caseCase193.Invoke(context, ((TestCases.Union.Case193)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase193));
+                    }
+                
+                case 194:
+                    if (!System.Object.ReferenceEquals(caseCase194, null))
+                    {
+                        return caseCase194.Invoke(context, ((TestCases.Union.Case194)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase194));
+                    }
+                
+                case 195:
+                    if (!System.Object.ReferenceEquals(caseCase195, null))
+                    {
+                        return caseCase195.Invoke(context, ((TestCases.Union.Case195)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase195));
+                    }
+                
+                case 196:
+                    if (!System.Object.ReferenceEquals(caseCase196, null))
+                    {
+                        return caseCase196.Invoke(context, ((TestCases.Union.Case196)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase196));
+                    }
+                
+                case 197:
+                    if (!System.Object.ReferenceEquals(caseCase197, null))
+                    {
+                        return caseCase197.Invoke(context, ((TestCases.Union.Case197)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase197));
+                    }
+                
+                case 198:
+                    if (!System.Object.ReferenceEquals(caseCase198, null))
+                    {
+                        return caseCase198.Invoke(context, ((TestCases.Union.Case198)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase198));
+                    }
+                
+                case 199:
+                    if (!System.Object.ReferenceEquals(caseCase199, null))
+                    {
+                        return caseCase199.Invoke(context, ((TestCases.Union.Case199)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase199));
+                    }
+                
+                case 200:
+                    if (!System.Object.ReferenceEquals(caseCase200, null))
+                    {
+                        return caseCase200.Invoke(context, ((TestCases.Union.Case200)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase200));
+                    }
+                
+                case 201:
+                    if (!System.Object.ReferenceEquals(caseCase201, null))
+                    {
+                        return caseCase201.Invoke(context, ((TestCases.Union.Case201)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase201));
+                    }
+                
+                case 202:
+                    if (!System.Object.ReferenceEquals(caseCase202, null))
+                    {
+                        return caseCase202.Invoke(context, ((TestCases.Union.Case202)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase202));
+                    }
+                
+                case 203:
+                    if (!System.Object.ReferenceEquals(caseCase203, null))
+                    {
+                        return caseCase203.Invoke(context, ((TestCases.Union.Case203)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase203));
+                    }
+                
+                case 204:
+                    if (!System.Object.ReferenceEquals(caseCase204, null))
+                    {
+                        return caseCase204.Invoke(context, ((TestCases.Union.Case204)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase204));
+                    }
+                
+                case 205:
+                    if (!System.Object.ReferenceEquals(caseCase205, null))
+                    {
+                        return caseCase205.Invoke(context, ((TestCases.Union.Case205)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase205));
+                    }
+                
+                case 206:
+                    if (!System.Object.ReferenceEquals(caseCase206, null))
+                    {
+                        return caseCase206.Invoke(context, ((TestCases.Union.Case206)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase206));
+                    }
+                
+                case 207:
+                    if (!System.Object.ReferenceEquals(caseCase207, null))
+                    {
+                        return caseCase207.Invoke(context, ((TestCases.Union.Case207)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase207));
+                    }
+                
+                case 208:
+                    if (!System.Object.ReferenceEquals(caseCase208, null))
+                    {
+                        return caseCase208.Invoke(context, ((TestCases.Union.Case208)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase208));
+                    }
+                
+                case 209:
+                    if (!System.Object.ReferenceEquals(caseCase209, null))
+                    {
+                        return caseCase209.Invoke(context, ((TestCases.Union.Case209)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase209));
+                    }
+                
+                case 210:
+                    if (!System.Object.ReferenceEquals(caseCase210, null))
+                    {
+                        return caseCase210.Invoke(context, ((TestCases.Union.Case210)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase210));
+                    }
+                
+                case 211:
+                    if (!System.Object.ReferenceEquals(caseCase211, null))
+                    {
+                        return caseCase211.Invoke(context, ((TestCases.Union.Case211)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase211));
+                    }
+                
+                case 212:
+                    if (!System.Object.ReferenceEquals(caseCase212, null))
+                    {
+                        return caseCase212.Invoke(context, ((TestCases.Union.Case212)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase212));
+                    }
+                
+                case 213:
+                    if (!System.Object.ReferenceEquals(caseCase213, null))
+                    {
+                        return caseCase213.Invoke(context, ((TestCases.Union.Case213)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase213));
+                    }
+                
+                case 214:
+                    if (!System.Object.ReferenceEquals(caseCase214, null))
+                    {
+                        return caseCase214.Invoke(context, ((TestCases.Union.Case214)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase214));
+                    }
+                
+                case 215:
+                    if (!System.Object.ReferenceEquals(caseCase215, null))
+                    {
+                        return caseCase215.Invoke(context, ((TestCases.Union.Case215)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase215));
+                    }
+                
+                case 216:
+                    if (!System.Object.ReferenceEquals(caseCase216, null))
+                    {
+                        return caseCase216.Invoke(context, ((TestCases.Union.Case216)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase216));
+                    }
+                
+                case 217:
+                    if (!System.Object.ReferenceEquals(caseCase217, null))
+                    {
+                        return caseCase217.Invoke(context, ((TestCases.Union.Case217)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase217));
+                    }
+                
+                case 218:
+                    if (!System.Object.ReferenceEquals(caseCase218, null))
+                    {
+                        return caseCase218.Invoke(context, ((TestCases.Union.Case218)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase218));
+                    }
+                
+                case 219:
+                    if (!System.Object.ReferenceEquals(caseCase219, null))
+                    {
+                        return caseCase219.Invoke(context, ((TestCases.Union.Case219)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase219));
+                    }
+                
+                case 220:
+                    if (!System.Object.ReferenceEquals(caseCase220, null))
+                    {
+                        return caseCase220.Invoke(context, ((TestCases.Union.Case220)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase220));
+                    }
+                
+                case 221:
+                    if (!System.Object.ReferenceEquals(caseCase221, null))
+                    {
+                        return caseCase221.Invoke(context, ((TestCases.Union.Case221)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase221));
+                    }
+                
+                case 222:
+                    if (!System.Object.ReferenceEquals(caseCase222, null))
+                    {
+                        return caseCase222.Invoke(context, ((TestCases.Union.Case222)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase222));
+                    }
+                
+                case 223:
+                    if (!System.Object.ReferenceEquals(caseCase223, null))
+                    {
+                        return caseCase223.Invoke(context, ((TestCases.Union.Case223)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase223));
+                    }
+                
+                case 224:
+                    if (!System.Object.ReferenceEquals(caseCase224, null))
+                    {
+                        return caseCase224.Invoke(context, ((TestCases.Union.Case224)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase224));
+                    }
+                
+                case 225:
+                    if (!System.Object.ReferenceEquals(caseCase225, null))
+                    {
+                        return caseCase225.Invoke(context, ((TestCases.Union.Case225)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase225));
+                    }
+                
+                case 226:
+                    if (!System.Object.ReferenceEquals(caseCase226, null))
+                    {
+                        return caseCase226.Invoke(context, ((TestCases.Union.Case226)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase226));
+                    }
+                
+                case 227:
+                    if (!System.Object.ReferenceEquals(caseCase227, null))
+                    {
+                        return caseCase227.Invoke(context, ((TestCases.Union.Case227)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase227));
+                    }
+                
+                case 228:
+                    if (!System.Object.ReferenceEquals(caseCase228, null))
+                    {
+                        return caseCase228.Invoke(context, ((TestCases.Union.Case228)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase228));
+                    }
+                
+                case 229:
+                    if (!System.Object.ReferenceEquals(caseCase229, null))
+                    {
+                        return caseCase229.Invoke(context, ((TestCases.Union.Case229)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase229));
+                    }
+                
+                case 230:
+                    if (!System.Object.ReferenceEquals(caseCase230, null))
+                    {
+                        return caseCase230.Invoke(context, ((TestCases.Union.Case230)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase230));
+                    }
+                
+                case 231:
+                    if (!System.Object.ReferenceEquals(caseCase231, null))
+                    {
+                        return caseCase231.Invoke(context, ((TestCases.Union.Case231)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase231));
+                    }
+                
+                case 232:
+                    if (!System.Object.ReferenceEquals(caseCase232, null))
+                    {
+                        return caseCase232.Invoke(context, ((TestCases.Union.Case232)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase232));
+                    }
+                
+                case 233:
+                    if (!System.Object.ReferenceEquals(caseCase233, null))
+                    {
+                        return caseCase233.Invoke(context, ((TestCases.Union.Case233)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase233));
+                    }
+                
+                case 234:
+                    if (!System.Object.ReferenceEquals(caseCase234, null))
+                    {
+                        return caseCase234.Invoke(context, ((TestCases.Union.Case234)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase234));
+                    }
+                
+                case 235:
+                    if (!System.Object.ReferenceEquals(caseCase235, null))
+                    {
+                        return caseCase235.Invoke(context, ((TestCases.Union.Case235)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase235));
+                    }
+                
+                case 236:
+                    if (!System.Object.ReferenceEquals(caseCase236, null))
+                    {
+                        return caseCase236.Invoke(context, ((TestCases.Union.Case236)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase236));
+                    }
+                
+                case 237:
+                    if (!System.Object.ReferenceEquals(caseCase237, null))
+                    {
+                        return caseCase237.Invoke(context, ((TestCases.Union.Case237)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase237));
+                    }
+                
+                case 238:
+                    if (!System.Object.ReferenceEquals(caseCase238, null))
+                    {
+                        return caseCase238.Invoke(context, ((TestCases.Union.Case238)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase238));
+                    }
+                
+                case 239:
+                    if (!System.Object.ReferenceEquals(caseCase239, null))
+                    {
+                        return caseCase239.Invoke(context, ((TestCases.Union.Case239)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase239));
+                    }
+                
+                case 240:
+                    if (!System.Object.ReferenceEquals(caseCase240, null))
+                    {
+                        return caseCase240.Invoke(context, ((TestCases.Union.Case240)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase240));
+                    }
+                
+                case 241:
+                    if (!System.Object.ReferenceEquals(caseCase241, null))
+                    {
+                        return caseCase241.Invoke(context, ((TestCases.Union.Case241)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase241));
+                    }
+                
+                case 242:
+                    if (!System.Object.ReferenceEquals(caseCase242, null))
+                    {
+                        return caseCase242.Invoke(context, ((TestCases.Union.Case242)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase242));
+                    }
+                
+                case 243:
+                    if (!System.Object.ReferenceEquals(caseCase243, null))
+                    {
+                        return caseCase243.Invoke(context, ((TestCases.Union.Case243)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase243));
+                    }
+                
+                case 244:
+                    if (!System.Object.ReferenceEquals(caseCase244, null))
+                    {
+                        return caseCase244.Invoke(context, ((TestCases.Union.Case244)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase244));
+                    }
+                
+                case 245:
+                    if (!System.Object.ReferenceEquals(caseCase245, null))
+                    {
+                        return caseCase245.Invoke(context, ((TestCases.Union.Case245)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase245));
+                    }
+                
+                case 246:
+                    if (!System.Object.ReferenceEquals(caseCase246, null))
+                    {
+                        return caseCase246.Invoke(context, ((TestCases.Union.Case246)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase246));
+                    }
+                
+                case 247:
+                    if (!System.Object.ReferenceEquals(caseCase247, null))
+                    {
+                        return caseCase247.Invoke(context, ((TestCases.Union.Case247)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase247));
+                    }
+                
+                case 248:
+                    if (!System.Object.ReferenceEquals(caseCase248, null))
+                    {
+                        return caseCase248.Invoke(context, ((TestCases.Union.Case248)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase248));
+                    }
+                
+                case 249:
+                    if (!System.Object.ReferenceEquals(caseCase249, null))
+                    {
+                        return caseCase249.Invoke(context, ((TestCases.Union.Case249)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase249));
+                    }
+                
+                case 250:
+                    if (!System.Object.ReferenceEquals(caseCase250, null))
+                    {
+                        return caseCase250.Invoke(context, ((TestCases.Union.Case250)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase250));
+                    }
+                
+                case 251:
+                    if (!System.Object.ReferenceEquals(caseCase251, null))
+                    {
+                        return caseCase251.Invoke(context, ((TestCases.Union.Case251)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase251));
+                    }
+                
+                case 252:
+                    if (!System.Object.ReferenceEquals(caseCase252, null))
+                    {
+                        return caseCase252.Invoke(context, ((TestCases.Union.Case252)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase252));
+                    }
+                
+                case 253:
+                    if (!System.Object.ReferenceEquals(caseCase253, null))
+                    {
+                        return caseCase253.Invoke(context, ((TestCases.Union.Case253)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseCase253));
+                    }
+                
+                case 254:
+                    if (!System.Object.ReferenceEquals(caseCase254, null))
+                    {
+                        return caseCase254.Invoke(context, ((TestCases.Union.Case254)this._value));
                     }
                     else
                     {

@@ -850,6 +850,140 @@ namespace TestCases
         /// </list>
         /// </summary>
         /// <param name="default"></param>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseString">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</param>
+        /// <param name="caseNumber">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</param>
+        /// <param name="caseBoolean">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</param>
+        /// <param name="caseNull">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</param>
+        /// <param name="caseArray">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</param>
+        /// <param name="caseObject">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</param>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.JsonValue" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.JsonValue" /> is a struct and this is the default value of <see cref="TestCases.JsonValue" />.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public void Switch<TSwitchContext>
+        (
+            TSwitchContext context,
+            System.Action<TSwitchContext>? @default,
+            System.Action<TSwitchContext, TestCases.JsonValue.String>? caseString = null,
+            System.Action<TSwitchContext, TestCases.JsonValue.Number>? caseNumber = null,
+            System.Action<TSwitchContext, TestCases.JsonValue.Boolean>? caseBoolean = null,
+            System.Action<TSwitchContext, TestCases.JsonValue.Null>? caseNull = null,
+            System.Action<TSwitchContext, TestCases.JsonValue.Array>? caseArray = null,
+            System.Action<TSwitchContext, TestCases.JsonValue.Object>? caseObject = null
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized.");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseString, null))
+                    {
+                        caseString.Invoke(context, ((TestCases.JsonValue.String)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNumber, null))
+                    {
+                        caseNumber.Invoke(context, ((TestCases.JsonValue.Number)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseBoolean, null))
+                    {
+                        caseBoolean.Invoke(context, ((TestCases.JsonValue.Boolean)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseNull, null))
+                    {
+                        caseNull.Invoke(context, ((TestCases.JsonValue.Null)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseArray, null))
+                    {
+                        caseArray.Invoke(context, ((TestCases.JsonValue.Array)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseObject, null))
+                    {
+                        caseObject.Invoke(context, ((TestCases.JsonValue.Object)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        @default.Invoke(context);
+                    }
+                    break;
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.JsonValue" /> represents.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseString" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNumber" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseBoolean" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNull" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseArray" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseObject" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="default" /></term>
+        ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="default"></param>
         /// <param name="caseString">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</param>
         /// <param name="caseNumber">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</param>
         /// <param name="caseBoolean">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</param>
@@ -937,6 +1071,111 @@ namespace TestCases
                     else if (!System.Object.ReferenceEquals(@default, null))
                     {
                         @default.Invoke();
+                    }
+                    break;
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+    
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.JsonValue" /> represents.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseString" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNumber" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseBoolean" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNull" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseArray" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseObject" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseString">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</param>
+        /// <param name="caseNumber">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</param>
+        /// <param name="caseBoolean">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</param>
+        /// <param name="caseNull">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</param>
+        /// <param name="caseArray">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</param>
+        /// <param name="caseObject">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</param>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.JsonValue" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.JsonValue" /> is a struct and this is the default value of <see cref="TestCases.JsonValue" />.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public void Switch<TSwitchContext>
+        (
+            TSwitchContext context,
+            System.Action<TSwitchContext,TestCases.JsonValue.String>? caseString,
+            System.Action<TSwitchContext,TestCases.JsonValue.Number>? caseNumber,
+            System.Action<TSwitchContext,TestCases.JsonValue.Boolean>? caseBoolean,
+            System.Action<TSwitchContext,TestCases.JsonValue.Null>? caseNull,
+            System.Action<TSwitchContext,TestCases.JsonValue.Array>? caseArray,
+            System.Action<TSwitchContext,TestCases.JsonValue.Object>? caseObject
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseString, null))
+                    {
+                        caseString.Invoke(context, ((TestCases.JsonValue.String)this._value));
+                    }
+                    break;
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNumber, null))
+                    {
+                        caseNumber.Invoke(context, ((TestCases.JsonValue.Number)this._value));
+                    }
+                    break;
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseBoolean, null))
+                    {
+                        caseBoolean.Invoke(context, ((TestCases.JsonValue.Boolean)this._value));
+                    }
+                    break;
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseNull, null))
+                    {
+                        caseNull.Invoke(context, ((TestCases.JsonValue.Null)this._value));
+                    }
+                    break;
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseArray, null))
+                    {
+                        caseArray.Invoke(context, ((TestCases.JsonValue.Array)this._value));
+                    }
+                    break;
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseObject, null))
+                    {
+                        caseObject.Invoke(context, ((TestCases.JsonValue.Object)this._value));
                     }
                     break;
                 
@@ -1230,6 +1469,160 @@ namespace TestCases
         ///         <term><paramref name="caseObject" /></term>
         ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</description>
         ///     </item>
+        ///     <item>
+        ///         <term><paramref name="default" /></term>
+        ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="default"></param>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseString">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</param>
+        /// <param name="caseNumber">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</param>
+        /// <param name="caseBoolean">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</param>
+        /// <param name="caseNull">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</param>
+        /// <param name="caseArray">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</param>
+        /// <param name="caseObject">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</param>
+        /// <returns>the result of invoking the relevant delegate.</returns>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.JsonValue" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.JsonValue" /> is a struct and this is the default value of <see cref="TestCases.JsonValue" />.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown when both the delegate that should have been invoked and <paramref name="default" /> are null.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public TMatchResult Match<TMatchResult, TMatchContext>
+        (
+            TMatchContext context,
+            System.Func<TMatchContext, TMatchResult> @default,
+            System.Func<TMatchContext, TestCases.JsonValue.String, TMatchResult>? caseString = null,
+            System.Func<TMatchContext, TestCases.JsonValue.Number, TMatchResult>? caseNumber = null,
+            System.Func<TMatchContext, TestCases.JsonValue.Boolean, TMatchResult>? caseBoolean = null,
+            System.Func<TMatchContext, TestCases.JsonValue.Null, TMatchResult>? caseNull = null,
+            System.Func<TMatchContext, TestCases.JsonValue.Array, TMatchResult>? caseArray = null,
+            System.Func<TMatchContext, TestCases.JsonValue.Object, TMatchResult>? caseObject = null
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseString, null))
+                    {
+                        return caseString.Invoke(context, ((TestCases.JsonValue.String)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNumber, null))
+                    {
+                        return caseNumber.Invoke(context, ((TestCases.JsonValue.Number)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseBoolean, null))
+                    {
+                        return caseBoolean.Invoke(context, ((TestCases.JsonValue.Boolean)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseNull, null))
+                    {
+                        return caseNull.Invoke(context, ((TestCases.JsonValue.Null)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseArray, null))
+                    {
+                        return caseArray.Invoke(context, ((TestCases.JsonValue.Array)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseObject, null))
+                    {
+                        return caseObject.Invoke(context, ((TestCases.JsonValue.Object)this._value));
+                    }
+                    else if (!System.Object.ReferenceEquals(@default, null))
+                    {
+                        return @default.Invoke(context);
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(@default));
+                    }
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.JsonValue" /> represents and returns its result.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseString" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNumber" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseBoolean" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNull" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseArray" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseObject" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</description>
+        ///     </item>
         /// </list>
         /// </summary>
         /// <param name="caseString">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</param>
@@ -1311,6 +1704,130 @@ namespace TestCases
                     if (!System.Object.ReferenceEquals(caseObject, null))
                     {
                         return caseObject.Invoke(((TestCases.JsonValue.Object)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseObject));
+                    }
+                
+                default:
+                    throw new System.InvalidOperationException("Union is not valid");
+            }
+        }
+        /// <summary>
+        /// Invokes one of the delegates based on what type this <see cref="TestCases.JsonValue" /> represents and returns its result.
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Delegate.</term>
+        ///         <description>When it will be invoked.</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term><paramref name="caseString" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNumber" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseBoolean" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseNull" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseArray" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term><paramref name="caseObject" /></term>
+        ///         <description>Invoked when this <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</description>
+        ///     </item>
+        /// </list>
+        /// </summary>
+        /// <param name="context">The context to pass to the invoked delegate</param>
+        /// <param name="caseString">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.String" />.</param>
+        /// <param name="caseNumber">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Number" />.</param>
+        /// <param name="caseBoolean">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Boolean" />.</param>
+        /// <param name="caseNull">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Null" />.</param>
+        /// <param name="caseArray">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Array" />.</param>
+        /// <param name="caseObject">The delegate to invoke when the <see cref="TestCases.JsonValue" /> represents a <see cref="TestCases.JsonValue.Object" />.</param>
+        /// <returns>the result of invoking the relevant delegate.</returns>
+        /// <exception cref="System.InvalidOperationException">Thrown when this <see cref="TestCases.JsonValue" /> is not a valid instance. This means that the <see cref="_discriminator" /> has been tampered with via reflection, or <see cref="TestCases.JsonValue" /> is a struct and this is the default value of <see cref="TestCases.JsonValue" />.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown when the delegate that should have been invoked is null.</exception>
+        [System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+        public TMatchResult Match<TMatchResult, TMatchContext>
+        (
+            TMatchContext context,
+            System.Func<TMatchContext, TestCases.JsonValue.String, TMatchResult> caseString,
+            System.Func<TMatchContext, TestCases.JsonValue.Number, TMatchResult> caseNumber,
+            System.Func<TMatchContext, TestCases.JsonValue.Boolean, TMatchResult> caseBoolean,
+            System.Func<TMatchContext, TestCases.JsonValue.Null, TMatchResult> caseNull,
+            System.Func<TMatchContext, TestCases.JsonValue.Array, TMatchResult> caseArray,
+            System.Func<TMatchContext, TestCases.JsonValue.Object, TMatchResult> caseObject
+        )
+        {
+            switch(this._discriminator)
+            {
+                case 0:
+                    throw new System.InvalidOperationException("Union is not initialized");
+    
+                case 1:
+                    if (!System.Object.ReferenceEquals(caseString, null))
+                    {
+                        return caseString.Invoke(context, ((TestCases.JsonValue.String)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseString));
+                    }
+                
+                case 2:
+                    if (!System.Object.ReferenceEquals(caseNumber, null))
+                    {
+                        return caseNumber.Invoke(context, ((TestCases.JsonValue.Number)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseNumber));
+                    }
+                
+                case 3:
+                    if (!System.Object.ReferenceEquals(caseBoolean, null))
+                    {
+                        return caseBoolean.Invoke(context, ((TestCases.JsonValue.Boolean)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseBoolean));
+                    }
+                
+                case 4:
+                    if (!System.Object.ReferenceEquals(caseNull, null))
+                    {
+                        return caseNull.Invoke(context, ((TestCases.JsonValue.Null)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseNull));
+                    }
+                
+                case 5:
+                    if (!System.Object.ReferenceEquals(caseArray, null))
+                    {
+                        return caseArray.Invoke(context, ((TestCases.JsonValue.Array)this._value));
+                    }
+                    else
+                    {
+                        throw new System.ArgumentNullException(nameof(caseArray));
+                    }
+                
+                case 6:
+                    if (!System.Object.ReferenceEquals(caseObject, null))
+                    {
+                        return caseObject.Invoke(context, ((TestCases.JsonValue.Object)this._value));
                     }
                     else
                     {

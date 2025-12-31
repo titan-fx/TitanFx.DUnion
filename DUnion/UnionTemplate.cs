@@ -123,6 +123,9 @@ internal static class UnionTemplate
 
         private string TMatchResult { get; }
 
+        private string TMatchContext { get; }
+        private string TSwitchContext { get; }
+
         private string TParams { get; }
 
         private string TUnion { get; }
@@ -150,6 +153,8 @@ internal static class UnionTemplate
             IsRecord = model.Definition.IsRecord;
             IsNonNull = model.Definition.Kind is CA.TypeKind.Struct or CA.TypeKind.Enum;
             TMatchResult = ComputeMatchResultType(model);
+            TMatchContext = ComputeMatchContextType(model);
+            TSwitchContext = ComputeSwitchContextType(model);
             uint i = 1;
             Cases = model.Cases.Select(c => new UnionCaseRenderContext(this, c, i++)).ToArray();
             DocSee = Helpers.RenderDocSee(model.Id);
@@ -440,6 +445,62 @@ internal static class UnionTemplate
                     /// </list>
                     /// </summary>
                     /// <param name="default"></param>
+                    /// <param name="context">The context to pass to the invoked delegate</param>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    /// <param name="case{{c.Name}}">The delegate to invoke when the {{DocSee}} represents a {{c.DocSee}}.</param>
+                    """)).Indent(4)}}
+                    /// <exception cref="System.InvalidOperationException">Thrown when this {{DocSee}} is not a valid instance. This means that the <see cref="{{Discriminator}}" /> has been tampered with via reflection, or {{DocSee}} is a struct and this is the default value of {{DocSee}}.</exception>
+                    [{{_compilerGenerated}}]
+                    public void {{Switch}}<{{TSwitchContext}}>
+                    (
+                        {{TSwitchContext}} context,{{string.Join(",", Cases
+                            .Select(c => $"\r\n{_action}<{TSwitchContext}, {c.TCase}>? case{c.Name} = null")
+                            .Prepend($"\r\n{_action}<{TSwitchContext}>? @default")
+                        ).Indent(8)}}
+                    )
+                    {
+                        switch(this.{{Discriminator}})
+                        {
+                            case 0:
+                                throw new {{_invalidOperationException}}("Union is not initialized.");
+
+                            {{string.Join("\r\n", Cases.Select(c => $$"""
+                            case {{c.Id}}:
+                                if (!{{_object}}.ReferenceEquals(case{{c.Name}}, null))
+                                {
+                                    case{{c.Name}}.Invoke(context, {{c.FromObject($"this.{Value}")}});
+                                }
+                                else if (!{{_object}}.ReferenceEquals(@default, null))
+                                {
+                                    @default.Invoke(context);
+                                }
+                                break;
+
+                            """)).Indent(12)}}
+                            default:
+                                throw new {{_invalidOperationException}}("Union is not valid");
+                        }
+                    }
+                    /// <summary>
+                    /// Invokes one of the delegates based on what type this {{DocSee}} represents.
+                    /// <list type="table">
+                    ///     <listheader>
+                    ///         <term>Delegate.</term>
+                    ///         <description>When it will be invoked.</description>
+                    ///     </listheader>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    ///     <item>
+                    ///         <term><paramref name="case{{c.Name}}" /></term>
+                    ///         <description>Invoked when this {{DocSee}} represents a {{c.DocSee}}.</description>
+                    ///     </item>
+                    """)).Indent(4)}}
+                    ///     <item>
+                    ///         <term><paramref name="default" /></term>
+                    ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+                    ///     </item>
+                    /// </list>
+                    /// </summary>
+                    /// <param name="default"></param>
                     {{string.Join("\r\n", Cases.Select(c => $$"""
                     /// <param name="case{{c.Name}}">The delegate to invoke when the {{DocSee}} represents a {{c.DocSee}}.</param>
                     """)).Indent(4)}}
@@ -466,6 +527,53 @@ internal static class UnionTemplate
                                 else if (!{{_object}}.ReferenceEquals(@default, null))
                                 {
                                     @default.Invoke();
+                                }
+                                break;
+
+                            """)).Indent(12)}}
+                            default:
+                                throw new {{_invalidOperationException}}("Union is not valid");
+                        }
+                    }
+
+                    /// <summary>
+                    /// Invokes one of the delegates based on what type this {{DocSee}} represents.
+                    /// <list type="table">
+                    ///     <listheader>
+                    ///         <term>Delegate.</term>
+                    ///         <description>When it will be invoked.</description>
+                    ///     </listheader>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    ///     <item>
+                    ///         <term><paramref name="case{{c.Name}}" /></term>
+                    ///         <description>Invoked when this {{DocSee}} represents a {{c.DocSee}}.</description>
+                    ///     </item>
+                    """)).Indent(4)}}
+                    /// </list>
+                    /// </summary>
+                    /// <param name="context">The context to pass to the invoked delegate</param>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    /// <param name="case{{c.Name}}">The delegate to invoke when the {{DocSee}} represents a {{c.DocSee}}.</param>
+                    """)).Indent(4)}}
+                    /// <exception cref="System.InvalidOperationException">Thrown when this {{DocSee}} is not a valid instance. This means that the <see cref="{{Discriminator}}" /> has been tampered with via reflection, or {{DocSee}} is a struct and this is the default value of {{DocSee}}.</exception>
+                    [{{_compilerGenerated}}]
+                    public void {{Switch}}<{{TSwitchContext}}>
+                    (
+                        {{TSwitchContext}} context,{{string.Join(",", Cases
+                            .Select(c => $"\r\n{_action}<{TSwitchContext},{c.TCase}>? case{c.Name}")
+                        ).Indent(8)}}
+                    )
+                    {
+                        switch(this.{{Discriminator}})
+                        {
+                            case 0:
+                                throw new {{_invalidOperationException}}("Union is not initialized");
+
+                            {{string.Join("\r\n", Cases.Select(c => $$"""
+                            case {{c.Id}}:
+                                if (!{{_object}}.ReferenceEquals(case{{c.Name}}, null))
+                                {
+                                    case{{c.Name}}.Invoke(context, {{c.FromObject($"this.{Value}")}});
                                 }
                                 break;
 
@@ -591,6 +699,67 @@ internal static class UnionTemplate
                     ///         <description>Invoked when this {{DocSee}} represents a {{c.DocSee}}.</description>
                     ///     </item>
                     """)).Indent(4)}}
+                    ///     <item>
+                    ///         <term><paramref name="default" /></term>
+                    ///         <description>Invoked when the delegate that would have otherwise been invoked was null.</description>
+                    ///     </item>
+                    /// </list>
+                    /// </summary>
+                    /// <param name="default"></param>
+                    /// <param name="context">The context to pass to the invoked delegate</param>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    /// <param name="case{{c.Name}}">The delegate to invoke when the {{DocSee}} represents a {{c.DocSee}}.</param>
+                    """)).Indent(4)}}
+                    /// <returns>the result of invoking the relevant delegate.</returns>
+                    /// <exception cref="System.InvalidOperationException">Thrown when this {{DocSee}} is not a valid instance. This means that the <see cref="{{Discriminator}}" /> has been tampered with via reflection, or {{DocSee}} is a struct and this is the default value of {{DocSee}}.</exception>
+                    /// <exception cref="System.ArgumentNullException">Thrown when both the delegate that should have been invoked and <paramref name="default" /> are null.</exception>
+                    [{{_compilerGenerated}}]
+                    public {{TMatchResult}} {{Match}}<{{TMatchResult}}, {{TMatchContext}}>
+                    (
+                        {{TMatchContext}} context,{{string.Join(",", Cases
+                            .Select(c => $"\r\n{_func}<{TMatchContext}, {c.TCase}, {TMatchResult}>? case{c.Name} = null")
+                            .Prepend($"\r\n{_func}<{TMatchContext}, {TMatchResult}> @default")
+                        ).Indent(8)}}
+                    )
+                    {
+                        switch(this.{{Discriminator}})
+                        {
+                            case 0:
+                                throw new {{_invalidOperationException}}("Union is not initialized");
+
+                            {{string.Join("\r\n", Cases.Select(c => $$"""
+                            case {{c.Id}}:
+                                if (!{{_object}}.ReferenceEquals(case{{c.Name}}, null))
+                                {
+                                    return case{{c.Name}}.Invoke(context, {{c.FromObject($"this.{Value}")}});
+                                }
+                                else if (!{{_object}}.ReferenceEquals(@default, null))
+                                {
+                                    return @default.Invoke(context);
+                                }
+                                else
+                                {
+                                    throw new {{_argumentNullException}}(nameof(@default));
+                                }
+
+                            """)).Indent(12)}}
+                            default:
+                                throw new {{_invalidOperationException}}("Union is not valid");
+                        }
+                    }
+                    /// <summary>
+                    /// Invokes one of the delegates based on what type this {{DocSee}} represents and returns its result.
+                    /// <list type="table">
+                    ///     <listheader>
+                    ///         <term>Delegate.</term>
+                    ///         <description>When it will be invoked.</description>
+                    ///     </listheader>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    ///     <item>
+                    ///         <term><paramref name="case{{c.Name}}" /></term>
+                    ///         <description>Invoked when this {{DocSee}} represents a {{c.DocSee}}.</description>
+                    ///     </item>
+                    """)).Indent(4)}}
                     /// </list>
                     /// </summary>
                     {{string.Join("\r\n", Cases.Select(c => $$"""
@@ -616,6 +785,57 @@ internal static class UnionTemplate
                                 if (!{{_object}}.ReferenceEquals(case{{c.Name}}, null))
                                 {
                                     return case{{c.Name}}.Invoke({{c.FromObject($"this.{Value}")}});
+                                }
+                                else
+                                {
+                                    throw new {{_argumentNullException}}(nameof(case{{c.Name}}));
+                                }
+
+                            """)).Indent(12)}}
+                            default:
+                                throw new {{_invalidOperationException}}("Union is not valid");
+                        }
+                    }
+                    /// <summary>
+                    /// Invokes one of the delegates based on what type this {{DocSee}} represents and returns its result.
+                    /// <list type="table">
+                    ///     <listheader>
+                    ///         <term>Delegate.</term>
+                    ///         <description>When it will be invoked.</description>
+                    ///     </listheader>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    ///     <item>
+                    ///         <term><paramref name="case{{c.Name}}" /></term>
+                    ///         <description>Invoked when this {{DocSee}} represents a {{c.DocSee}}.</description>
+                    ///     </item>
+                    """)).Indent(4)}}
+                    /// </list>
+                    /// </summary>
+                    /// <param name="context">The context to pass to the invoked delegate</param>
+                    {{string.Join("\r\n", Cases.Select(c => $$"""
+                    /// <param name="case{{c.Name}}">The delegate to invoke when the {{DocSee}} represents a {{c.DocSee}}.</param>
+                    """)).Indent(4)}}
+                    /// <returns>the result of invoking the relevant delegate.</returns>
+                    /// <exception cref="System.InvalidOperationException">Thrown when this {{DocSee}} is not a valid instance. This means that the <see cref="{{Discriminator}}" /> has been tampered with via reflection, or {{DocSee}} is a struct and this is the default value of {{DocSee}}.</exception>
+                    /// <exception cref="System.ArgumentNullException">Thrown when the delegate that should have been invoked is null.</exception>
+                    [{{_compilerGenerated}}]
+                    public {{TMatchResult}} {{Match}}<{{TMatchResult}}, {{TMatchContext}}>
+                    (
+                        {{TMatchContext}} context,{{string.Join(",", Cases
+                            .Select(c => $"\r\n{_func}<{TMatchContext}, {c.TCase}, {TMatchResult}> case{c.Name}")
+                        ).Indent(8)}}
+                    )
+                    {
+                        switch(this.{{Discriminator}})
+                        {
+                            case 0:
+                                throw new {{_invalidOperationException}}("Union is not initialized");
+
+                            {{string.Join("\r\n", Cases.Select(c => $$"""
+                            case {{c.Id}}:
+                                if (!{{_object}}.ReferenceEquals(case{{c.Name}}, null))
+                                {
+                                    return case{{c.Name}}.Invoke(context, {{c.FromObject($"this.{Value}")}});
                                 }
                                 else
                                 {
@@ -676,6 +896,34 @@ internal static class UnionTemplate
         private static string ComputeMatchResultType(Union model)
         {
             const string name = "TMatchResult";
+            var known = model.Id.TypeParameters.Select(p => p.Name).ToImmutableHashSet();
+            if (!known.Contains(name))
+                return name;
+
+            for (var i = 0; true; i++)
+            {
+                if (!known.Contains(name + i))
+                    return name + i;
+            }
+        }
+
+        private static string ComputeMatchContextType(Union model)
+        {
+            const string name = "TMatchContext";
+            var known = model.Id.TypeParameters.Select(p => p.Name).ToImmutableHashSet();
+            if (!known.Contains(name))
+                return name;
+
+            for (var i = 0; true; i++)
+            {
+                if (!known.Contains(name + i))
+                    return name + i;
+            }
+        }
+
+        private static string ComputeSwitchContextType(Union model)
+        {
+            const string name = "TSwitchContext";
             var known = model.Id.TypeParameters.Select(p => p.Name).ToImmutableHashSet();
             if (!known.Contains(name))
                 return name;
