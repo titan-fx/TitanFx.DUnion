@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>TitanFx.DUnion.Attributes</PackageId>
+    <RootNamespace>TitanFx.DUnion</RootNamespace>
+    <Description>A default implementation of the attributes used by TitanFx.DUnion</Description>
+    <IsPackable>True</IsPackable>
+  </PropertyGroup>
+</Project>

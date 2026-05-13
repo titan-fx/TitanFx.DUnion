@@ -1,4 +1,4 @@
-# DUnion
+# TitanFx.DUnion
 
 Easy source generator for creating custom discriminated unions.
 

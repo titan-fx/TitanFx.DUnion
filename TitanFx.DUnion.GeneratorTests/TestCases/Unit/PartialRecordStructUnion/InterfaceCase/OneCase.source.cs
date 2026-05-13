@@ -1,0 +1,9 @@
+using TitanFx.DUnion;
+
+namespace TestCases;
+
+[DUnion]
+public partial record struct Union
+{
+    public interface ICase1 { }
+}

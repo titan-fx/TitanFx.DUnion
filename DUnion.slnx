@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.build.props" />
+    <File Path="TitanFx.DUnion/README.md" />
+  </Folder>
+  <Project Path="TitanFx.DUnion.Attributes/TitanFx.DUnion.Attributes.csproj" />
+  <Project Path="TitanFx.DUnion.Common/TitanFx.DUnion.Common.csproj" />
+  <Project Path="TitanFx.DUnion.GeneratedTests/TitanFx.DUnion.GeneratedTests.csproj" />
+  <Project Path="TitanFx.DUnion.GeneratorTests/TitanFx.DUnion.GeneratorTests.csproj" />
+  <Project Path="TitanFx.DUnion/TitanFx.DUnion.csproj" />
+</Solution>
