@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Set VERSION variable from tag
-        run: echo "$GITHUB_REF" | sed -e 's/^[^0-9]+//g' >> $GITHUB_ENV
+        run: echo "$GITHUB_REF" | sed -e 's/^[^0-9]\+//g' >> $GITHUB_ENV
       - name: Build
         run: dotnet build -c Release --version ${VERSION}
       - name: Test
