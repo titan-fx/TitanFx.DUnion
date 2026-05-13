@@ -1,4 +1,4 @@
-# DUnion
+# TitanFx.DUnion
 
 Easy source generator for creating custom discriminated unions.
 
@@ -164,9 +164,9 @@ public readonly record struct JsonValue
 
 # Using in multiple projects
 
-In most situations, you will be fine to add this source generator to any of your projects, however it does come with a bit of duplication if you do so. Each place where you add this package will have a set of internal attributes added, namely `DUnion.DUnionAttribute`, `DUnion.DUnionCaseAttribute`, `DUnion.DUnionGenericAttribute`, and `DUnion.DUnionExcludeAttribute`. These might therefore be duplicated many times and slightly inflate your build output. Theres also an issue with the `[InternalsVisibleTo]` attribute. If two projects have the source generator installed, and one has its internals visible to the other, then the build will fail due to ambiguous references to the attributes.
+In most situations, you will be fine to add this source generator to any of your projects, however it does come with a bit of duplication if you do so. Each place where you add this package will have a set of internal attributes added, namely `TitanFx.DUnion.DUnionAttribute`, `TitanFx.DUnion.DUnionCaseAttribute`, `TitanFx.DUnion.DUnionGenericAttribute`, and `TitanFx.DUnion.DUnionExcludeAttribute`. These might therefore be duplicated many times and slightly inflate your build output. Theres also an issue with the `[InternalsVisibleTo]` attribute. If two projects have the source generator installed, and one has its internals visible to the other, then the build will fail due to ambiguous references to the attributes.
 
-To solve all these issues, you can install the [`DUnion.Attributes`](https://www.nuget.org/packages/DUnion.Attributes) package, and add the following to your `.csproj` files:
+To solve all these issues, you can install the [`TitanFx.DUnion.Attributes`](https://www.nuget.org/packages/TitanFx.DUnion.Attributes) package, and add the following to your `.csproj` files:
 
 ```xml
 <PropertyGroup>

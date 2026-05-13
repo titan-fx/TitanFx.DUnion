@@ -26,6 +26,8 @@
   <ItemGroup>
     <EmbeddedResource Include="..\TitanFx.DUnion.Attributes\**\*.cs" />
     <EmbeddedResource Remove="..\TitanFx.DUnion.Attributes\obj\**\*.cs" />
+    <None Include="$(ProjectDir)\..\README.md" Pack="true" PackagePath="\" />
+    <None Remove="$(ProjectDir)\README.md" />
   </ItemGroup>
 
   <ItemGroup>
