@@ -2,7 +2,8 @@ on:
   push:
     branch: main
 jobs:
-  publish-to-nuget:
+  ci:
+    name: Run CI checks
     permissions:
       id-token: write
     runs-on: ubuntu-latest
