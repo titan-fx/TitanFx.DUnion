@@ -1,6 +1,7 @@
 on:
   push:
-    branch: main
+    branches:
+      - main
 jobs:
   ci:
     name: Run CI checks
